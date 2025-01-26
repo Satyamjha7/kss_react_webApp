@@ -1,0 +1,68 @@
+.styled-footer {
+    background-color: white;
+    color: black;
+    padding: 64px 0 32px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.social-button {
+    color: #ffffff;
+    margin: 0 8px;
+    transition: transform 0.2s;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+    color: #4caf50;
+}
+
+.quick-link {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.quick-link:hover {
+    color: #4caf50;
+}
+
+.subscribe-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 24px;
+}
+
+.subscribe-button:hover {
+    background-color: #388e3c;
+}
+
+footer .MuiContainer-root {
+    max-width: lg;
+}
+
+footer .MuiGrid-root {
+    margin-bottom: 24px;
+}
+
+footer .MuiTypography-root {
+    margin-bottom: 12px;
+}
+
+footer .MuiTypography-root a {
+    color: #ffffff;
+}
+
+footer .MuiTypography-root a:hover {
+    color: #4caf50;
+}
+
+footer .MuiBox-root {
+    margin-top: 16px;
+}
+
+footer .MuiSnackbar-root {
+    width: 100%;
+}
