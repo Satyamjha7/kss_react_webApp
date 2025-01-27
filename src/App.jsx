@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "./component/navbar";
-import Footer from "./component/footer";
+import Navbar from "./Components/navbar";
+import Footer from "./Components/footer";
+import Home from "./Components/home";
 
 
 
@@ -9,6 +10,7 @@ const App = () => {
     <div>
       <Navbar />
       <Footer />
+      <Home />
     </div>
   );
 };
