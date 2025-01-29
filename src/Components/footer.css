@@ -2,7 +2,8 @@
     background-color: white;
     color: black;
     padding: 64px 0 32px;
-    position: fixed;
+    position: relative;
+    width: 100%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -65,4 +66,19 @@ footer .MuiBox-root {
 
 footer .MuiSnackbar-root {
     width: 100%;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .styled-footer {
+        padding: 40px 0 20px;
+        text-align: center;
+    }
+
+    footer .MuiGrid-root {
+        margin-bottom: 16px;
+    }
+
+    .social-button {
+        margin: 8px;
+    }
 }

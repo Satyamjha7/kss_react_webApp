@@ -15,11 +15,12 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <div className="logo">
-                <img src="Assets\logo-png.png" alt="Kosi Seva Sadan Logo" className="logo-img" />
-                <li className='logo-text'>Kosi Seva Sadan
-                    <p>Restoring Hope, Reviving communities</p>
-                </li>
+            <div className="logo-container">
+                <img src="Assets/logo-png.png" alt="Kosi Seva Sadan Logo" className="logo-img animated-logo" />
+                <div className="logo-text">
+                    Kosi Seva Sadan
+                    <p className="slogan">Restoring Hope, Reviving Communities</p>
+                </div>
             </div>
             <div className="nav-links">
                 <ul>

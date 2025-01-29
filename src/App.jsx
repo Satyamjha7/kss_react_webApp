@@ -1,16 +1,18 @@
 import React from "react";
 import Navbar from "./Components/navbar";
 import Footer from "./Components/footer";
-import Home from "./Components/home";
+import Home from "./Page/Home"
 
 
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
+      <div className="main-content">
+        <Home />
+      </div>
       <Footer />
-      <Home />
     </div>
   );
 };

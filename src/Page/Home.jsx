@@ -37,7 +37,7 @@ const Hero = () => {
         transition={{ duration: 1 }}
       >
         <img
-          src="/path/to/hero-image.png" /* Replace with your image path */
+          src="Assets\33.jpeg"
           alt="Empowering Communities"
         />
       </motion.div>
