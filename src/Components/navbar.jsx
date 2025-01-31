@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
     const [dropdown, setDropdown] = useState({
@@ -16,101 +17,108 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="logo-container">
-                <img src="Assets/logo-png.png" alt="Kosi Seva Sadan Logo" className="logo-img animated-logo" />
+                <Link to="/">
+                    <img src="/Assets/logo-png.png" alt="Kosi Seva Sadan Logo" className="logo-img animated-logo" />
+                </Link>
                 <div className="logo-text">
                     Kosi Seva Sadan
                     <p className="slogan">Restoring Hope, Reviving Communities</p>
                 </div>
             </div>
+
             <div className="nav-links">
                 <ul>
-                    <li><a href="./index.html"><b>Home</b></a></li>
+                    <li><Link to="/"><b>Home</b></Link></li>
 
+                    {/* About Us Dropdown */}
                     <li
-                        onMouseEnter={() => toggleDropdown('about')}
-                        onMouseLeave={() => toggleDropdown('about')}
+                        onMouseEnter={() => toggleDropdown("about")}
+                        onMouseLeave={() => toggleDropdown("about")}
                     >
-                        <a href="#" className="mouse-event"><b>About Us <span className="caret"></span></b></a>
+                        <span className="mouse-event"><b>About Us <span className="caret"></span></b></span>
                         {dropdown.about && (
                             <div className="dropdown-menu" id="about-dropdown">
-                                <a href="./aboutWhoWeAre.html">Who We Are</a>
+                                <Link to="/who-we-are">Who We Are</Link>
                                 <hr />
-                                <a href="./team.html">The Team</a>
+                                <Link to="/team">The Team</Link>
                                 <hr />
-                                <a href="./values.html">Our Values</a>
+                                <Link to="/values">Our Values</Link>
                                 <hr />
-                                <a href="./kssPolicies.html">KSS Policies</a>
+                                <Link to="/kss-policies">KSS Policies</Link>
                                 <hr />
-                                <a href="">Financials</a>
+                                <Link to="/financials">Financials</Link>
                             </div>
                         )}
                     </li>
 
+                    {/* What We Do Dropdown */}
                     <li
-                        onMouseEnter={() => toggleDropdown('what')}
-                        onMouseLeave={() => toggleDropdown('what')}
+                        onMouseEnter={() => toggleDropdown("what")}
+                        onMouseLeave={() => toggleDropdown("what")}
                     >
-                        <a href="#" className="mouse-event"><b>What We Do <span className="caret"></span></b></a>
+                        <span className="mouse-event"><b>What We Do <span className="caret"></span></b></span>
                         {dropdown.what && (
                             <div className="dropdown-menu" id="what-dropdown">
-                                <a href="./womenEmpowerment.html" id="women-empowerment">Women Empowerment</a>
+                                <Link to="/women-empowerment">Women Empowerment</Link>
                                 <hr />
-                                <a href="" id="health-nutrition">Health & Nutrition</a>
+                                <Link to="/health-nutrition">Health & Nutrition</Link>
                                 <hr />
-                                <a href="" id="watsan">Water and Sanitation (WATSAN)</a>
+                                <Link to="/watsan">Water and Sanitation (WATSAN)</Link>
                                 <hr />
-                                <a href="" id="education-awareness">Education and Awareness</a>
+                                <Link to="/education-awareness">Education and Awareness</Link>
                                 <hr />
-                                <a href="" id="child-rights">Child Rights</a>
+                                <Link to="/child-rights">Child Rights</Link>
                                 <hr />
-                                <a href="" id="drr-climate">DRR & Climate Change</a>
+                                <Link to="/drr-climate">DRR & Climate Change</Link>
                                 <hr />
-                                <a href="" id="skills-dev">Skills Development</a>
+                                <Link to="/skills-development">Skills Development</Link>
                                 <hr />
-                                <a href="" id="sust-agri">Sustainable Agriculture</a>
+                                <Link to="/sustainable-agriculture">Sustainable Agriculture</Link>
                                 <hr />
-                                <a href="" id="environment">Environment & Clean Energy</a>
+                                <Link to="/environment">Environment & Clean Energy</Link>
                                 <hr />
-                                <a href="" id="livelihood-prom">Livelihood Promotion</a>
+                                <Link to="/livelihood-promotion">Livelihood Promotion</Link>
                             </div>
                         )}
                     </li>
 
+                    {/* Resources Dropdown */}
                     <li
-                        onMouseEnter={() => toggleDropdown('res')}
-                        onMouseLeave={() => toggleDropdown('res')}
+                        onMouseEnter={() => toggleDropdown("res")}
+                        onMouseLeave={() => toggleDropdown("res")}
                     >
-                        <a href="#" className="mouse-event"><b>Resources <span className="caret"></span></b></a>
+                        <span className="mouse-event"><b>Resources <span className="caret"></span></b></span>
                         {dropdown.res && (
                             <div className="dropdown-menu" id="res-dropdown">
-                                <a href="./annualReport.html">Annual Report</a>
+                                <Link to="/annual-report">Annual Report</Link>
                                 <hr />
-                                <a href="">FCRA</a>
+                                <Link to="/fcra">FCRA</Link>
                                 <hr />
-                                <a href="">Organization Doc</a>
+                                <Link to="/organization-docs">Organization Docs</Link>
                                 <hr />
-                                <a href="">Case Study</a>
+                                <Link to="/case-study">Case Study</Link>
                                 <hr />
-                                <a href="">Stories</a>
+                                <Link to="/stories">Stories</Link>
                             </div>
                         )}
                     </li>
 
+                    {/* Media Dropdown */}
                     <li
-                        onMouseEnter={() => toggleDropdown('gallery')}
-                        onMouseLeave={() => toggleDropdown('gallery')}
+                        onMouseEnter={() => toggleDropdown("gallery")}
+                        onMouseLeave={() => toggleDropdown("gallery")}
                     >
-                        <a href="#" className="mouse-event"><b>Media <span className="caret"></span></b></a>
+                        <span className="mouse-event"><b>Media <span className="caret"></span></b></span>
                         {dropdown.gallery && (
                             <div className="dropdown-menu" id="gallery-dropdown">
-                                <a href="./galleryImages.html">Gallery</a>
+                                <Link to="/gallery">Gallery</Link>
                                 <hr />
-                                <a href="">Paper Clips</a>
+                                <Link to="/paper-clips">Paper Clips</Link>
                             </div>
                         )}
                     </li>
 
-                    <li><a href="./contact.html"><b>Contact</b></a></li>
+                    <li><Link to="/contact"><b>Contact</b></Link></li>
                 </ul>
             </div>
         </nav>
