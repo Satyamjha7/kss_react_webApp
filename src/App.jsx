@@ -5,6 +5,7 @@ import Footer from "./Components/footer";
 import Home from "./Page/Home";
 import WhoWeAre from "./Page/WhoWeAre";
 import Team from "./Page/Team";
+import Values from "./Page/Values";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/who-we-are" element={<WhoWeAre />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/values" element={<Values />} />
           </Routes>
         </div>
         <Footer />
