@@ -1,45 +1,43 @@
-import React from 'react';
-import './Values.css'; // Updated styling for user-friendly design
+import React from "react";
+import { motion } from "framer-motion";
+import { FaShieldAlt, FaHandHolding, FaUsers, FaLightbulb, FaHandsHelping } from "react-icons/fa";
+import "./Values.css";
 
-const CoreValuesPage = () => {
+const coreValues = [
+    { icon: <FaShieldAlt />, title: "Integrity", description: "We conduct all our work with honesty, transparency, and accountability, maintaining the highest ethical standards." },
+    { icon: <FaHandHolding />, title: "Empowerment", description: "We believe in empowering individuals and communities to become self-sufficient and lead their own development." },
+    { icon: <FaUsers />, title: "Collaboration", description: "We value partnerships, as we know that by working together, we can achieve greater impact." },
+    { icon: <FaLightbulb />, title: "Innovation", description: "We continuously seek creative and innovative solutions to address complex challenges effectively." },
+    { icon: <FaHandsHelping />, title: "Inclusivity", description: "We respect diversity, ensuring that everyone's voice is heard and valued." },
+];
+
+const CoreValues = () => {
     return (
-        <div className="core-values">
-            <h1 className="page-title">Our Core Values</h1>
-            <p className="intro-text">At Kosi Seva Sadan, our core values drive everything we do. These values are at the heart of our commitment to creating a better future for all.</p>
-
-            <div className="values-container">
-                <div className="value-item integrity">
-                    <i className="fas fa-shield-alt"></i>
-                    <h2>Integrity</h2>
-                    <p>We conduct all our work with the utmost honesty, transparency, and accountability, maintaining the highest ethical standards in everything we do.</p>
-                </div>
-
-                <div className="value-item empowerment">
-                    <i className="fas fa-hand-holding-heart"></i>
-                    <h2>Empowerment</h2>
-                    <p>We believe in empowering individuals and communities to become self-sufficient and lead their own development.</p>
-                </div>
-
-                <div className="value-item collaboration">
-                    <i className="fas fa-users"></i>
-                    <h2>Collaboration</h2>
-                    <p>We value collaboration and partnerships, as we know that by working together, we can achieve greater impact.</p>
-                </div>
-
-                <div className="value-item innovation">
-                    <i className="fas fa-lightbulb"></i>
-                    <h2>Innovation</h2>
-                    <p>We continuously seek creative and innovative solutions to address complex challenges effectively.</p>
-                </div>
-
-                <div className="value-item inclusivity">
-                    <i className="fas fa-hands-helping"></i>
-                    <h2>Inclusivity</h2>
-                    <p>We are committed to inclusivity, respecting diversity, and ensuring that everyone's voice is heard and valued.</p>
-                </div>
+        <motion.div
+            className="core-values-container"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+        >
+            <h1 className="title">Our Core Values</h1>
+            <div className="values-grid">
+                {coreValues.map((value, index) => (
+                    <motion.div
+                        key={index}
+                        className="value-card"
+                        whileHover={{ scale: 1.1, rotateY: 10 }}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5, delay: index * 0.2 }}
+                    >
+                        <div className="icon">{value.icon}</div>
+                        <h2>{value.title}</h2>
+                        <p>{value.description}</p>
+                    </motion.div>
+                ))}
             </div>
-        </div>
+        </motion.div>
     );
 };
 
-export default CoreValuesPage;
+export default CoreValues;
