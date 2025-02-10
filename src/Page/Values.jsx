@@ -20,7 +20,7 @@ const CoreValues = () => {
             transition={{ duration: 1 }}
         >
             <h1 className="title">Our Core Values</h1>
-            <div className="values-grid">
+            <div className="values-tree">
                 {coreValues.map((value, index) => (
                     <motion.div
                         key={index}

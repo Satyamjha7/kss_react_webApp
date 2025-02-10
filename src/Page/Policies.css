@@ -1,0 +1,99 @@
+/* Page Background */
+.policies-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  color: white;
+}
+
+/* Title */
+.title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Grid Layout */
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Policy Card */
+.policy-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+.policy-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Icon */
+.icon {
+  font-size: 50px;
+  color: #ffdd57;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.policy-card:hover .icon {
+  color: #ff5733;
+}
+
+/* Text */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Download Button */
+.download-btn {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: linear-gradient(45deg, #ff758c, #ff7eb3);
+  color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

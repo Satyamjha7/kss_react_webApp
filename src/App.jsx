@@ -6,6 +6,7 @@ import Home from "./Page/Home";
 import WhoWeAre from "./Page/WhoWeAre";
 import Team from "./Page/Team";
 import Values from "./Page/Values";
+import Policies from "./Page/Policies";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/who-we-are" element={<WhoWeAre />} />
             <Route path="/team" element={<Team />} />
             <Route path="/values" element={<Values />} />
+            <Route path="/policies" element={<Policies />} />
           </Routes>
         </div>
         <Footer />

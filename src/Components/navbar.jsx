@@ -44,7 +44,7 @@ const Navbar = () => {
                                 <hr />
                                 <Link to="/values">Our Values</Link>
                                 <hr />
-                                <Link to="/kss-policies">KSS Policies</Link>
+                                <Link to="/Policies">KSS Policies</Link>
                                 <hr />
                                 <Link to="/financials">Financials</Link>
                             </div>
