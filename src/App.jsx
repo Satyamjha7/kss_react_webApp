@@ -7,6 +7,8 @@ import WhoWeAre from "./Page/WhoWeAre";
 import Team from "./Page/Team";
 import Values from "./Page/Values";
 import Policies from "./Page/Policies";
+import Financials from "./Page/Financials";
+
 
 const App = () => {
   return (
@@ -20,6 +22,7 @@ const App = () => {
             <Route path="/team" element={<Team />} />
             <Route path="/values" element={<Values />} />
             <Route path="/policies" element={<Policies />} />
+            <Route path="/financials" element={<Financials />} />
           </Routes>
         </div>
         <Footer />
