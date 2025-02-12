@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -10,15 +10,27 @@ const Navbar = () => {
         gallery: false,
     });
 
+    const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     const toggleDropdown = (menu) => {
         setDropdown((prev) => ({ ...prev, [menu]: !prev[menu] }));
     };
 
     return (
-        <nav className="navbar">
+        <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
             <div className="logo-container">
                 <Link to="/">
-                    <img src="/Assets/logo-png.png" alt="Kosi Seva Sadan Logo" className="logo-img animated-logo" />
+                    <img src="/Assets/logo-png.png" alt="Kosi Seva Sadan Logo" className="logo-img" />
                 </Link>
                 <div className="logo-text">
                     Kosi Seva Sadan
@@ -26,26 +38,27 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className="nav-links">
+            {/* Hamburger Menu for Mobile */}
+            <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                ☰
+            </div>
+
+            <div className={`nav-links ${menuOpen ? "active" : ""}`}>
                 <ul>
-                    <li><Link to="/"><b>Home</b></Link></li>
+                    <li><Link to="/">Home</Link></li>
 
                     {/* About Us Dropdown */}
                     <li
                         onMouseEnter={() => toggleDropdown("about")}
                         onMouseLeave={() => toggleDropdown("about")}
                     >
-                        <span className="mouse-event"><b>About Us <span className="caret"></span></b></span>
+                        <span className="mouse-event">About Us ▾</span>
                         {dropdown.about && (
-                            <div className="dropdown-menu" id="about-dropdown">
+                            <div className="dropdown-menu">
                                 <Link to="/who-we-are">Who We Are</Link>
-                                <hr />
                                 <Link to="/team">The Team</Link>
-                                <hr />
                                 <Link to="/values">Our Values</Link>
-                                <hr />
                                 <Link to="/Policies">KSS Policies</Link>
-                                <hr />
                                 <Link to="/financials">Financials</Link>
                             </div>
                         )}
@@ -56,27 +69,18 @@ const Navbar = () => {
                         onMouseEnter={() => toggleDropdown("what")}
                         onMouseLeave={() => toggleDropdown("what")}
                     >
-                        <span className="mouse-event"><b>What We Do <span className="caret"></span></b></span>
+                        <span className="mouse-event">What We Do ▾</span>
                         {dropdown.what && (
-                            <div className="dropdown-menu" id="what-dropdown">
+                            <div className="dropdown-menu">
                                 <Link to="/women-empowerment">Women Empowerment</Link>
-                                <hr />
                                 <Link to="/health-nutrition">Health & Nutrition</Link>
-                                <hr />
-                                <Link to="/watsan">Water and Sanitation (WATSAN)</Link>
-                                <hr />
-                                <Link to="/education-awareness">Education and Awareness</Link>
-                                <hr />
+                                <Link to="/watsan">Water & Sanitation</Link>
+                                <Link to="/education-awareness">Education & Awareness</Link>
                                 <Link to="/child-rights">Child Rights</Link>
-                                <hr />
-                                <Link to="/drr-climate">DRR & Climate Change</Link>
-                                <hr />
+                                <Link to="/drr-climate">Climate Change</Link>
                                 <Link to="/skills-development">Skills Development</Link>
-                                <hr />
                                 <Link to="/sustainable-agriculture">Sustainable Agriculture</Link>
-                                <hr />
                                 <Link to="/environment">Environment & Clean Energy</Link>
-                                <hr />
                                 <Link to="/livelihood-promotion">Livelihood Promotion</Link>
                             </div>
                         )}
@@ -87,17 +91,13 @@ const Navbar = () => {
                         onMouseEnter={() => toggleDropdown("res")}
                         onMouseLeave={() => toggleDropdown("res")}
                     >
-                        <span className="mouse-event"><b>Resources <span className="caret"></span></b></span>
+                        <span className="mouse-event">Resources ▾</span>
                         {dropdown.res && (
-                            <div className="dropdown-menu" id="res-dropdown">
+                            <div className="dropdown-menu">
                                 <Link to="/annual-report">Annual Report</Link>
-                                <hr />
                                 <Link to="/fcra">FCRA</Link>
-                                <hr />
                                 <Link to="/organization-docs">Organization Docs</Link>
-                                <hr />
                                 <Link to="/case-study">Case Study</Link>
-                                <hr />
                                 <Link to="/stories">Stories</Link>
                             </div>
                         )}
@@ -108,17 +108,16 @@ const Navbar = () => {
                         onMouseEnter={() => toggleDropdown("gallery")}
                         onMouseLeave={() => toggleDropdown("gallery")}
                     >
-                        <span className="mouse-event"><b>Media <span className="caret"></span></b></span>
+                        <span className="mouse-event">Media ▾</span>
                         {dropdown.gallery && (
-                            <div className="dropdown-menu" id="gallery-dropdown">
+                            <div className="dropdown-menu">
                                 <Link to="/gallery">Gallery</Link>
-                                <hr />
                                 <Link to="/paper-clips">Paper Clips</Link>
                             </div>
                         )}
                     </li>
 
-                    <li><Link to="/contact"><b>Contact</b></Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
         </nav>

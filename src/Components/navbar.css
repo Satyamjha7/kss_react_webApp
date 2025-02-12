@@ -1,3 +1,4 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,178 +9,150 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: white;
-    color: rgb(9, 9, 9);
+    padding: 15px 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 1000;
     width: 100%;
+    transition: background 0.4s ease-in-out;
 }
 
-/* Logo Container */
+/* Navbar on Scroll */
+.navbar.scrolled {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
 .logo-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 10px;
-    margin-left: 20px;
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
 }
 
-/* Logo Image with Animation */
 .logo-img {
     height: 80px;
-    width: auto;
+    width:auto;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out, opacity 0.5s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .logo-img:hover {
-    transform: scale(1.15) rotate(5deg);
+    transform: scale(1.1);
 }
 
-/* Animated Fade-in Effect */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Logo Text */
 .logo-text {
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
+    color: #05191d;
     display: flex;
     flex-direction: column;
     line-height: 1.2;
     transition: color 0.3s ease-in-out;
 }
 
-/* Logo Hover Effect */
-.logo-container:hover .logo-text {
-    color: #4caf50;
-    /* Changes text color on hover */
-}
-
-/* Slogan */
 .slogan {
     font-family: "Brush Script MT", cursive;
+    color:#05191d;
     font-size: 18px;
     font-weight: 400;
     margin-top: 4px;
     transition: transform 0.3s ease-in-out;
 }
 
-/* Make Slogan Float Up on Hover */
-.logo-container:hover .slogan {
-    transform: translateY(-3px);
-}
+/* Navigation Links */
 .nav-links ul {
     display: flex;
-    list-style-type: none;
+    list-style: none;
 }
 
 .nav-links ul li {
     position: relative;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
-.nav-links ul li a {
+.nav-links ul li a,
+.mouse-event {
     text-decoration: none;
     color: black;
     font-size: 18px;
     font-weight: bold;
-    position: relative;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-.nav-links ul li a:hover {
+.nav-links ul li a:hover,
+.mouse-event:hover {
     color: #f39c12;
 }
-.nav-links ul li a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #f39c12;
-    transition: width 0.3s;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-}
 
-.nav-links ul li a:hover::after {
-    width: 100%;
-}
-
+/* Dropdown Menu */
 .dropdown-menu {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #c0c0c0;;
+    background: #ffffff;
     width: 200px;
-    z-index: 10;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-links ul li:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .dropdown-menu a {
-    padding: 10px;
+    padding: 10px 15px;
     display: block;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 .dropdown-menu a:hover {
-    background-color: #444;
+    background-color: #f9f9f9;
 }
 
-.dropdown-menu hr {
-    margin: 0;
-    border: 0.5px solid #444;
+/* Mobile Menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-/* Show dropdown on hover */
-.nav-links ul li:hover .dropdown-menu {
-    display: block;
-}
-
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    .nav-links ul {
-        flex-direction: column;
-        align-items: center;
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
         display: none;
-    }
-
-    .nav-links ul li {
-        margin: 10px 0;
-    }
-
-    .nav-links.active ul {
-        display: flex;
-    }
-
-    .navbar .logo h1 {
-        margin-left: 10px;
-    }
-
-    /* Show dropdowns on smaller screens */
-    .dropdown-menu {
-        position: static;
+        position: absolute;
+        top: 80px;
+        left: 0;
         width: 100%;
+        background: white;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
     }
 }

@@ -1,48 +1,81 @@
-import React from "react";
-import { motion } from "framer-motion";
-import "./Hero.css";
+import React, { useState, useEffect } from 'react';
+import './Hero.css';
 
-const Hero = () => {
+const Home = () => {
+  const slides = [
+    {
+      img: '/images/img1.jpeg',
+      message: 'Empowering Communities with Unity',
+      description: 'Support the children and families in rural India for a brighter future.',
+    },
+    {
+      img: '/images/img2.jpeg',
+      message: 'Connecting People, Creating Change',
+      description: 'Your support helps us create better lives for the villagers in need.',
+    },
+    {
+      img: '/images/img3.jpeg',
+      message: 'Data-Driven Solutions for Impactful Change',
+      description: 'Help us make informed decisions to serve the communities better.',
+    },
+    {
+      img: '/images/img4.jpeg',
+      message: 'Data-Driven Solutions for Impactful Change',
+      description: 'Help us make informed decisions to serve the communities better.',
+    },
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleNext = () => {
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
+
+  const handlePrev = () => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
   return (
-    <section className="hero-container">
-      <div className="hero-content">
-        <motion.h1
-          className="hero-title"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Empowering Communities, Changing Lives
-        </motion.h1>
-        <motion.p
-          className="hero-subtitle"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
-          Together, we can create a sustainable future for all. Join us in making a difference.
-        </motion.p>
-        <motion.button
-          className="hero-button"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          Get Involved
-        </motion.button>
+    <div className="home-container">
+      {}
+      <div className="slider-container">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`slider ${currentSlide === index ? 'current-slide' : ''}`}
+            style={{
+              backgroundImage: `url(${slide.img})`,
+            }}
+          >
+            <div className="slider-content">
+              <h1>{slide.message}</h1>
+              <p>{slide.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
-      <motion.div
-        className="hero-image"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <img
-          src="Assets\33.jpeg"
-          alt="Empowering Communities"
-        />
-      </motion.div>
-    </section>
+
+      {}
+      <button className="slider-arrow left" onClick={handlePrev}>❮</button>
+      <button className="slider-arrow right" onClick={handleNext}>❯</button>
+
+      {}
+
+      {}
+      <section className="cta">
+        <h2>Make a Lasting Impact on Rural Communities</h2>
+        <p>Your donations empower change and provide hope to families in need.</p>
+        <a href="#donate" className="cta-btn">Donate Now</a>
+      </section>
+    </div>
   );
 };
 
-export default Hero;
+export default Home;
