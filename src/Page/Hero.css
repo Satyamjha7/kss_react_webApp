@@ -17,8 +17,8 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transform: translateX(100%); 
-  transition: opacity 2s ease, transform 2s ease; /* Smooth transitions for both opacity and sliding */
+  transform: translateX(50%); 
+  transition: opacity 3s ease, transform 3s ease; /* Smooth transitions for both opacity and sliding */
 }
 
 .slider.current-slide {
@@ -37,6 +37,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -79,11 +80,13 @@
 .cta h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color:#05191d;
 }
 
 .cta p {
   font-size: 1.3rem;
   margin-bottom: 30px;
+  color:#333333;
 }
 
 .cta .cta-btn {
@@ -101,7 +104,7 @@
 /* Slider Arrows */
 .slider-arrow {
   position: absolute;
-  top: 25%;
+  top: 35%;
   font-size: 2rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
