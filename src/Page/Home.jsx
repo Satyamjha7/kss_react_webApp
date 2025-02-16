@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import './Hero.css';
+import React, { useState, useEffect } from "react";
+import "./Hero.css";
+import Mission from "./Mission";
 
 const Home = () => {
   const slides = [
     {
-      img: '/images/img1.jpeg',
-      message: 'Empowering Communities with Unity',
-      description: 'Support the children and families in rural India for a brighter future.',
+      img: "/images/img1.jpeg",
+      heading: "HELP US TO SAVE THE",
+      highlight: "HOMELESS PEOPLE",
+      description:
+        "Your support helps us create better lives for the villagers in need.",
     },
     {
-      img: '/images/img2.jpeg',
-      message: 'Connecting People, Creating Change',
-      description: 'Your support helps us create better lives for the villagers in need.',
+      img: "/images/img2.jpeg",
+      heading: "TOGETHER, WE CAN",
+      highlight: "MAKE A DIFFERENCE",
+      description: "Join our mission to uplift underprivileged communities.",
     },
     {
-      img: '/images/img3.jpeg',
-      message: 'Data-Driven Solutions for Impactful Change',
-      description: 'Help us make informed decisions to serve the communities better.',
-    },
-    {
-      img: '/images/img4.jpeg',
-      message: 'Data-Driven Solutions for Impactful Change',
-      description: 'Help us make informed decisions to serve the communities better.',
+      img: "/images/img3.jpeg",
+      heading: "PROVIDING HOPE FOR",
+      highlight: "A BRIGHTER FUTURE",
+      description: "Empowering children and families through education.",
     },
   ];
 
@@ -44,36 +44,33 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      {}
       <div className="slider-container">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`slider ${currentSlide === index ? 'current-slide' : ''}`}
-            style={{
-              backgroundImage: `url(${slide.img})`,
-            }}
+            className={`slider ${currentSlide === index ? "current-slide" : ""}`}
+            style={{ backgroundImage: `url(${slide.img})` }}
           >
+            <div className="overlay"></div>
             <div className="slider-content">
-              <h1>{slide.message}</h1>
+              <h1>
+                {slide.heading} <span>{slide.highlight}</span>
+              </h1>
               <p>{slide.description}</p>
+              <div className="slider-buttons">
+                <a href="#learn-more" className="btn learn-more">Learn More</a>
+                <a href="#join-us" className="btn join-us">Join Now</a>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      {}
       <button className="slider-arrow left" onClick={handlePrev}>❮</button>
       <button className="slider-arrow right" onClick={handleNext}>❯</button>
 
-      {}
-
-      {}
-      <section className="cta">
-        <h2>Make a Lasting Impact on Rural Communities</h2>
-        <p>Your donations empower change and provide hope to families in need.</p>
-        <a href="#donate" className="cta-btn">Donate Now</a>
-      </section>
+      {/* Adding Mission Component Below Slider */}
+      <Mission />
     </div>
   );
 };

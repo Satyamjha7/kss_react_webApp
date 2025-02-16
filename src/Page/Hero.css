@@ -1,5 +1,5 @@
+/* General Styles */
 .home-container {
-  font-family: Arial, sans-serif;
   position: relative;
   overflow: hidden;
 }
@@ -17,95 +17,117 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transform: translateX(50%); 
-  transition: opacity 3s ease, transform 3s ease; /* Smooth transitions for both opacity and sliding */
+  transform: scale(1); /* Zoom-in effect */
+  transition: opacity 1s ease-in-out, transform 3s ease-in-out;
 }
 
 .slider.current-slide {
   opacity: 1;
-  transform: translateX(0); /* Make it visible and slide in */
+  transform: scale(1.1); /* Smooth zoom-out */
 }
 
-.slider.prev-slide {
-  opacity: 0;
-  transform: translateX(-100%); /* Slide out the previous slide */
+/* Overlay */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
 }
 
+/* Animation for Text Appearance */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slider Content */
 .slider-content {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 10%;
+  transform: translateY(-50%);
   color: white;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+  max-width: 600px;
+  opacity: 0; /* Initially hidden */
 }
 
-.slider-content h1 {
+/* When slide is active, animate text */
+.current-slide .slider-content {
+  animation: fadeSlide 1s ease-in-out forwards;
+}
+
+/* Main Heading (Appears first) */
+.current-slide .slider-content h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  opacity: 0;
+  animation: fadeSlide 1s ease-in-out forwards;
 }
 
-.slider-content p {
-  font-size: 1.2rem;
+/* Highlighted Text (Appears after delay) */
+.current-slide .slider-content h1 span {
+  color: #e91e63; /* Highlighted text */
+  opacity: 0;
+  display: inline-block;
+  animation: fadeSlide 1s ease-in-out forwards;
+  animation-delay: 0.8s;
 }
 
-.donate-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #ff5722;
-  color: white;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease;
-}
-
-.donate-btn:hover {
-  background-color: #e64a19;
-}
-
-.cta {
-  text-align: center;
-  padding: 80px 20px;
-  background-color: #f1f1f1;
-  color: #333;
-}
-
-.cta h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color:#05191d;
-}
-
-.cta p {
-  font-size: 1.3rem;
+/* Paragraph (Appears after heading & span) */
+.current-slide .slider-content p {
+  font-size: 1.4rem;
   margin-bottom: 30px;
-  color:#333333;
+  opacity: 0;
+  animation: fadeSlide 1s ease-in-out forwards;
+  animation-delay: 1.5s;
 }
 
-.cta .cta-btn {
-  background-color: #ff5722;
-  padding: 15px 30px;
-  color: white;
+/* Buttons (Appear last) */
+.current-slide .slider-buttons {
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  animation: fadeSlide 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+.btn {
+  padding: 10px 22px;
+  font-size: 1rem;
+  text-transform: uppercase;
   text-decoration: none;
-  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
-.cta .cta-btn:hover {
-  background-color: #e64a19;
+.learn-more {
+  background-color: #ff4081;
+  color: white;
 }
 
-/* Slider Arrows */
+.learn-more:hover {
+  background-color: #d81b60;
+}
+
+.join-us {
+  background-color: white;
+  color: black;
+}
+
+.join-us:hover {
+  background-color: #ddd;
+}
+
 .slider-arrow {
   position: absolute;
-  top: 35%;
-  font-size: 2rem;
+  top: 50%;
+  font-size: 2.5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
@@ -113,7 +135,6 @@
   cursor: pointer;
   z-index: 10;
   transform: translateY(-50%);
-  transition: background-color 0.3s ease;
 }
 
 .slider-arrow.left {
@@ -126,4 +147,19 @@
 
 .slider-arrow:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .slider-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .slider-content p {
+    font-size: 1.2rem;
+  }
+
+  .slider-buttons {
+    flex-direction: column;
+  }
 }

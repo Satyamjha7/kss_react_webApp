@@ -8,6 +8,7 @@ import Team from "./Page/Team";
 import Values from "./Page/Values";
 import Policies from "./Page/Policies";
 import Financials from "./Page/Financials";
+import Mission from "./Page/Mission";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <div className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/mission" element={<Mission />} />
             <Route path="/who-we-are" element={<WhoWeAre />} />
             <Route path="/team" element={<Team />} />
             <Route path="/values" element={<Values />} />
