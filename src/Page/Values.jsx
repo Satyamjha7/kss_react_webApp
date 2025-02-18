@@ -43,8 +43,8 @@ const Values = () => {
             <div className="line"></div>
             <ul className="values">
                 {values.map((value, index) => (
-                    <li key={index} className={`value-item ${value.title.toLowerCase()}`}>
-                        <i className={`${value.icon}`}></i>
+                    <li key={index} className="value-item">
+                        <i className={`${value.icon} value-icon`}></i>
                         <h2>{value.title}</h2>
                         <p>{value.description}</p>
                     </li>

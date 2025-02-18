@@ -1,0 +1,28 @@
+.annual-report {
+    text-align: center;
+    padding: 20px;
+}
+
+.pdf-viewer {
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-link {
+    margin-top: 20px;
+}
+
+.download-link a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-link a:hover {
+    background-color: #2980b9;
+}

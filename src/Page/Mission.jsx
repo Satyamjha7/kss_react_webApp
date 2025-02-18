@@ -1,23 +1,28 @@
 import React from "react";
 import "./Mission.css";
 
+// Import the images
+import icon from "../assets/icon.png";
+import icon1 from "../assets/icon1.png";
+import icon2 from "../assets/icon2.png";
+
 const Mission = () => {
     const missionData = [
         {
-            icon: "🕊️",
-            title: "Peace",
+            icon: icon, 
+            title: "Promote Equity",
             description:
                 "Bridging the gaps in social and economic disparities by advocating for equal opportunities in education, healthcare, and livelihoods.",
         },
         {
-            icon: "💊",
-            title: "Health",
+            icon: icon1, 
+            title: "Ensure Justice",
             description:
                 "Upholding human rights, fostering a fair society, and empowering individuals with the knowledge and resources to claim their rights.",
         },
         {
-            icon: "🥗",
-            title: "Food",
+            icon: icon2,
+            title: "Champion Sustainability",
             description:
                 "Encouraging responsible use of resources, implementing eco-friendly solutions, and working towards long-term, impactful change for a healthier planet.",
         },
@@ -35,7 +40,9 @@ const Mission = () => {
                 <div className="mission-cards">
                     {missionData.map((item, index) => (
                         <div key={index} className="mission-card">
-                            <div className="mission-icon">{item.icon}</div>
+                            <div className="mission-icon">
+                                <img src={item.icon} alt={item.title} className="mission-icon-image" />
+                            </div>
                             <h3 className="mission-card-title">{item.title}</h3>
                             <p className="mission-card-description">{item.description}</p>
                         </div>

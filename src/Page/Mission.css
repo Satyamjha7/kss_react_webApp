@@ -55,13 +55,17 @@
 }
 
 .mission-icon {
-  font-size: 3rem;
-  color: #e91e63;
   margin-bottom: 15px;
 }
 
+.mission-icon img {
+  width: 60px; /* Adjust the width as needed */
+  height: 60px; /* Adjust the height as needed */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
+
 .mission-card-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
