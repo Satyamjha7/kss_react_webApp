@@ -1,7 +1,8 @@
+// src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import Footer from "./Components/footer";
+import Footer from "./Components/Footer";
 import Home from "./Page/Home";
 import WhoWeAre from "./Page/WhoWeAre";
 import Team from "./Page/Team";
@@ -9,8 +10,8 @@ import Values from "./Page/Values";
 import Policies from "./Page/Policies";
 import Financials from "./Page/Financials";
 import Mission from "./Page/Mission";
-
-
+import AnnualReport from "./Page/AnnualReport";
+import ImpactSection from "./Page/ImpactSection";
 const App = () => {
   return (
     <Router>
@@ -19,12 +20,14 @@ const App = () => {
         <div className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/impactsection" element={<ImpactSection />} />
             <Route path="/mission" element={<Mission />} />
             <Route path="/who-we-are" element={<WhoWeAre />} />
             <Route path="/team" element={<Team />} />
             <Route path="/values" element={<Values />} />
             <Route path="/policies" element={<Policies />} />
             <Route path="/financials" element={<Financials />} />
+            <Route path="/annual-report" element={<AnnualReport />} /> {/* New Route */}
           </Routes>
         </div>
         <Footer />

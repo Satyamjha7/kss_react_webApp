@@ -1,0 +1,14 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-content {
+  flex-grow: 1;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+}
