@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../Page/WhoWeAre.css"; // Ensure you create this file
 
+
 const WhoWeAre = () => {
     return (
         <div className="who-we-are-container">

@@ -30,10 +30,14 @@ const Navbar = () => {
         <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
             <div className="logo-container">
                 <Link to="/">
-                    <img src="/Assets/logo-png.png" alt="Kosi Seva Sadan Logo" className="logo-img" />
+                    <img
+                        src={scrolled ? "/Assets/logo-png.png" : "/Assets/logo-white.png"}
+                        alt="Kosi Seva Sadan Logo"
+                        className="logo-img"
+                    />
                 </Link>
                 <div className="logo-text">
-                    Kosi Seva Sadan
+                    KOSI SEVA SADAN
                     <p className="slogan">Restoring Hope, Reviving Communities</p>
                 </div>
             </div>

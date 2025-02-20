@@ -1,5 +1,6 @@
 import React from "react";
 import "./Values.css";
+import valueBackground from "../assets/133.jpeg"
 
 const Values = () => {
     const values = [
@@ -36,9 +37,9 @@ const Values = () => {
     ];
 
     return (
-        <div className="core-values">
-            <div className="header-image">
-                <h1>Our Core Values</h1>
+        <div className="core-values"style={{ backgroundImage: `url(${valueBackground})` }}>
+            <div className="value-overlay">
+                <h1 className="value-title">Our Core Values</h1>
             </div>
             <div className="line"></div>
             <ul className="values">

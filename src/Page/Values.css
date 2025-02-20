@@ -1,33 +1,26 @@
 .core-values {
-  text-align: center;
-  padding: 50px 20px;
-  margin-top: 110px;
-  background-color: #f4f4f9; /* Light background for contrast */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
 }
-
-.core-values h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #333;
+.value-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.header-image {
-  background-image: url('/images/header-core.jpg');
-  background-position: center;
-  background-size: cover;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-}
-
-.header-image h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.value-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .line {
