@@ -1,12 +1,12 @@
 import React from "react";
 import "./AnnualReport.css";
 
-// Import Thumbnails
+
 import report2018 from "../assets/ANNUAL REPORT 2017-2018-thumbnail.jpg";
 import report2019 from "../assets/ANNUAL REPORT 2018-2019-thumbnail.jpg";
 import report2020 from "../assets/ANNUAL REPORT 2019-2020-thumbnail.jpg";
 
-// Import PDFs
+
 import pdf2018 from "../assets/ANNUAL REPORT 2017-2018.pdf";
 import pdf2019 from "../assets/ANNUAL REPORT 2018-2019.pdf";
 import pdf2020 from "../assets/ANNUAL REPORT 2019-2020.pdf";
@@ -24,7 +24,6 @@ const reports = [
 const AnnualReport = () => {
     return (
         <div className="annual-report-container">
-            {/* Banner Section */}
             <div className="annual-banner" style={{ backgroundImage: `url(${annualImage})` }}>
                 <div className="annual-banner-overlay">
                     <h1 className="annual-banner-title">Annual Reports</h1>

@@ -1,98 +1,47 @@
 import React from "react";
-import { motion } from "framer-motion";
-import "../Page/WhoWeAre.css"; // Ensure you create this file
-
+import "./WhoWeAre.css";
+import VisionImage from "../assets/114.jpeg";
+import MissionImage from "../assets/182.jpg";
+import ImpactImage from "../assets/178.jpg";
+import AboutUsImage from "../assets/133.jpeg";
 
 const WhoWeAre = () => {
     return (
-        <div className="who-we-are-container">
-            <motion.div
-                className="who-header"
-                initial={{ opacity: 0, y: -30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-            >
-                <h1>Empowering Communities: Our Journey of Hope and Impact</h1>
-            </motion.div>
-
-            {/* Content Section */}
-            <motion.div
-                className="who-content"
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
-            >
-                <p>
-                    <strong>Kosi Seva Sadan (KSS)</strong> is a distinguished not-for-profit organization
-                    founded in 1981, inspired by the vision of the esteemed activist and
-                    freedom fighter, <strong>late Shri Jay Prakash Narayan</strong>. Guided by the
-                    support of <strong>late Shri Prem Bhai</strong> from the Sarvodaya Movement, KSS thrived
-                    under his dynamic leadership, initiating need-based programs for the
-                    holistic development of impoverished communities.
-                </p>
-                <p>
-                    KSS is <strong>registered under the Society Registration Act</strong>, and it also holds
-                    <strong>FCRA Act registration</strong>, along with compliance under <strong>Sections 12(A) and
-                        80(G) of the Income Tax Act</strong>.
-                </p>
-            </motion.div>
-
-            {/* Geographical Reach Section */}
-            <motion.div
-                className="who-reach"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
-            >
-                <h2>Geographical Reach</h2>
-                <p>
-                    Kosi Seva Sadan (KSS) operates in three blocks of Saharsha district in
-                    North Bihar, focusing on empowering marginalized communities.
-                </p>
-
-                <div className="location-cards">
-                    {/* Mahishi */}
-                    <motion.div
-                        className="location-card"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        <h3>Mahishi</h3>
-                        <p>
-                            KSS has a strong presence in Mahishi, implementing programs to
-                            uplift the local communities.
-                        </p>
-                    </motion.div>
-
-                    {/* Nauhatta */}
-                    <motion.div
-                        className="location-card"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        <h3>Nauhatta</h3>
-                        <p>
-                            KSS works to address local challenges and implement projects that
-                            promote sustainable development.
-                        </p>
-                    </motion.div>
-
-                    {/* SatarKataiya */}
-                    <motion.div
-                        className="location-card"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        <h3>SatarKataiya</h3>
-                        <p>
-                            By extending its reach here, KSS uplifts socio-economic conditions
-                            and fosters positive change.
-                        </p>
-                    </motion.div>
+        <div className="who-we-are">
+            <div className="hero-section" style={{ backgroundImage: `url(${AboutUsImage})` }}>
+                <div className="hero-overlay">
+                    <h1>Who We Are</h1>
+                    <p>Committed to empowering communities with equity, justice, and sustainability.</p>
                 </div>
-            </motion.div>
+            </div>
+
+            <div className="content-section">
+                <h2>About Us</h2>
+                <p>
+                    Kosi Seva Sadan (KSS) is a Gandhian non-profit organization rooted in the values of equity, justice, and sustainability. Established in 1981 by the inspiration of the esteemed social reformer Late Jay Prakash Narayan, KSS was born out of the Jayaprakash Movement during the Bhoodan Andolan, which sought to bring about societal change through non-violence and self-sufficiency.
+                </p>
+                <p>
+                    Our journey was further strengthened by the mentorship of Late Prem Bhai of the Sarvodaya Movement, who guided a group of passionate youth to create impactful, need-based programs aimed at uplifting vulnerable communities.
+                </p>
+            </div>
+
+            <div className="grid-section">
+                <div className="grid-item">
+                    <img src={VisionImage} alt="Vision" />
+                    <h3>Our Vision</h3>
+                    <p>To create an egalitarian society where every individual, especially the poor, oppressed, and underprivileged, gets an opportunity to realize their full potential.</p>
+                </div>
+                <div className="grid-item">
+                    <img src={MissionImage} alt="Mission" />
+                    <h3>Our Mission</h3>
+                    <p>Facilitating holistic development anchored in equity, justice, and sustainability by empowering communities to become self-sufficient and resilient.</p>
+                </div>
+                <div className="grid-item">
+                    <img src={ImpactImage} alt="Impact" />
+                    <h3>Our Impact</h3>
+                    <p>Operating in the Saharsa district of Bihar, KSS has expanded its outreach to other districts, impacting thousands through programs in education, health, livelihood, and more.</p>
+                </div>
+            </div>
         </div>
     );
 };
