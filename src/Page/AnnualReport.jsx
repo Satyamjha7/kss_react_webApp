@@ -1,6 +1,7 @@
 import React from "react";
 import "./AnnualReport.css";
 
+// Import Thumbnails
 import report2018 from "../assets/ANNUAL REPORT 2017-2018-thumbnail.jpg";
 import report2019 from "../assets/ANNUAL REPORT 2018-2019-thumbnail.jpg";
 import report2020 from "../assets/ANNUAL REPORT 2019-2020-thumbnail.jpg";
@@ -10,17 +11,29 @@ import pdf2018 from "../assets/ANNUAL REPORT 2017-2018.pdf";
 import pdf2019 from "../assets/ANNUAL REPORT 2018-2019.pdf";
 import pdf2020 from "../assets/ANNUAL REPORT 2019-2020.pdf";
 
+import annualImage from "../assets/182.jpg"; // Make sure to add a relevant banner image
+
+import Breadcrumb from "../Components/Breadcrumb";
+
 const reports = [
     { year: "2017-18", image: report2018, pdf: pdf2018 },
     { year: "2018-19", image: report2019, pdf: pdf2019 },
     { year: "2019-20", image: report2020, pdf: pdf2020 },
 ];
 
-const AnnualReportDownload = () => {
+const AnnualReport = () => {
     return (
         <div className="annual-report-container">
-            <h1>KSS Annual Reports</h1>
+            {/* Banner Section */}
+            <div className="annual-banner" style={{ backgroundImage: `url(${annualImage})` }}>
+                <div className="annual-banner-overlay">
+                    <h1 className="annual-banner-title">Annual Reports</h1>
+                </div>
+            </div>
+
+            <Breadcrumb />
             <p className="intro-text">Explore our journey, impact, and progress over the years.</p>
+
             <div className="annual-report-display">
                 {reports.map((report, index) => (
                     <div className="report-item" key={index}>
@@ -37,4 +50,4 @@ const AnnualReportDownload = () => {
     );
 };
 
-export default AnnualReportDownload;
+export default AnnualReport;

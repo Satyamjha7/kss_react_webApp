@@ -12,6 +12,9 @@ import Financials from "./Page/Financials";
 import Mission from "./Page/Mission";
 import AnnualReport from "./Page/AnnualReport";
 import ImpactSection from "./Page/ImpactSection";
+import Subscription from "./Page/Subscription";
+import Contact from "./Page/Contact";
+
 const App = () => {
   return (
     <Router>
@@ -27,7 +30,9 @@ const App = () => {
             <Route path="/values" element={<Values />} />
             <Route path="/policies" element={<Policies />} />
             <Route path="/financials" element={<Financials />} />
-            <Route path="/annual-report" element={<AnnualReport />} /> {/* New Route */}
+            <Route path="/annual-report" element={<AnnualReport />} />
+            <Route path="/subscription" element={<Subscription />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />

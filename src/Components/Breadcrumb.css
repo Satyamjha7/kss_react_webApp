@@ -1,0 +1,50 @@
+/* Breadcrumb Container */
+.breadcrumb-container {
+    background: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+    color: #555;
+    white-space: nowrap;
+}
+
+.breadcrumb-item {
+    color: #3498db;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.breadcrumb-item:hover {
+    color: #2980b9;
+}
+
+.breadcrumb-icon {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-separator {
+    margin: 0 5px;
+    color: #888;
+    display: inline-block;
+}
+
+.breadcrumb-item.active {
+    color: #555;
+    pointer-events: none;
+}

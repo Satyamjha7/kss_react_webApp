@@ -1,0 +1,53 @@
+.newsletter-section {
+    background: linear-gradient(to bottom right, #74ebd5, #9face6);
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 50px auto;
+    color: #05191d;
+}
+
+.newsletter-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #05191d;
+    margin-bottom: 20px;
+}
+
+.newsletter-message {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.newsletter-input {
+    padding: 15px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+}
+
+.newsletter-button {
+    padding: 15px 25px;
+    background-color: #05191d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.newsletter-button:hover {
+    background-color: #333;
+}
+
+.newsletter-button:active {
+    transform: scale(0.98);
+}

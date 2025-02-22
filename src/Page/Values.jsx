@@ -1,5 +1,6 @@
 import React from "react";
 import "./Values.css";
+import Breadcrumb from "../Components/Breadcrumb";
 import valueBackground from "../assets/133.jpeg";
 
 const Values = () => {
@@ -41,6 +42,8 @@ const Values = () => {
             <div className="values-section" style={{ backgroundImage: `url(${valueBackground})` }}>
                 <h1 className="values-title">Our Core Values</h1>
             </div>
+            <Breadcrumb/>
+
             <div className="values-content">
                 <ul className="values-list">
                     {values.map((value, index) => (

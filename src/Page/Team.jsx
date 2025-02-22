@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Team.css";
+import Breadcrumb from "../Components/Breadcrumb";
 import teamBackground from "../assets/114.jpeg";
 
 const teamData = {
@@ -7,29 +8,49 @@ const teamData = {
         {
             name: "Rajendra Jha",
             role: "Secretary",
-            image: "https://via.placeholder.com/300"
+            image: "https://marketplace.canva.com/EAGUuoKjlYk/1/0/1600w/canva-dark-blue-modern-professional-recruitment-linkedin-profile-picture-Rvj3l5SuQoU.jpg"
         },
         {
             name: "Vidyapati Chaudhary",
             role: "Vice Chairperson",
-            image: "https://via.placeholder.com/300"
+            image: "https://marketplace.canva.com/EAGUuoKjlYk/1/0/1600w/canva-dark-blue-modern-professional-recruitment-linkedin-profile-picture-Rvj3l5SuQoU.jpg"
         },
         {
             name: "Laturan Das",
             role: "Vice Chairperson",
-            image: "https://via.placeholder.com/300"
+            image: "https://marketplace.canva.com/EAGUuoKjlYk/1/0/1600w/canva-dark-blue-modern-professional-recruitment-linkedin-profile-picture-Rvj3l5SuQoU.jpg"
+        },
+        {
+            name: "Laturan Das",
+            role: "Vice Chairperson",
+            image: "https://marketplace.canva.com/EAGUuoKjlYk/1/0/1600w/canva-dark-blue-modern-professional-recruitment-linkedin-profile-picture-Rvj3l5SuQoU.jpg"
+        },
+        {
+            name: "Laturan Das",
+            role: "Vice Chairperson",
+            image: "https://marketplace.canva.com/EAGUuoKjlYk/1/0/1600w/canva-dark-blue-modern-professional-recruitment-linkedin-profile-picture-Rvj3l5SuQoU.jpg"
+        },
+        {
+            name: "Laturan Das",
+            role: "Vice Chairperson",
+            image: "https://marketplace.canva.com/EAGUuoKjlYk/1/0/1600w/canva-dark-blue-modern-professional-recruitment-linkedin-profile-picture-Rvj3l5SuQoU.jpg"
         },
     ],
     managementTeam: [
         {
             name: "Samol Kumar Pathak",
             role: "Executive Director",
-            image: "https://via.placeholder.com/300"
+            image: "https://marketplace.canva.com/EAGUuoKjlYk/1/0/1600w/canva-dark-blue-modern-professional-recruitment-linkedin-profile-picture-Rvj3l5SuQoU.jpg"
         },
         {
             name: "Arvind Mukhiya",
             role: "Program Manager",
-            image: "https://via.placeholder.com/300"
+            image: "https://marketplace.canva.com/EAGUuoKjlYk/1/0/1600w/canva-dark-blue-modern-professional-recruitment-linkedin-profile-picture-Rvj3l5SuQoU.jpg"
+        },
+        {
+            name: "Arvind Mukhiya",
+            role: "Program Manager",
+            image: "https://marketplace.canva.com/EAGUuoKjlYk/1/0/1600w/canva-dark-blue-modern-professional-recruitment-linkedin-profile-picture-Rvj3l5SuQoU.jpg"
         }
     ]
 };
@@ -37,8 +58,8 @@ const teamData = {
 const Team = () => {
     const [selectedTeam, setSelectedTeam] = useState("governingBoard");
 
-    const handleTeamChange = (event) => {
-        setSelectedTeam(event.target.value);
+    const handleTeamChange = (team) => {
+        setSelectedTeam(team);
     };
 
     return (
@@ -49,18 +70,27 @@ const Team = () => {
                     <h1 className="team-title">Our Team</h1>
                 </div>
             </div>
-
+            <Breadcrumb/>
             {/* KSS Team Section */}
             <div className="kss-team-section">
-                <h2 className="team-heading">Our Awesome Team</h2>
+                <h2 className="team-heading">Behind the Scenes</h2>
                 <p className="team-description">
-                    Meet the dedicated members who drive our mission forward.
+                    Meet the passionate and dedicated group of individuals committed to driving positive change and transforming the lives of the underprivileged communities in North Bihar, India. Led by experienced and visionary leaders, the team is driven by the organization's mission and strives to make a significant impact in the regions where we operate.
+
                 </p>
-                <div className="dropdown-container">
-                    <select value={selectedTeam} onChange={handleTeamChange} className="team-dropdown">
-                        <option value="governingBoard">Governing Board</option>
-                        <option value="managementTeam">Management Team</option>
-                    </select>
+                <div className="team-headings">
+                    <h3
+                        className={`team-option ${selectedTeam === "governingBoard" ? "active" : ""}`}
+                        onClick={() => handleTeamChange("governingBoard")}
+                    >
+                        Governing Board
+                    </h3>
+                    <h3
+                        className={`team-option ${selectedTeam === "managementTeam" ? "active" : ""}`}
+                        onClick={() => handleTeamChange("managementTeam")}
+                    >
+                        Management Team
+                    </h3>
                 </div>
                 <div className="team-grid">
                     {teamData[selectedTeam].map((member, index) => (

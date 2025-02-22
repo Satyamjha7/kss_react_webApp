@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { FaFilePdf, FaDownload, FaUpload, FaEye } from "react-icons/fa";
+import { FaFilePdf, FaDownload, FaEye } from "react-icons/fa";
+import Breadcrumb from "../Components/Breadcrumb";
 import "./Financials.css";
+import teamBackground from "../assets/163.jpg"; // Reusing the background image
 
 const initialDocs = [
     { title: "Annual Report 2023", file: "annual_report_2023.pdf" },
@@ -24,34 +26,42 @@ const Financials = () => {
         window.open(`/${fileName}`, "_blank");
     };
 
-    const handleFileUpload = (event) => {
-        const file = event.target.files[0];
-        if (file) {
-            setDocuments([...documents, { title: file.name, file: file.name }]);
-        }
-    };
-
     return (
-        <div className="financials-container">
-            <h1 className="financial-title">Financials & Accounts</h1>
-            <p className="financial-subtitle">Ensuring transparency and accountability in our financials.</p>
-            <div className="documents-list">
-                {documents.map((doc, index) => (
-                    <div key={index} className="doc-card">
-                        <FaFilePdf className="doc-icon" />
-                        <h3>{doc.title}</h3>
-                        <div className="buttons">
-                            <button className="preview-btn" onClick={() => handlePreview(doc.file)}>
-                                <FaEye /> Preview
-                            </button>
-                            <button className="download-btn" onClick={() => handleDownload(doc.file)}>
-                                <FaDownload /> Download
-                            </button>
-                        </div>
-                    </div>
-                ))}
+        <>
+            <div
+                className="financials-banner"
+                style={{ backgroundImage: `url(${teamBackground})` }}
+            >
+                <div className="financials-banner-overlay">
+                    <h1 className="financial-title">Financials & Accounts</h1>
+                </div>
             </div>
-        </div>
+            <Breadcrumb />
+            <div className="financials-content">
+                <div className="documents-list">
+                    {documents.map((doc, index) => (
+                        <div key={index} className="doc-card">
+                            <FaFilePdf className="doc-icon" />
+                            <h3>{doc.title}</h3>
+                            <div className="buttons">
+                                <button
+                                    className="preview-btn"
+                                    onClick={() => handlePreview(doc.file)}
+                                >
+                                    <FaEye /> Preview
+                                </button>
+                                <button
+                                    className="download-btn"
+                                    onClick={() => handleDownload(doc.file)}
+                                >
+                                    <FaDownload /> Download
+                                </button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </>
     );
 };
 
