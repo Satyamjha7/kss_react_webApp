@@ -1,6 +1,6 @@
 import React from "react";
 import "./Values.css";
-import valueBackground from "../assets/133.jpeg"
+import valueBackground from "../assets/133.jpeg";
 
 const Values = () => {
     const values = [
@@ -37,20 +37,21 @@ const Values = () => {
     ];
 
     return (
-        <div className="core-values"style={{ backgroundImage: `url(${valueBackground})` }}>
-            <div className="value-overlay">
-                <h1 className="value-title">Our Core Values</h1>
+        <div>
+            <div className="values-section" style={{ backgroundImage: `url(${valueBackground})` }}>
+                <h1 className="values-title">Our Core Values</h1>
             </div>
-            <div className="line"></div>
-            <ul className="values">
-                {values.map((value, index) => (
-                    <li key={index} className="value-item">
-                        <i className={`${value.icon} value-icon`}></i>
-                        <h2>{value.title}</h2>
-                        <p>{value.description}</p>
-                    </li>
-                ))}
-            </ul>
+            <div className="values-content">
+                <ul className="values-list">
+                    {values.map((value, index) => (
+                        <li key={index} className="value-item">
+                            <i className={`${value.icon} value-icon`}></i>
+                            <h2>{value.title}</h2>
+                            <p>{value.description}</p>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 };
