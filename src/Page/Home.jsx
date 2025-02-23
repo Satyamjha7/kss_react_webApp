@@ -3,7 +3,7 @@ import "./Hero.css";
 import Mission from "./Mission";
 import ImpactSection from "./ImpactSection";
 import Subscription from './Subscription';
-
+import LatestNews from './LatestNews';
 const Home = () => {
   const slides = [
     {
@@ -74,6 +74,7 @@ const Home = () => {
       {/* Adding Mission Component Below Slider */}
       <Mission />
       <ImpactSection />
+      <LatestNews />
       <Subscription />
     </div>
   );

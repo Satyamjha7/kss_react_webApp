@@ -13,6 +13,8 @@ import AnnualReport from "./Page/AnnualReport";
 import ImpactSection from "./Page/ImpactSection";
 import Subscription from "./Page/Subscription";
 import Contact from "./Page/Contact";
+import LatestNews from "./Page/LatestNews";
+import AllNews from './Page/AllNews';
 
 const App = () => {
   return (
@@ -32,6 +34,8 @@ const App = () => {
             <Route path="/annual-report" element={<AnnualReport />} />
             <Route path="/subscription" element={<Subscription />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/latest-news" element={<LatestNews />} />
+            <Route path="/all-news" element={<AllNews />} />
           </Routes>
         </div>
         <Footer />

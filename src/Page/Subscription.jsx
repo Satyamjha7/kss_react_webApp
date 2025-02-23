@@ -1,6 +1,6 @@
 import React from 'react';
 import './Subscription.css';
-import newsletterIcon from '../assets/198.jpg';
+import newsletterIcon from '../assets/198.png';
 
 const Subscription = () => {
     return (
