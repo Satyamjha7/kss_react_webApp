@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import Mission from "./Mission";
 import ImpactSection from "./ImpactSection";
+import Subscription from './Subscription';
 
 const Home = () => {
   const slides = [
@@ -73,6 +74,7 @@ const Home = () => {
       {/* Adding Mission Component Below Slider */}
       <Mission />
       <ImpactSection />
+      <Subscription />
     </div>
   );
 };
