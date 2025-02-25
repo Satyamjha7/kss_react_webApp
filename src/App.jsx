@@ -18,6 +18,11 @@ import AllNews from './Page/AllNews';
 import WomenEmpowerment from "./Page/WomenEmpowerment";
 import Health from "./Page/Health";
 import Watsan from "./Page/Watsan";
+import Education from "./Page/Education";
+import ChildRights from "./Page/ChildRights";
+import ClimateChange from "./Page/ClimateChange";
+
+
 
 const App = () => {
   return (
@@ -42,6 +47,9 @@ const App = () => {
             <Route path="/women-empowerment" element={<WomenEmpowerment />} />
             <Route path="/health-nutrition" element={<Health />} />
             <Route path="/watsan" element={<Watsan />} />
+            <Route path="/education-awareness" element={<Education />} />
+            <Route path="/child-rights" element={<ChildRights />} />
+            <Route path="/drr-climate" element={<ClimateChange />} />
           </Routes>
         </div>
         <Footer />
