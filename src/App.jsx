@@ -15,6 +15,9 @@ import Subscription from "./Page/Subscription";
 import Contact from "./Page/Contact";
 import LatestNews from "./Page/LatestNews";
 import AllNews from './Page/AllNews';
+import WomenEmpowerment from "./Page/WomenEmpowerment";
+import Health from "./Page/Health";
+import Watsan from "./Page/Watsan";
 
 const App = () => {
   return (
@@ -36,6 +39,9 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/latest-news" element={<LatestNews />} />
             <Route path="/all-news" element={<AllNews />} />
+            <Route path="/women-empowerment" element={<WomenEmpowerment />} />
+            <Route path="/health-nutrition" element={<Health />} />
+            <Route path="/watsan" element={<Watsan />} />
           </Routes>
         </div>
         <Footer />
