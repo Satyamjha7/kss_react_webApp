@@ -21,6 +21,11 @@ import Watsan from "./Page/Watsan";
 import Education from "./Page/Education";
 import ChildRights from "./Page/ChildRights";
 import ClimateChange from "./Page/ClimateChange";
+import SkillDevelopment from "./Page/SkillDevelopment";
+import Environment from './Page/Environment';
+import SustainableAgriculture from './Page/SustainableAgriculture';
+import LivelihoodPromotion from './Page/LivelihoodPromotion';
+
 
 
 
@@ -50,6 +55,10 @@ const App = () => {
             <Route path="/education-awareness" element={<Education />} />
             <Route path="/child-rights" element={<ChildRights />} />
             <Route path="/drr-climate" element={<ClimateChange />} />
+            <Route path="/skills-development" element={<SkillDevelopment />} />
+            <Route path="/environment" element={<Environment />} />
+            <Route path="/sustainable-agriculture" element={<SustainableAgriculture />} />
+            <Route path="/livelihood-promotion" element={<LivelihoodPromotion />} />
           </Routes>
         </div>
         <Footer />

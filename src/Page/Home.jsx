@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./Hero.css";
+import "./Home.css";
 import Mission from "./Mission";
 import ImpactSection from "./ImpactSection";
 import Subscription from './Subscription';
 import LatestNews from './LatestNews';
+
 const Home = () => {
   const slides = [
     {
@@ -71,7 +72,6 @@ const Home = () => {
       <button className="slider-arrow left" onClick={handlePrev}>❮</button>
       <button className="slider-arrow right" onClick={handleNext}>❯</button>
 
-      {/* Adding Mission Component Below Slider */}
       <Mission />
       <ImpactSection />
       <LatestNews />
