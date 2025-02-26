@@ -10,11 +10,13 @@
   align-items: center;
   justify-content: center;
 }
+.background-grad{
+  background:rgba(37, 141, 225, 0.5);
+}
 
 .women-banner-overlay {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #05191d 0%, #1c3b41 100%);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,24 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import './Subscription.css';
-import newsletterIcon from '../assets/198.png';
 
 const Subscription = () => {
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const res = await axios.post('http://localhost:5000/api/subscriptions', { email });
+            setMessage(res.data.message);
+            setEmail('');
+        } catch (error) {
+            setMessage('Subscription failed. Please try again.');
+        }
+    };
+
     return (
-        <section className="subscription-section">
-            <div className="subscription-container">
-                <img
-                    src={newsletterIcon}
-                    alt="Newsletter Icon"
-                    className="newsletter-icon"
+        <div className="subscription-container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
                 />
-                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-                <p>Join our mailing list to stay updated on all the latest news and events from Kosi Seva Sadan.</p>
-                <form className="subscription-form">
-                    <input type="email" placeholder="Your email here..." required />
-                    <button type="submit">SUBSCRIBE</button>
-                </form>
-            </div>
-        </section>
+                <button type="submit">Subscribe</button>
+            </form>
+            {message && <p>{message}</p>}
+        </div>
     );
 };
 

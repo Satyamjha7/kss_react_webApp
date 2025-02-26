@@ -1,11 +1,13 @@
 import React from 'react';
 import './WomenEmpowerment.css';
-import teamBackground from '../assets/133.jpeg';
-import empowermentImg from '../assets/163.jpg';
+import teamBackground from '../assets/women-back.jpg';
+import empowermentImg from '../assets/women.jpg';
+import Breadcrumb from '../Components/Breadcrumb';
 
 const WomenEmpowerment = () => {
     return (
         <>
+            <div className="background-grad">
             <div
                 className="women-banner"
                 style={{ backgroundImage: `url(${teamBackground})` }}
@@ -13,7 +15,9 @@ const WomenEmpowerment = () => {
                 <div className="women-banner-overlay">
                     <h1 className="women-title">Women Empowerment</h1>
                 </div>
+                </div>
             </div>
+            <Breadcrumb/>
 
             <div className="women-content">
                 <div className="content-section">
