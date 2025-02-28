@@ -4,6 +4,7 @@ import Mission from "./Mission";
 import ImpactSection from "./ImpactSection";
 import Subscription from './Subscription';
 import LatestNews from './LatestNews';
+import TestimonialCarousel from "./TestimonialCarousel";
 
 const Home = () => {
   const slides = [
@@ -76,6 +77,7 @@ const Home = () => {
       <ImpactSection />
       <LatestNews />
       <Subscription />
+      <TestimonialCarousel />
     </div>
   );
 };

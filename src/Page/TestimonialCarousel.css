@@ -1,0 +1,70 @@
+.carousel-container {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-slide {
+  min-width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial-image {
+  border-radius: 10px;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.quote {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.role {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.nav-button.left {
+  left: 20px;
+}
+
+.nav-button.right {
+  right: 20px;
+}
+
+.nav-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}

@@ -25,6 +25,7 @@ import SkillDevelopment from "./Page/SkillDevelopment";
 import Environment from './Page/Environment';
 import SustainableAgriculture from './Page/SustainableAgriculture';
 import LivelihoodPromotion from './Page/LivelihoodPromotion';
+import TestimonialCarousel from "./Page/TestimonialCarousel";
 
 
 
@@ -59,6 +60,7 @@ const App = () => {
             <Route path="/environment" element={<Environment />} />
             <Route path="/sustainable-agriculture" element={<SustainableAgriculture />} />
             <Route path="/livelihood-promotion" element={<LivelihoodPromotion />} />
+            <Route path="/testimonial-carousel" element={<TestimonialCarousel />} />
           </Routes>
         </div>
         <Footer />
