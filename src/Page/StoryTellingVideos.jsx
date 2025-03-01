@@ -1,7 +1,7 @@
 import React from "react";
 import "./StorytellingVideos.css";
 import playIcon from "../assets/play-icon.svg"; // Play button SVG
-import sideDecoration from "../assets/side-decoration.svg"; // Side decoration SVG
+import sideDecoration from "../assets/decoration.svg"; // Side decoration SVG
 
 const StorytellingVideos = () => {
     return (

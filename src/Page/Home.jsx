@@ -6,6 +6,7 @@ import Subscription from './Subscription';
 import LatestNews from './LatestNews';
 import TestimonialCarousel from "./TestimonialCarousel";
 import StorytellingVideos from "./StoryTellingVideos";
+import DonationFeature from "./DonationFeatures";
 const Home = () => {
   const slides = [
     {
@@ -79,6 +80,7 @@ const Home = () => {
       <LatestNews />
       <Subscription />
       <TestimonialCarousel />
+      <DonationFeature />
     </div>
   );
 };
