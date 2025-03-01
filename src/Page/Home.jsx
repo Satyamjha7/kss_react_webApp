@@ -7,6 +7,7 @@ import LatestNews from './LatestNews';
 import TestimonialCarousel from "./TestimonialCarousel";
 import StorytellingVideos from "./StoryTellingVideos";
 import DonationFeature from "./DonationFeatures";
+import DonateButton from "../Components/DonateButton";
 const Home = () => {
   const slides = [
     {
@@ -76,6 +77,7 @@ const Home = () => {
 
       <Mission />
       <ImpactSection />
+      <DonateButton />
       <StorytellingVideos />
       <LatestNews />
       <Subscription />

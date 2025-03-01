@@ -6,7 +6,6 @@ import sideDecoration from "../assets/decoration.svg"; // Side decoration SVG
 const StorytellingVideos = () => {
     return (
         <div className="video-container">
-            {/* Title and Subtitle */}
             <div className="video-header">
                 <h2 className="video-title">
                     <span className="highlight">Our</span> Videos

@@ -28,6 +28,7 @@ import LivelihoodPromotion from './Page/LivelihoodPromotion';
 import TestimonialCarousel from "./Page/TestimonialCarousel";
 import StorytellingVideos from "./Page/StoryTellingVideos";
 import DonationFeature from "./Page/DonationFeatures";
+import DonateButton from "./Components/DonateButton";
 
 const App = () => {
   return (
@@ -62,6 +63,7 @@ const App = () => {
             <Route path="/testimonial-carousel" element={<TestimonialCarousel />} />
             <Route path="/story-videos" element={<StorytellingVideos />} />
             <Route path="/donation-features" element={<DonationFeature />} />
+            <Route path="/donate-button" element={<DonateButton />} />
           </Routes>
         </div>
         <Footer />
