@@ -26,9 +26,7 @@ import Environment from './Page/Environment';
 import SustainableAgriculture from './Page/SustainableAgriculture';
 import LivelihoodPromotion from './Page/LivelihoodPromotion';
 import TestimonialCarousel from "./Page/TestimonialCarousel";
-
-
-
+import StorytellingVideos from "./Page/StoryTellingVideos";
 
 const App = () => {
   return (
@@ -61,6 +59,7 @@ const App = () => {
             <Route path="/sustainable-agriculture" element={<SustainableAgriculture />} />
             <Route path="/livelihood-promotion" element={<LivelihoodPromotion />} />
             <Route path="/testimonial-carousel" element={<TestimonialCarousel />} />
+            <Route path="/story-videos" element={<StorytellingVideos />} />
           </Routes>
         </div>
         <Footer />

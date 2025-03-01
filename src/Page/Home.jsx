@@ -5,7 +5,7 @@ import ImpactSection from "./ImpactSection";
 import Subscription from './Subscription';
 import LatestNews from './LatestNews';
 import TestimonialCarousel from "./TestimonialCarousel";
-
+import StorytellingVideos from "./StoryTellingVideos";
 const Home = () => {
   const slides = [
     {
@@ -75,6 +75,7 @@ const Home = () => {
 
       <Mission />
       <ImpactSection />
+      <StorytellingVideos />
       <LatestNews />
       <Subscription />
       <TestimonialCarousel />
