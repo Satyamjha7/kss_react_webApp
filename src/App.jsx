@@ -29,6 +29,9 @@ import TestimonialCarousel from "./Page/TestimonialCarousel";
 import StorytellingVideos from "./Page/StoryTellingVideos";
 import DonationFeature from "./Page/DonationFeatures";
 import DonateButton from "./Components/DonateButton";
+import Gallery from "./Page/Gallery";
+import Notes from "./Page/Notes";
+import Support from "./Page/Support";
 
 const App = () => {
   return (
@@ -64,6 +67,9 @@ const App = () => {
             <Route path="/story-videos" element={<StorytellingVideos />} />
             <Route path="/donation-features" element={<DonationFeature />} />
             <Route path="/donate-button" element={<DonateButton />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/secretary-notes" element={<Notes />} />
+            <Route path="/support" element={<Support />} />
           </Routes>
         </div>
         <Footer />
