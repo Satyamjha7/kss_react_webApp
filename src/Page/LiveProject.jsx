@@ -1,5 +1,5 @@
 import React from "react";
-import "./LiveProjects.css";
+import "./LiveProject.css";
 
 const projects = [
     {
@@ -9,7 +9,7 @@ const projects = [
         received: 500000,
         utilized: 350000,
         progress: 70,
-        image: "nutrition.jpg",
+        image: "163.jpg",
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const projects = [
         received: 300000,
         utilized: 150000,
         progress: 50,
-        image: "education.jpg",
+        image: "163.jpg",
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const projects = [
         received: 400000,
         utilized: 200000,
         progress: 50,
-        image: "women_empowerment.jpg",
+        image: "163.jpg",
     },
 ];
 
@@ -38,7 +38,13 @@ const LiveProjects = () => {
             <div className="projects-list">
                 {projects.map((project) => (
                     <div key={project.id} className="project-card">
-                        <img src={require(`../assets/${project.image}`)} alt={project.name} className="project-image" />
+                        {/* Use Public Folder Image Reference */}
+                        <img
+                            src={`/assets/${project.image}`}
+                            alt={project.name}
+                            className="project-image"
+                            onError={(e) => (e.target.src = "/assets/default.jpg")} // Fallback image
+                        />
                         <div className="project-info">
                             <h3>{project.name}</h3>
                             <p>{project.description}</p>

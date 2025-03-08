@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/navbar";
 import Footer from "./Components/Footer";
 import Home from "./Page/Home";
 import WhoWeAre from "./Page/WhoWeAre";
@@ -32,6 +32,9 @@ import DonateButton from "./Components/DonateButton";
 import Gallery from "./Page/Gallery";
 import Notes from "./Page/Notes";
 import Support from "./Page/Support";
+import LiveProjects from "./Page/LiveProject";
+import FCRA from "./Page/FCRA";
+import OrganisationDocs from "./Page/OrganisationDocs";
 
 const App = () => {
   return (
@@ -70,6 +73,10 @@ const App = () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/secretary-notes" element={<Notes />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/live-projects" element={<LiveProjects />} />
+            <Route path="/fcra" element={<FCRA />} /> 
+            <Route path="/organization-docs" element={<OrganisationDocs />} />
+
           </Routes>
         </div>
         <Footer />

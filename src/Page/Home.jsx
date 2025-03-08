@@ -9,6 +9,7 @@ import StorytellingVideos from "./StoryTellingVideos";
 import DonationFeature from "./DonationFeatures";
 import DonateButton from "../Components/DonateButton";
 import Notes from "./Notes";
+import LiveProjects from "./LiveProject";
 const Home = () => {
   const slides = [
     {
@@ -80,6 +81,7 @@ const Home = () => {
       <ImpactSection />
       <DonateButton />
       <StorytellingVideos />
+      <LiveProjects />
       <LatestNews />
       <Subscription />
       <TestimonialCarousel />
