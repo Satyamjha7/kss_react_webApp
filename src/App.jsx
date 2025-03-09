@@ -35,6 +35,7 @@ import Support from "./Page/Support";
 import LiveProjects from "./Page/LiveProject";
 import FCRA from "./Page/FCRA";
 import OrganisationDocs from "./Page/OrganisationDocs";
+import UnderMaintenance from "./Page/UnderMaintenance";
 
 const App = () => {
   return (
@@ -76,6 +77,7 @@ const App = () => {
             <Route path="/live-projects" element={<LiveProjects />} />
             <Route path="/fcra" element={<FCRA />} /> 
             <Route path="/organization-docs" element={<OrganisationDocs />} />
+            <Route path="*" element={<UnderMaintenance />} />
 
           </Routes>
         </div>

@@ -43,6 +43,7 @@
     padding: 20px;
 }
 
+/* Document Item */
 .doc-item {
     width: 320px;
     padding: 20px;
@@ -51,13 +52,29 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    
+    /* Ensures all boxes have equal height */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between; /* Ensures consistent layout */
+    min-height: 220px; /* Forces equal height */
 }
-
-.doc-item:hover {
-    transform: translateY(-5px);
+.org-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    color: black;
+    text-align:center;
+}
+.org-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #c40c0c;
+  margin: 10px auto;
 }
 
 .doc-title {
@@ -65,25 +82,34 @@
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
+    flex-grow: 1; /* Allows text to occupy available space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
+.org-logo {
+    width: 60px;  /* Adjust as needed */
+    height: auto;
+    display: block;  /* Ensure it's visible */
+    object-fit: contain;
+}
 /* Button Wrapper */
 .buttons {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Align vertically */
-    gap: 15px;
+    justify-content: center; 
+    align-items: center;
+    gap: 12px;
     width: 100%;
-    margin-top: 15px;
 }
 
-/* Common Button Styles */
+
 .view-btn,
 .download-btn {
     text-decoration: none;
     font-size: 1rem;
-    height: 45px; /* Fixed height */
-    min-width: 140px; /* Ensuring same width */
+    height: 45px;
+    min-width: 140px;
     padding: 12px 20px;
     display: flex;
     align-items: center;
@@ -94,8 +120,9 @@
     border: none;
     cursor: pointer;
     box-sizing: border-box;
-    line-height: 1; /* Fix text height issue */
+    line-height: 1;
     transition: all 0.3s ease-in-out;
+    margin-top:10px;
 }
 
 /* View Button */
@@ -118,14 +145,6 @@
 .download-btn:hover {
     background: linear-gradient(to right, #0056b3, #003f7f);
     transform: scale(1.05);
-}
-
-/* Fix any extra margin or padding */
-.report-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center everything inside */
-    justify-content: center;
 }
 
 /* Responsive Design */

@@ -1,53 +1,81 @@
+/* Notes Container */
 .notes-container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Notes Content - Modern Card Design */
 .notes-content {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.2); /* Glassmorphism Effect */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
+.notes-content:hover {
+    transform: scale(1.03);
+}
+
+/* Secretary Image */
 .secretary-img {
-  width: 40%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }
 
+/* Text Content */
 .notes-text {
-  width: 55%;
-  h2 {
-    font-size: 2rem;
-    color: #333;
-  }
-  p {
+    width: 55%;
+}
+
+.notes-text h2 {
+    font-size: 2.2rem;
+    color: #222;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.notes-text p {
     font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-  }
-  h3 {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.notes-text h3 {
     margin-top: 20px;
     font-size: 1.3rem;
-    color: #222;
+    font-weight: bold;
+    color: #333;
     font-style: italic;
-  }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .notes-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .secretary-img, .notes-text {
-    width: 100%;
-  }
+    .notes-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .secretary-img, .notes-text {
+        width: 100%;
+    }
+
+    .notes-text h2 {
+        font-size: 1.8rem;
+    }
 }
