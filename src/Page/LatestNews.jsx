@@ -24,11 +24,6 @@ const LatestNews = () => {
             title: "Healthcare Camp in Rural Villages",
             description: "Free medical check-ups and health awareness programs organized.",
         },
-        {
-            image: img3,
-            title: "Healthcare Camp in Rural Villages",
-            description: "Free medical check-ups and health awareness programs organized.",
-        },
     ];
 
     return (

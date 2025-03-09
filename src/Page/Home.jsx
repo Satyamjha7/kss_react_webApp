@@ -6,10 +6,9 @@ import Subscription from './Subscription';
 import LatestNews from './LatestNews';
 import TestimonialCarousel from "./TestimonialCarousel";
 import StorytellingVideos from "./StoryTellingVideos";
-import DonationFeature from "./DonationFeatures";
 import DonateButton from "../Components/DonateButton";
 import Notes from "./Notes";
-import LiveProjects from "./LiveProject";
+
 const Home = () => {
   const slides = [
     {
@@ -81,11 +80,9 @@ const Home = () => {
       <ImpactSection />
       <DonateButton />
       <StorytellingVideos />
-      <LiveProjects />
       <LatestNews />
       <Subscription />
       <TestimonialCarousel />
-      <DonationFeature />
     </div>
   );
 };

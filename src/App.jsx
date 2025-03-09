@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/navbar";
 import Footer from "./Components/Footer";
+import NewsletterPopup from "./Components/Popup";
+
+// Page Imports
 import Home from "./Page/Home";
 import WhoWeAre from "./Page/WhoWeAre";
 import Team from "./Page/Team";
@@ -14,7 +17,7 @@ import ImpactSection from "./Page/ImpactSection";
 import Subscription from "./Page/Subscription";
 import Contact from "./Page/Contact";
 import LatestNews from "./Page/LatestNews";
-import AllNews from './Page/AllNews';
+import AllNews from "./Page/AllNews";
 import WomenEmpowerment from "./Page/WomenEmpowerment";
 import Health from "./Page/Health";
 import Watsan from "./Page/Watsan";
@@ -22,9 +25,9 @@ import Education from "./Page/Education";
 import ChildRights from "./Page/ChildRights";
 import ClimateChange from "./Page/ClimateChange";
 import SkillDevelopment from "./Page/SkillDevelopment";
-import Environment from './Page/Environment';
-import SustainableAgriculture from './Page/SustainableAgriculture';
-import LivelihoodPromotion from './Page/LivelihoodPromotion';
+import Environment from "./Page/Environment";
+import SustainableAgriculture from "./Page/SustainableAgriculture";
+import LivelihoodPromotion from "./Page/LivelihoodPromotion";
 import TestimonialCarousel from "./Page/TestimonialCarousel";
 import StorytellingVideos from "./Page/StoryTellingVideos";
 import DonationFeature from "./Page/DonationFeatures";
@@ -38,6 +41,17 @@ import OrganisationDocs from "./Page/OrganisationDocs";
 import UnderMaintenance from "./Page/UnderMaintenance";
 
 const App = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  // Show popup on home page after 5 seconds
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 5000); // Adjust timing as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
       <div className="app-container">
@@ -75,13 +89,15 @@ const App = () => {
             <Route path="/secretary-notes" element={<Notes />} />
             <Route path="/support" element={<Support />} />
             <Route path="/live-projects" element={<LiveProjects />} />
-            <Route path="/fcra" element={<FCRA />} /> 
+            <Route path="/fcra" element={<FCRA />} />
             <Route path="/organization-docs" element={<OrganisationDocs />} />
             <Route path="*" element={<UnderMaintenance />} />
-
           </Routes>
         </div>
         <Footer />
+
+        {/* Newsletter Popup */}
+        {showPopup && <NewsletterPopup onClose={() => setShowPopup(false)} />}
       </div>
     </Router>
   );

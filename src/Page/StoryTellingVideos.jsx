@@ -1,49 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import "./StorytellingVideos.css";
-import playIcon from "../assets/play-icon.svg"; // Play button SVG
-import sideDecoration from "../assets/decoration.svg"; // Side decoration SVG
+import playButton from "../assets/play-button.png";
+
+import thumbnailImg from "../assets/133.jpeg";
 
 const StorytellingVideos = () => {
+    const [videoVisible, setVideoVisible] = useState(false);
+
     return (
         <div className="video-container">
             <div className="video-header">
                 <h2 className="video-title">
                     <span className="highlight">Our</span> Videos
                 </h2>
-                <p className="video-subtitle">Helping Communities</p>
+                <p className="video-subtitle">Bringing Innovation</p>
                 <p className="video-description">
-                    The organisation is committed to promoting sustainable community development by repositioning women as change makers and fostering collective leadership.
+                    We believe that innovation drives progress. Our videos showcase the impact
+                    of our work, inspiring others to join us in building a better future.
                 </p>
             </div>
 
-            {/* Video Section */}
+            {/* Video Section with Thumbnail and Play Button */}
             <div className="video-wrapper">
-                {/* Left Decorative SVG */}
-                <img src={sideDecoration} alt="Decoration" className="left-svg" />
-
-                {/* Video Thumbnail with Play Button */}
-                <div className="video-thumbnail">
-                    <img
-                        src="https://img.youtube.com/vi/1uLGCUgqDUE/maxresdefault.jpg"
-                        alt="Story Video Thumbnail"
-                        className="thumbnail-image"
-                    />
-                    <a
-                        href="https://www.youtube.com/watch?v=1uLGCUgqDUE"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="play-button"
-                    >
-                        <img src={playIcon} alt="Play" />
-                    </a>
-                    <div className="video-text">
-                        <h3>Our Story</h3>
-                        <p>Against All Odds</p>
+                {!videoVisible ? (
+                    <div className="video-thumbnail" onClick={() => setVideoVisible(true)}>
+                        <img
+                            src={thumbnailImg}
+                            alt="Video Thumbnail"
+                            className="thumbnail-image"
+                        />
+                        <img src={playButton} alt="Play Button" className="play-button" />
                     </div>
-                </div>
-
-                {/* Right Decorative SVG */}
-                <img src={sideDecoration} alt="Decoration" className="right-svg" />
+                ) : (
+                    <iframe
+                        className="video-frame"
+                        src="https://www.youtube.com/embed/1uLGCUgqDUE?autoplay=1"
+                        title="Our Story"
+                        allowFullScreen
+                    ></iframe>
+                )}
             </div>
         </div>
     );
