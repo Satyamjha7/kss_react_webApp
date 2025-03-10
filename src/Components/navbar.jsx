@@ -101,7 +101,7 @@ const Navbar = () => {
                                 <Link to="/annual-report">Annual Report</Link>
                                 <Link to="/fcra">FCRA</Link>
                                 <Link to="/organization-docs">Organization Docs</Link>
-                                <Link to="/case-study">Case Study</Link>
+                                <Link to="/careers">Careers</Link>
                                 <Link to="/stories">Stories</Link>
                             </div>
                         )}

@@ -39,6 +39,7 @@ import LiveProjects from "./Page/LiveProject";
 import FCRA from "./Page/FCRA";
 import OrganisationDocs from "./Page/OrganisationDocs";
 import UnderMaintenance from "./Page/UnderMaintenance";
+import Careers from "./Page/Careers";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -92,6 +93,7 @@ const App = () => {
             <Route path="/fcra" element={<FCRA />} />
             <Route path="/organization-docs" element={<OrganisationDocs />} />
             <Route path="*" element={<UnderMaintenance />} />
+            <Route path="/careers" element={<Careers />} />
           </Routes>
         </div>
         <Footer />

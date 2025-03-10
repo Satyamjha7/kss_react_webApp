@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #fffaf5;
     width: 100%;
     padding: 60px 10%;
 }
@@ -37,7 +38,6 @@
     flex: 1;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 6px;
     font-size: 16px;
     outline: none;
 }
@@ -47,7 +47,6 @@
     background-color: #b22222; /* Red Theme */
     color: white;
     border: none;
-    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;

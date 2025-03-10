@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Subscription.css";
-import newsletterImage from "../assets/banner.jpg";
+import newsletterImage from "../assets/banner.png";
 
 const Subscription = () => {
     const [email, setEmail] = useState("");
