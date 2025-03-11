@@ -36,14 +36,14 @@ const TestimonialCarousel = () => {
                 <div className="carousel-track">
                     {[...testimonials, ...testimonials].map((item, i) => (
                         <div className="carousel-slide" key={i}>
-                        <img src={item.image} alt={item.name} className="testimonial-image" />
+                            <img src={item.image} alt={item.name} className="testimonial-image" />
                             <div className="testimonial-content">
                                 <p className="quote">" {item.quote} "</p>
                                 <h3 className="name">{item.name}</h3>
                                 <p className="role">{item.role}</p>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
                 </div>
             </div>
         </div>
@@ -51,3 +51,4 @@ const TestimonialCarousel = () => {
 };
 
 export default TestimonialCarousel;
+

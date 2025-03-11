@@ -28,7 +28,6 @@ import SkillDevelopment from "./Page/SkillDevelopment";
 import Environment from "./Page/Environment";
 import SustainableAgriculture from "./Page/SustainableAgriculture";
 import LivelihoodPromotion from "./Page/LivelihoodPromotion";
-import TestimonialCarousel from "./Page/TestimonialCarousel";
 import StorytellingVideos from "./Page/StoryTellingVideos";
 import DonationFeature from "./Page/DonationFeatures";
 import DonateButton from "./Components/DonateButton";
@@ -40,6 +39,8 @@ import FCRA from "./Page/FCRA";
 import OrganisationDocs from "./Page/OrganisationDocs";
 import UnderMaintenance from "./Page/UnderMaintenance";
 import Careers from "./Page/Careers";
+import AnimatedTestimonials from "./Page/TestimonialCarousel";
+import TestimonialCarousel from "./Page/TestimonialCarousel";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -82,7 +83,7 @@ const App = () => {
             <Route path="/environment" element={<Environment />} />
             <Route path="/sustainable-agriculture" element={<SustainableAgriculture />} />
             <Route path="/livelihood-promotion" element={<LivelihoodPromotion />} />
-            <Route path="/testimonial-carousel" element={<TestimonialCarousel />} />
+            <Route path="/testimonial-carousel" element={<TestimonialCarousel/>} />
             <Route path="/story-videos" element={<StorytellingVideos />} />
             <Route path="/donation-features" element={<DonationFeature />} />
             <Route path="/donate-button" element={<DonateButton />} />
