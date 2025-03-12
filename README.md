@@ -1,6 +1,6 @@
 # 🌍 Kosi Seva Sadan (KSS) Website  
 
-Kosi Seva Sadan (KSS) is a non-profit organization dedicated to empowering communities through sustainable development initiatives.  
+Kosi Seva Sadan (KSS) is a non-profit organization focused on building community resilience to floods through sustainable development and local capacity-building initiatives.
 
 ## 🚀 Features  
 ✅ **Home Page:** Overview of KSS’s mission and impact  
