@@ -39,8 +39,8 @@ import FCRA from "./Page/FCRA";
 import OrganisationDocs from "./Page/OrganisationDocs";
 import UnderMaintenance from "./Page/UnderMaintenance";
 import Careers from "./Page/Careers";
-import AnimatedTestimonials from "./Page/TestimonialCarousel";
 import TestimonialCarousel from "./Page/TestimonialCarousel";
+import PartnersCarousel from "./Page/PartnersCarousel";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -95,6 +95,7 @@ const App = () => {
             <Route path="/organization-docs" element={<OrganisationDocs />} />
             <Route path="*" element={<UnderMaintenance />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/partners" element={<PartnersCarousel />} />
           </Routes>
         </div>
         <Footer />

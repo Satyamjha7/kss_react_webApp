@@ -1,0 +1,95 @@
+/* Container */
+.partners-carousel-container {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Title */
+.carousel-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Individual Partner Item */
+.partner-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.partner-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Partner Logo */
+.partner-logo {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: grayscale(100%); /* Initially greyed out */
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+    filter: grayscale(0); /* Colorize on hover */
+}
+
+/* Slider Customization */
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: #c40c0c;
+}
+
+/* Dots */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #c40c0c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-title {
+        font-size: 2rem;
+    }
+
+    .partner-logo {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-title {
+        font-size: 1.5rem;
+    }
+
+    .partner-logo {
+        width: 100px;
+        height: 60px;
+    }
+}

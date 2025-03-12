@@ -8,6 +8,7 @@ import TestimonialCarousel from "./TestimonialCarousel";
 import StorytellingVideos from "./StoryTellingVideos";
 import DonateButton from "../Components/DonateButton";
 import Notes from "./Notes";
+import PartnersCarousel from "./PartnersCarousel";
 
 const Home = () => {
   const slides = [
@@ -83,6 +84,7 @@ const Home = () => {
       <LatestNews />
       <Subscription />
       <TestimonialCarousel />
+      <PartnersCarousel />
     </div>
   );
 };
