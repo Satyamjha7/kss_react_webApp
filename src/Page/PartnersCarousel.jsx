@@ -4,32 +4,61 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./PartnersCarousel.css";
 
-// Sample partner data
+import arghyam from "../assets/Partnerslogo/arghyam.png";
+import casa from "../assets/Partnerslogo/casalogo.png";
+import childline from "../assets/Partnerslogo/childline.jpeg";
+import gpsvs from "../assets/Partnerslogo/gpsvs.png";
+import igsss from "../assets/Partnerslogo/igsss.png";
+import bfdw from "../assets/Partnerslogo/bfdw.png";
+import misereor from "../assets/Partnerslogo/misereor.png";
+import mpa from "../assets/Partnerslogo/mpa.png";
+import ssp from "../assets/Partnerslogo/ssp.png";
+
 const partners = [
     {
-        name: "Google",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-        link: "https://www.google.com"
+        name: "Arghyam",
+        logo: arghyam,
+        link: "https://arghyam.org/"
     },
     {
-        name: "Microsoft",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
-        link: "https://www.microsoft.com"
+        name: "CASA",
+        logo: casa,
+        link: "https://casa-india.org/"
     },
     {
-        name: "Amazon",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-        link: "https://www.amazon.com"
+        name: "CHILDLINE",
+        logo: childline,
+        link: "https://www.childlineindia.org/"
     },
     {
-        name: "Facebook",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
-        link: "https://www.facebook.com"
+        name: "GPSVS",
+        logo: gpsvs,
+        link: "https://gpsvs.org/"
     },
     {
-        name: "Apple",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
-        link: "https://www.apple.com"
+        name: "IGSSS",
+        logo: igsss,
+        link: "https://igsss.org/"
+    },
+    {
+        name: "BfdW",
+        logo: bfdw,
+        link: "https://www.brot-fuer-die-welt.de/en/bread-for-the-world/"
+    }, 
+    {
+        name: "MISEREOR",
+        logo: misereor,
+        link: "https://www.misereor.org/"
+    },
+    {
+        name: "Megh Pyne Abhiyan",
+        logo: mpa,
+        link: "https://meghpyneabhiyan.wordpress.com/"
+    },
+    {
+        name: "Swayam Shikshan Prayog",
+        logo: ssp,
+        link: "https://swayamshikshanprayog.org/"
     }
 ];
 

@@ -41,8 +41,6 @@ const Navbar = () => {
                     <p className="slogan">Restoring Hope, Reviving Communities</p>
                 </div>
             </div>
-
-            {/* Hamburger Menu for Mobile */}
             <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                 ☰
             </div>
@@ -106,8 +104,6 @@ const Navbar = () => {
                             </div>
                         )}
                     </li>
-
-                    {/* Media Dropdown */}
                     <li
                         onMouseEnter={() => toggleDropdown("gallery")}
                         onMouseLeave={() => toggleDropdown("gallery")}
