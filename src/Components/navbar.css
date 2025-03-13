@@ -1,3 +1,4 @@
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -30,13 +31,8 @@ body {
     background: white;
     box-shadow: 0 4px 10px rgba(221, 215, 215, 0.33);
 }
-.nav-links {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-/* Logo */
+/* Logo Container */
 .logo-container {
     display: flex;
     align-items: center;
@@ -44,7 +40,7 @@ body {
 }
 
 .logo-img {
-    height: 60px;
+    height: 70px;
     width: auto;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -55,7 +51,7 @@ body {
 }
 
 .logo-text {
-    font-size: 23px;
+    font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: white;
@@ -72,7 +68,7 @@ body {
 .slogan {
     font-family: "Brush Script MT", cursive;
     color: white;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 400;
     margin-top: 4px;
     transition: color 0.3s ease-in-out;
@@ -83,6 +79,12 @@ body {
 }
 
 /* Navigation Links */
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .nav-links ul {
     display: flex;
     list-style: none;
@@ -93,7 +95,6 @@ body {
     margin: 0 15px;
 }
 
-/* Smooth Underline Effect */
 .nav-links ul li a,
 .mouse-event {
     text-decoration: none;
@@ -102,24 +103,6 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s;
-    position: relative;
-}
-
-.nav-links ul li a::after,
-.mouse-event::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 0;
-    height: 2px;
-    background-color: #376cfb;
-    transition: width 0.3s ease;
-}
-
-.nav-links ul li a:hover::after,
-.mouse-event:hover::after {
-    width: 100%;
 }
 
 .navbar.scrolled .nav-links ul li a,
@@ -127,10 +110,25 @@ body {
     color: black;
 }
 
-/* Adjust hover color */
 .nav-links ul li a:hover,
 .mouse-event:hover {
     color: #376cfb;
+}
+
+/* Active Link Underline Effect */
+.nav-links ul li a::after,
+.mouse-event::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #376cfb;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links ul li a:hover::after,
+.mouse-event:hover::after {
+    width: 100%;
 }
 
 /* Dropdown Menu */
@@ -156,7 +154,6 @@ body {
     transform: translateY(0);
 }
 
-/* Dropdown Menu Text Default (Before Scroll) */
 .dropdown-menu a {
     padding: 10px 15px;
     display: block;
@@ -165,25 +162,62 @@ body {
     transition: color 0.3s;
 }
 
-/* Ensure dropdown menu text remains white even after scroll */
 .navbar.scrolled .dropdown-menu a {
     color: white !important;
 }
 
-/* Dropdown Hover Effect */
 .dropdown-menu a:hover {
     background-color: #f9f9f9;
     color: red;
 }
 
-/* Mobile Menu */
+/* Hamburger Menu */
 .hamburger {
     display: none;
     font-size: 24px;
     cursor: pointer;
 }
 
-/* Responsive */
+/* Search Box & Donate Button */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Search Box */
+.search-box {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 180px;
+    font-size: 14px;
+}
+
+.search-box:focus {
+    border-color: #376cfb;
+}
+
+/* Donate Button */
+.donate-btn {
+    padding: 8px 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #e04e2a;
+}
+
+/* Mobile View */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -192,13 +226,55 @@ body {
         left: 0;
         width: 100%;
         background: white;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-links.active {
-        display: block;
+        display: flex;
     }
 
     .hamburger {
         display: block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+
+    .search-box,
+    .donate-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-actions {
+        display: none;
+    }
+}
+
+/* Scroll Behavior for Mobile */
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Ensure dropdown width in smaller screens */
+@media (max-width: 480px) {
+    .dropdown-menu {
+        width: 100%;
     }
 }

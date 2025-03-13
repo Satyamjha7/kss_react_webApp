@@ -28,6 +28,7 @@ const Navbar = () => {
 
     return (
         <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+            {/* Logo Container */}
             <div className="logo-container">
                 <Link to="/">
                     <img
@@ -41,10 +42,13 @@ const Navbar = () => {
                     <p className="slogan">Restoring Hope, Reviving Communities</p>
                 </div>
             </div>
+
+            {/* Hamburger for Mobile */}
             <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                 ☰
             </div>
 
+            {/* Nav Links */}
             <div className={`nav-links ${menuOpen ? "active" : ""}`}>
                 <ul>
                     <li><Link to="/">Home</Link></li>
@@ -104,6 +108,8 @@ const Navbar = () => {
                             </div>
                         )}
                     </li>
+
+                    {/* Media Dropdown */}
                     <li
                         onMouseEnter={() => toggleDropdown("gallery")}
                         onMouseLeave={() => toggleDropdown("gallery")}
@@ -117,8 +123,15 @@ const Navbar = () => {
                         )}
                     </li>
 
+                    {/* Contact */}
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
+            </div>
+
+            {/* Search Box & Donate Button */}
+            <div className="nav-actions">
+                <input type="text" placeholder="Search..." className="search-box" />
+                <button className="donate-btn">Donate</button>
             </div>
         </nav>
     );
