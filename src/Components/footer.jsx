@@ -6,10 +6,12 @@ const Footer = () => {
     return (
         <footer className="footer-container">
             <div className="footer-content">
-                <div className="footer-section logo-section">
-                    <img src="src\assets\logo-white.png" alt="KSS Logo" className="footer-logo" />
-                    <h2>Kosi Seva Sadan</h2>
-                    <p>The organization is dedicated to community development and empowerment through sustainable initiatives and leadership.</p>
+                <div className="footer-section about-section">
+                    <img src="src/assets/logo-white.png" alt="KSS Logo" className="footer-logo" />
+                    <div className="about-text">
+                        <h2>Kosi Seva Sadan</h2>
+                        <p>The organization is dedicated to community development and empowerment through sustainable initiatives and leadership.</p>
+                    </div>
                 </div>
 
                 <div className="footer-section contact-section">
@@ -22,11 +24,21 @@ const Footer = () => {
                 <div className="footer-section social-section">
                     <h3>Stay Connected</h3>
                     <div className="social-icons">
-                        <i className="fab fa-facebook"></i>
-                        <i className="fab fa-twitter"></i>
-                        <i className="fab fa-linkedin"></i>
-                        <i className="fab fa-youtube"></i>
-                        <i className="fab fa-instagram"></i>
+                        <a href="https://www.facebook.com/your-page-link" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.youtube.com/c/your-channel" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>

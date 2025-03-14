@@ -1,14 +1,14 @@
-/* Footer.css */
 .footer-container {
   background: linear-gradient(135deg, #05191d, #0a2e33);
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
+  color: #333;
+  padding: 60px 0;
+  text-align: left;
+  border-top: 3px solid #b71c1c;
 }
 
 .footer-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
@@ -17,20 +17,49 @@
 .footer-section {
   flex: 1;
   padding: 20px;
-  min-width: 250px;
+  min-width: 280px;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
 }
 
 .footer-logo {
   width: 80px;
-  margin-bottom: 10px;
-}
-.social-icons i {
-  font-size: 24px;
-  margin: 0 10px;
-  cursor: pointer;
-  transition: color 0.3s;
+  margin-right: 20px;
 }
 
-.social-icons i:hover {
-  color: #66fcf1;
+.about-text {
+  border-left: 2px solid #b71c1c;
+  padding-left: 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  color: #b71c1c;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #555;
+  margin-right: 12px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #b71c1c;
 }

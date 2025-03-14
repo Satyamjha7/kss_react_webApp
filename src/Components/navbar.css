@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +7,6 @@
 body {
     font-family: Arial, sans-serif;
 }
-
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -25,14 +22,11 @@ body {
     transition: background 0.4s ease-in-out;
     color: white;
 }
-
-/* Navbar on Scroll */
 .navbar.scrolled {
     background: white;
     box-shadow: 0 4px 10px rgba(221, 215, 215, 0.33);
 }
 
-/* Logo Container */
 .logo-container {
     display: flex;
     align-items: center;
@@ -40,7 +34,7 @@ body {
 }
 
 .logo-img {
-    height: 70px;
+    height: 60px;
     width: auto;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -51,7 +45,7 @@ body {
 }
 
 .logo-text {
-    font-size: 28px;
+    font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: white;
@@ -68,7 +62,7 @@ body {
 .slogan {
     font-family: "Brush Script MT", cursive;
     color: white;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 400;
     margin-top: 4px;
     transition: color 0.3s ease-in-out;
@@ -78,7 +72,6 @@ body {
     color: #05191d;
 }
 
-/* Navigation Links */
 .nav-links {
     position: absolute;
     left: 50%;
@@ -95,6 +88,7 @@ body {
     margin: 0 15px;
 }
 
+/* Smooth Underline Effect */
 .nav-links ul li a,
 .mouse-event {
     text-decoration: none;
@@ -103,6 +97,24 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s;
+    position: relative;
+}
+
+.nav-links ul li a::after,
+.mouse-event::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #376cfb;
+    transition: width 0.3s ease;
+}
+
+.nav-links ul li a:hover::after,
+.mouse-event:hover::after {
+    width: 100%;
 }
 
 .navbar.scrolled .nav-links ul li a,
@@ -115,20 +127,10 @@ body {
     color: #376cfb;
 }
 
-/* Active Link Underline Effect */
-.nav-links ul li a::after,
-.mouse-event::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background-color: #376cfb;
-    width: 0;
-    transition: width 0.3s ease-in-out;
-}
-
-.nav-links ul li a:hover::after,
-.mouse-event:hover::after {
-    width: 100%;
+/* ✅ Fix: Keep hover color blue even when scrolled */
+.navbar.scrolled .nav-links ul li a:hover,
+.navbar.scrolled .mouse-event:hover {
+    color: #376cfb;
 }
 
 /* Dropdown Menu */
@@ -138,6 +140,7 @@ body {
     left: 0;
     background: rgba(23, 22, 22, 0.73);
     width: 200px;
+    margin-top:;
     padding: 10px 0;
     display: flex;
     flex-direction: column;
@@ -162,13 +165,20 @@ body {
     transition: color 0.3s;
 }
 
+/* ✅ Fix: Ensure dropdown hover color remains blue even after scroll */
+.dropdown-menu a:hover {
+    background-color: #f9f9f9;
+    color: #376cfb !important;
+}
+
 .navbar.scrolled .dropdown-menu a {
     color: white !important;
 }
 
-.dropdown-menu a:hover {
+/* ✅ Fix: Ensure dropdown hover color stays blue after scroll */
+.navbar.scrolled .dropdown-menu a:hover {
     background-color: #f9f9f9;
-    color: red;
+    color: #376cfb !important;
 }
 
 /* Hamburger Menu */
@@ -189,7 +199,6 @@ body {
 .search-box {
     padding: 8px 12px;
     border: 1px solid #ccc;
-    border-radius: 20px;
     outline: none;
     transition: border-color 0.3s ease;
     width: 180px;
@@ -206,7 +215,6 @@ body {
     background-color: #ff5733;
     color: white;
     border: none;
-    border-radius: 20px;
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
@@ -217,7 +225,7 @@ body {
     background-color: #e04e2a;
 }
 
-/* Mobile View */
+/* Responsive */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -249,26 +257,6 @@ body {
 
     .nav-actions {
         display: none;
-    }
-}
-
-/* Scroll Behavior for Mobile */
-@media (max-width: 768px) {
-    .nav-links ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-links ul li {
-        margin: 10px 0;
-    }
-
-    .dropdown-menu {
-        position: static;
-        box-shadow: none;
-        transform: none;
-        opacity: 1;
-        visibility: visible;
     }
 }
 

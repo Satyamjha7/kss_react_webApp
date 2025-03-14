@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/navbar";
 import Footer from "./Components/Footer";
 import NewsletterPopup from "./Components/Popup";
-
-// Page Imports
 import Home from "./Page/Home";
 import WhoWeAre from "./Page/WhoWeAre";
 import Team from "./Page/Team";
@@ -44,13 +42,10 @@ import PartnersCarousel from "./Page/PartnersCarousel";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
-
-  // Show popup on home page after 5 seconds
   React.useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 5000); // Adjust timing as needed
-
+    }, 5000);
     return () => clearTimeout(timer);
   }, []);
 
