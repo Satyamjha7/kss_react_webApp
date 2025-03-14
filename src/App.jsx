@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/navbar";
-import Footer from "./Components/Footer";
+import Footer from "./Components/footer";
 import NewsletterPopup from "./Components/Popup";
 import Home from "./Page/Home";
 import WhoWeAre from "./Page/WhoWeAre";
@@ -30,7 +30,7 @@ import StorytellingVideos from "./Page/StoryTellingVideos";
 import DonationFeature from "./Page/DonationFeatures";
 import DonateButton from "./Components/DonateButton";
 import Gallery from "./Page/Gallery";
-import Notes from "./Page/Notes";
+import Action from "./Page/Action";
 import Support from "./Page/Support";
 import LiveProjects from "./Page/LiveProject";
 import FCRA from "./Page/FCRA";
@@ -83,7 +83,7 @@ const App = () => {
             <Route path="/donation-features" element={<DonationFeature />} />
             <Route path="/donate-button" element={<DonateButton />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/secretary-notes" element={<Notes />} />
+            <Route path="/action" element={<Action />} />
             <Route path="/support" element={<Support />} />
             <Route path="/live-projects" element={<LiveProjects />} />
             <Route path="/fcra" element={<FCRA />} />

@@ -7,7 +7,7 @@ import LatestNews from './LatestNews';
 import TestimonialCarousel from "./TestimonialCarousel";
 import StorytellingVideos from "./StoryTellingVideos";
 import DonateButton from "../Components/DonateButton";
-import Notes from "./Notes";
+import Action from "./Action";
 import PartnersCarousel from "./PartnersCarousel";
 
 const Home = () => {
@@ -76,7 +76,7 @@ const Home = () => {
 
       <button className="slider-arrow left" onClick={handlePrev}>❮</button>
       <button className="slider-arrow right" onClick={handleNext}>❯</button>
-      <Notes />
+      <Action />
       <Mission />
       <ImpactSection />
       <DonateButton />
