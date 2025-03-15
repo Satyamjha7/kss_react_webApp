@@ -6,7 +6,7 @@ const Action = () => {
         <div className="action-container">
             <div className="action-content">
                 <div className="action-image">
-                    <img src="src/assets/flood.jpg" alt="Flood Relief Work" />
+                    <img src="Assets/flood.jpg" alt="Flood Relief Work" />
                 </div>
                 <div className="action-text">
                     <h1 className="action-heading">Surviving the Flood</h1>
