@@ -1,6 +1,6 @@
 import React from 'react';
 import './WomenEmpowerment.css';
-import teamBackground from '../assets/women-back.jpg';
+import teamBackground from '../assets/133.jpeg';
 import empowermentImg from '../assets/women.jpg';
 import Breadcrumb from '../Components/Breadcrumb';
 
