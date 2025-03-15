@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./StorytellingVideos.css";
+import './StorytellingVideos.css';
 import playButton from "../assets/play-button.png";
 
 import thumbnailImg from "../assets/133.jpeg";
