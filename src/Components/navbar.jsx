@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="logo-container">
                 <Link to="/">
                     <img
-                        src={scrolled ? "/Assets/logo-png.png" : "/Assets/logo-white.png"}
+                        src={scrolled ? "src/assets/logo-png.png" : "src/assets/logo-white.png"}
                         alt="Kosi Seva Sadan Logo"
                         className="logo-img"
                     />
