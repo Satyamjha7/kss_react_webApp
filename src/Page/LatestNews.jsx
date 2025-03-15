@@ -2,7 +2,7 @@ import React from 'react';
 import './LatestNews.css';
 import { useNavigate } from 'react-router-dom';
 import img1 from "../assets/img1.jpg";
-import img2 from "../assets/img2.jpg";
+import img2 from "../assets/img2.JPG";
 import img3 from "../assets/img3.jpg";
 
 const LatestNews = () => {
