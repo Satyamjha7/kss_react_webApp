@@ -1,4 +1,3 @@
-/* General Styles */
 .home-container {
   position: relative;
   overflow: hidden;
@@ -17,16 +16,16 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transform: scale(1); /* Zoom-in effect */
+  transform: scale(1);
   transition: opacity 1s ease-in-out, transform 3s ease-in-out;
 }
 
 .slider.current-slide {
   opacity: 1;
-  transform: scale(1.1); /* Smooth zoom-out */
+  transform: scale(1.1);
 }
 
-/* Overlay */
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -73,7 +72,7 @@
 
 /* Highlighted Text (Appears after delay) */
 .current-slide .slider-content h1 span {
-  color: #376cfb; /* Highlighted text */
+  color: #c40c0c; /* Highlighted text */
   opacity: 0;
   display: inline-block;
   animation: fadeSlide 1s ease-in-out forwards;
@@ -107,12 +106,12 @@
 }
 
 .learn-more {
-  background-color: #376cfb;
+  background-color: #c40c0c;
   color: white;
 }
 
 .learn-more:hover {
-  background-color: #376cfb;
+  background-color: #c40c0c;
 }
 
 .join-us {

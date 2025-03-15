@@ -108,7 +108,7 @@ body {
     bottom: -3px;
     width: 0;
     height: 2px;
-    background-color: #376cfb;
+    background-color: #c40c0c;
     transition: width 0.3s ease;
 }
 
@@ -124,13 +124,13 @@ body {
 
 .nav-links ul li a:hover,
 .mouse-event:hover {
-    color: #376cfb;
+    color: #c40c0c;
 }
 
 /* ✅ Fix: Keep hover color blue even when scrolled */
 .navbar.scrolled .nav-links ul li a:hover,
 .navbar.scrolled .mouse-event:hover {
-    color: #376cfb;
+    color: #c40c0c;
 }
 
 /* Dropdown Menu */
@@ -168,7 +168,7 @@ body {
 /* ✅ Fix: Ensure dropdown hover color remains blue even after scroll */
 .dropdown-menu a:hover {
     background-color: #f9f9f9;
-    color: #376cfb !important;
+    color: #c40c0c !important;
 }
 
 .navbar.scrolled .dropdown-menu a {
@@ -178,7 +178,7 @@ body {
 /* ✅ Fix: Ensure dropdown hover color stays blue after scroll */
 .navbar.scrolled .dropdown-menu a:hover {
     background-color: #f9f9f9;
-    color: #376cfb !important;
+    color: #c40c0c !important;
 }
 
 /* Hamburger Menu */
@@ -206,7 +206,7 @@ body {
 }
 
 .search-box:focus {
-    border-color: #376cfb;
+    border-color: #c40c0c;
 }
 
 /* Donate Button */

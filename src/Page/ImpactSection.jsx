@@ -7,7 +7,7 @@ const ImpactSection = () => {
         { value: 128, suffix: "+", label: "children and their families are impacted every year" },
         { value: 2000, suffix: "+", label: "Villages and slums are reached across the country" },
         { value: 400, suffix: "+", label: "Projects focused on education, healthcare, and women empowerment" },
-        { value: 25, suffix: "+", label: "States are reached including the remotest areas" },
+        { value: 100, suffix: "+", label: "Villages in Saharsa District covered through direct intervention and outreach programs." },
     ];
 
     return (
