@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="logo-container">
                 <Link to="/">
                     <img
-                        src={scrolled ? "Assets/logo-png.png" : "Assets/logo-white.png"}
+                        src={scrolled ? "/images/logo-png.png" : "/images/logo-white.png"}
                         alt="Kosi Seva Sadan Logo"
                         className="logo-img"
                     />
@@ -42,8 +42,6 @@ const Navbar = () => {
                     <p className="slogan">Restoring Hope, Reviving Communities</p>
                 </div>
             </div>
-
-            {/* Hamburger for Mobile */}
             <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                 ☰
             </div>

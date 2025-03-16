@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer-container">
             <div className="footer-content">
                 <div className="footer-section about-section">
-                    <img src="Assets/logo-white.png" alt="KSS Logo" className="footer-logo" />
+                    <img src="/images/logo-white.png" alt="KSS Logo" className="footer-logo" />
                     <div className="about-text">
                         <h2>Kosi Seva Sadan</h2>
                         <p>The organization is dedicated to community development and empowerment through sustainable initiatives and leadership.</p>
