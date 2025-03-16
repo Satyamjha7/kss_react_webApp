@@ -11,7 +11,6 @@ const WhoWeAre = () => {
             <div className="hero-section" style={{ backgroundImage: `url(${AboutUsImage})` }}>
                 <div className="hero-overlay">
                     <h1>Who We Are</h1>
-                    <p>Committed to empowering communities with equity, justice, and sustainability.</p>
                 </div>
             </div>
 

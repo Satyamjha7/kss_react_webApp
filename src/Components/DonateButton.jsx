@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./DonateButton.css";
+import "./Styles.css";
 import donateImage from "../assets/156.jpg";
 
 const DonateButton = () => {

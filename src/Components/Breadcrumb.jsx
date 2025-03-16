@@ -1,17 +1,18 @@
 import React from "react";
 import { FaHome, FaChevronRight } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
-import "./Breadcrumb.css";
+import "./Styles.css";
 
-const Breadcrumb = () => {
+const Breadcrumb = ({ heading }) => {
     const location = useLocation();
     const pathNames = location.pathname.split("/").filter((x) => x);
 
     return (
-        <div className="breadcrumb-container">
+        <div className="breadcrumb-wrapper">
+            <h1 className="page-heading">{heading}</h1>
             <nav className="breadcrumb">
                 <Link to="/" className="breadcrumb-item">
-                    <FaHome className="breadcrumb-icon" /> Home
+                    <FaHome className="breadcrumb-icon" /> HOME
                 </Link>
                 {pathNames.map((name, index) => {
                     const routeTo = `/${pathNames.slice(0, index + 1).join("/")}`;
@@ -21,11 +22,11 @@ const Breadcrumb = () => {
                             <FaChevronRight className="breadcrumb-separator" />
                             {isLast ? (
                                 <span className="breadcrumb-item active">
-                                    {name.charAt(0).toUpperCase() + name.slice(1)}
+                                    {name.toUpperCase()}
                                 </span>
                             ) : (
                                 <Link to={routeTo} className="breadcrumb-item">
-                                    {name.charAt(0).toUpperCase() + name.slice(1)}
+                                    {name.toUpperCase()}
                                 </Link>
                             )}
                         </span>

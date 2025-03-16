@@ -1,17 +1,15 @@
 import React from "react";
 import "./AnnualReport.css";
 
-
 import report2018 from "../assets/ANNUAL REPORT 2017-2018-thumbnail.jpg";
 import report2019 from "../assets/ANNUAL REPORT 2018-2019-thumbnail.jpg";
 import report2020 from "../assets/ANNUAL REPORT 2019-2020-thumbnail.jpg";
-
 
 import pdf2018 from "../assets/ANNUAL REPORT 2017-2018.pdf";
 import pdf2019 from "../assets/ANNUAL REPORT 2018-2019.pdf";
 import pdf2020 from "../assets/ANNUAL REPORT 2019-2020.pdf";
 
-import annualImage from "../assets/182.jpg"; // Make sure to add a relevant banner image
+import annualImage from "../assets/182.jpg";
 
 import Breadcrumb from "../Components/Breadcrumb";
 
@@ -27,12 +25,16 @@ const AnnualReport = () => {
             <div className="annual-banner" style={{ backgroundImage: `url(${annualImage})` }}>
                 <div className="annual-banner-overlay">
                     <h1 className="annual-banner-title">Annual Reports</h1>
+                    <div className="breadcrumb-wrapper">
+                        <Breadcrumb />
+                    </div>
                 </div>
             </div>
+            <p className="intro-text">
+                Explore our journey, impact, and progress over the years.
+            </p>
 
-            <Breadcrumb />
-            <p className="intro-text">Explore our journey, impact, and progress over the years.</p>
-
+            {/* Report Display */}
             <div className="annual-report-display">
                 {reports.map((report, index) => (
                     <div className="report-item" key={index}>

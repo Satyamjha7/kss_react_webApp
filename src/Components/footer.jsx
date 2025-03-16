@@ -1,8 +1,11 @@
 import React from 'react';
-import './footer.css';
+import './styles.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Rights from './Rights';
 
 const Footer = () => {
+    const year = new Date().getFullYear();
+
     return (
         <footer className="footer-container">
             <div className="footer-content">
@@ -16,9 +19,9 @@ const Footer = () => {
 
                 <div className="footer-section contact-section">
                     <h3>Contact</h3>
-                    <p><i className="fas fa-map-marker-alt"></i> Address Line, City, State, PIN</p>
-                    <p><i className="fas fa-envelope"></i> kss.email@example.com</p>
-                    <p><i className="fas fa-phone"></i> +91 XXXXXXXXXX</p>
+                    <p><i className="fas fa-map-marker-alt"></i> Acharyavan Mahishi, Distt- Saharsa, Pin-852216</p>
+                    <p><i className="fas fa-envelope"></i> kosisevasadan@gmail.com</p>
+                    <p><i className="fas fa-phone"></i> +91 9934797023, 9113124943</p>
                 </div>
 
                 <div className="footer-section social-section">
@@ -42,7 +45,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <Rights />
         </footer>
+
     );
 };
 

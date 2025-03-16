@@ -14,7 +14,8 @@
 }
 
 .action-image img {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: auto;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -25,27 +26,27 @@
 }
 
 .action-heading {
-    max-width: 100%;
-    margin-top:20px;
-    color: #000000;
+    margin-top: 20px;
+    color: #000;
     font-family: "PT Sans", Sans-serif;
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 1.25em;
 }
+
 .action-heading::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #c40c0c;
-  margin: 10px auto;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #c40c0c;
+    margin: 10px 0;
 }
 
 .action-description {
     color: #454545;
     font-family: "PT Sans", Sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
 }
@@ -63,4 +64,59 @@
 
 .donate-button1:hover {
     background-color: #005f89;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .action-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .action-image img {
+        max-width: 100%;
+    }
+
+    .action-heading {
+        font-size: 2.5rem;
+    }
+
+    .action-description {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .action-container {
+        padding: 30px;
+    }
+
+    .action-heading {
+        font-size: 2rem;
+    }
+
+    .action-description {
+        font-size: 0.9rem;
+    }
+
+    .donate-button1 {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .action-heading {
+        font-size: 1.8rem;
+    }
+
+    .action-description {
+        font-size: 0.85rem;
+    }
+
+    .donate-button1 {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
 }

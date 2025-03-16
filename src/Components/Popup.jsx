@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Popup.css";
+import "./Styles.css";
 
 import letter_icon from "../assets/email.png";
 
