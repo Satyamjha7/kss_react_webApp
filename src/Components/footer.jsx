@@ -1,54 +1,81 @@
-import React from 'react';
-import './styles.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import Rights from './Rights';
+import React from "react";
+import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from "mdb-react-ui-kit";
 
-const Footer = () => {
-    const year = new Date().getFullYear();
-
+export default function Footer() {
     return (
-        <footer className="footer-container">
-            <div className="footer-content">
-                <div className="footer-section about-section">
-                    <img src="/images/logo-white.png" alt="KSS Logo" className="footer-logo" />
-                    <div className="about-text">
-                        <h2>Kosi Seva Sadan</h2>
-                        <p>The organization is dedicated to community development and empowerment through sustainable initiatives and leadership.</p>
-                    </div>
+        <MDBFooter className="footer">
+            <section className="social-section">
+                <div className="social-text">
+                    <span>Get connected with us on social networks:</span>
                 </div>
 
-                <div className="footer-section contact-section">
-                    <h3>Contact</h3>
-                    <p><i className="fas fa-map-marker-alt"></i> Acharyavan Mahishi, Distt- Saharsa, Pin-852216</p>
-                    <p><i className="fas fa-envelope"></i> kosisevasadan@gmail.com</p>
-                    <p><i className="fas fa-phone"></i> +91 9934797023, 9113124943</p>
+                <div className="social-icons">
+                    <a href="#" className="social-link">
+                        <MDBIcon fab icon="facebook-f" />
+                    </a>
+                    <a href="#" className="social-link">
+                        <MDBIcon fab icon="twitter" />
+                    </a>
+                    <a href="#" className="social-link">
+                        <MDBIcon fab icon="google" />
+                    </a>
+                    <a href="#" className="social-link">
+                        <MDBIcon fab icon="instagram" />
+                    </a>
+                    <a href="#" className="social-link">
+                        <MDBIcon fab icon="linkedin" />
+                    </a>
+                    <a href="#" className="social-link">
+                        <MDBIcon fab icon="github" />
+                    </a>
                 </div>
+            </section>
 
-                <div className="footer-section social-section">
-                    <h3>Stay Connected</h3>
-                    <div className="social-icons">
-                        <a href="https://www.facebook.com/your-page-link" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-x-twitter"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.youtube.com/c/your-channel" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
+            <section className="footer-content">
+                <MDBContainer className="footer-container">
+                    <MDBRow className="footer-row">
+                        <MDBCol md="3" lg="4" xl="3" className="footer-col">
+                            <h6 className="footer-title">
+                                <MDBIcon icon="gem" className="footer-icon" />
+                                Company name
+                            </h6>
+                            <p className="footer-text">
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit.
+                            </p>
+                        </MDBCol>
+
+                        <MDBCol md="2" lg="2" xl="2" className="footer-col">
+                            <h6 className="footer-title">Products</h6>
+                            <p><a href="#" className="footer-link">Angular</a></p>
+                            <p><a href="#" className="footer-link">React</a></p>
+                            <p><a href="#" className="footer-link">Vue</a></p>
+                            <p><a href="#" className="footer-link">Laravel</a></p>
+                        </MDBCol>
+
+                        <MDBCol md="3" lg="2" xl="2" className="footer-col">
+                            <h6 className="footer-title">Useful links</h6>
+                            <p><a href="#" className="footer-link">Pricing</a></p>
+                            <p><a href="#" className="footer-link">Settings</a></p>
+                            <p><a href="#" className="footer-link">Orders</a></p>
+                            <p><a href="#" className="footer-link">Help</a></p>
+                        </MDBCol>
+
+                        <MDBCol md="4" lg="3" xl="3" className="footer-col">
+                            <h6 className="footer-title">Contact</h6>
+                            <p><MDBIcon icon="home" className="footer-icon" /> New York, NY 10012, US</p>
+                            <p><MDBIcon icon="envelope" className="footer-icon" /> info@example.com</p>
+                            <p><MDBIcon icon="phone" className="footer-icon" /> +01 234 567 88</p>
+                            <p><MDBIcon icon="print" className="footer-icon" /> +01 234 567 89</p>
+                        </MDBCol>
+                    </MDBRow>
+                </MDBContainer>
+            </section>
+
+            <div className="footer-bottom">
+                © 2025 Copyright:
+                <a href="https://mdbootstrap.com/" className="footer-brand">MDBootstrap.com</a>
             </div>
-            <Rights />
-        </footer>
-
+        </MDBFooter>
     );
-};
-
-export default Footer;
+}
