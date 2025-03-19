@@ -36,15 +36,16 @@ export default function Footer() {
                     <MDBRow className="footer-row">
                         <MDBCol md="3" lg="4" xl="3" className="footer-col">
                             <h6 className="footer-title">
-                                <MDBIcon icon="gem" className="footer-icon" />
-                                Company name
+                                <MDBIcon src="public\images\logo-white.png" className="footer-icon" />
+                                Kosi Seva Sadan
                             </h6>
                             <p className="footer-text">
-                                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit.
+                                Kosi Seva Sadan is a non-profit organization dedicated to empowering marginalized communities in Bihar through sustainable livelihood initiatives, disaster resilience, women’s empowerment, and social justice. Established in 1981, we focus on transforming lives by promoting innovative farming techniques, community-based development, and access to essential resources for rural development.
                             </p>
                         </MDBCol>
 
+
+                        
                         <MDBCol md="2" lg="2" xl="2" className="footer-col">
                             <h6 className="footer-title">Products</h6>
                             <p><a href="#" className="footer-link">Angular</a></p>
@@ -73,13 +74,11 @@ export default function Footer() {
             </section>
 
             <div className="footer-bottom">
-                <div className="footerlast">
                     <p>© 2025 Kosi Seva Sadan. All rights reserved</p>
                     <div className="footer-links">
                         <a href="/copyright">Copyright</a>
                         <a href="/privacy-policy">Privacy Policy and Cookie Notice</a>
                         <a href="/terms-conditions">Terms and Conditions</a>
-                    </div>
                 </div>
             </div>
         </MDBFooter>
