@@ -8,7 +8,7 @@ const Breadcrumb = ({ heading }) => {
     const pathNames = location.pathname.split("/").filter((x) => x);
 
     return (
-        <div className="breadcrumb-wrapper">
+        <div className="breadcrumb-container">
             <h1 className="page-heading">{heading}</h1>
             <nav className="breadcrumb">
                 <Link to="/" className="breadcrumb-item">

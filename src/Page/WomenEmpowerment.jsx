@@ -14,10 +14,9 @@ const WomenEmpowerment = () => {
             >
                 <div className="women-banner-overlay">
                     <h1 className="women-title">Women Empowerment</h1>
-                </div>
+                    </div>
                 </div>
             </div>
-            <Breadcrumb/>
 
             <div className="women-content">
                 <div className="content-section">

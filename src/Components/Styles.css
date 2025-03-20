@@ -630,47 +630,61 @@ body {
     background: #570b9c;
 }
 /*Breadcrumb*/
-.page-heading {
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: 600;
-    margin-bottom: 8px;
+/* Container for heading and breadcrumb */
+.breadcrumb-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Space between heading and breadcrumb */
 }
+
+/* Heading Style */
+.page-heading {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+/* Breadcrumb Styling */
 .breadcrumb {
     display: flex;
     align-items: center;
-    gap: 6px;
-    font-size: 0.95rem;
+    gap: 8px;
+    font-size: 1rem;
 }
 
+/* Breadcrumb Item */
 .breadcrumb-item {
     color: #cccccc;
     text-decoration: none;
-    font-weight: 200;
-    margin-top: 0.5px;
-    transition: color 0.3s ease;
+    font-weight: 400;
+    transition: color 0.2s ease;
 }
 
 .breadcrumb-item:hover {
     color: #ffffff;
 }
 
+/* Separator Styling */
 .breadcrumb-separator {
-    color: #888;
-    height:12px;
+    color: #999999;
+    font-size: 12px;
 }
 
+/* Active State */
 .breadcrumb-item.active {
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 600;
     pointer-events: none;
 }
 
+/* Icon Styling */
 .breadcrumb-icon {
     margin-right: 5px;
-    font-size: 14px;
+    font-size: 16px;
     color: #cccccc;
 }
+
 /*Donate Button*/
 .donate-section {
     position: relative;
