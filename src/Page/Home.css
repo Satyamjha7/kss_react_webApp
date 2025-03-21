@@ -25,7 +25,6 @@
   transform: scale(1.1);
 }
 
-
 .overlay {
   position: absolute;
   width: 100%;
@@ -125,7 +124,7 @@
 
 .slider-arrow {
   position: absolute;
-  top: 8%;
+  top: 50%;
   font-size: 2.5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
@@ -150,6 +149,11 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .slider-content {
+    left: 5%;
+    max-width: 90%;
+  }
+
   .slider-content h1 {
     font-size: 2.2rem;
   }
@@ -160,5 +164,30 @@
 
   .slider-buttons {
     flex-direction: column;
+  }
+
+  .slider-arrow {
+    font-size: 2rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .slider-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .slider-arrow {
+    font-size: 1.5rem;
+    padding: 6px;
   }
 }
