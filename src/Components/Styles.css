@@ -335,7 +335,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
+    margin-top: 5px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -359,81 +360,60 @@ body {
 }
 
 /* Footer Content */
-.footer-container {
-    text-align: left;
-    padding: 20px 0;
-}
-
-.footer-row {
-    display: flex;
-    justify-content: center;
-}
-
-.footer-col {
-    margin-bottom: 20px;
-}
-
-.footer-title {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.footer-icon {
-    margin-right: 5px;
-}
-
-.footer-text {
-    font-size: 14px;
-    color: #ccc;
-}
-
-/* Footer Links */
-/* ✅ General Footer Styling */
 .footer {
-    color: #ffffff;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgb(31, 49, 52), rgb(16, 69, 75));
+    color: white;
+    text-align: center;
+    padding-top: 10px;
 }
 
-/* ✅ Social Media Section */
+/* Social Section */
 .social-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 12px 20px;
-    border-bottom: 1px solid #4a5568;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .social-text {
+    margin-right: 20px;
     font-size: 14px;
     color: #e2e8f0;
 }
 
-.social-icons a {
-    margin-left: 12px;
-    color: #ffffff;
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    color: white;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
+.social-link:hover {
     color: #f3a847;
 }
 
-/* ✅ Main Footer Content */
-.footer-content {
-    padding: 30px;
+/* Footer Content */
+.footer-container {
+    text-align: left;
+    padding: 30px 10%;
 }
 
 .footer-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
 
 .footer-col {
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
+    margin-bottom: 20px;
 }
 
 .footer-title {
@@ -441,12 +421,13 @@ body {
     font-weight: bold;
     margin-bottom: 12px;
     color: #f3a847;
+    text-transform: uppercase;
 }
 
 .footer-text {
     font-size: 14px;
-    margin-bottom: 8px;
-    color: #e2e8f0;
+    color: #ccc;
+    line-height: 1.6;
 }
 
 .footer-link {
@@ -465,48 +446,42 @@ body {
     color: #f3a847;
 }
 
-/* ✅ Footer Bottom */
+/* Footer Bottom */
 .footer-bottom {
-    background:linear-gradient(135deg, rgb(31, 49, 52), rgb(10, 51, 56));
+    background: linear-gradient(135deg, rgb(31, 49, 52), rgb(10, 51, 56));
     padding: 12px;
     color: #b0b0b0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    flex-wrap: wrap;
     font-size: 14px;
 }
 
-.footer-bottom a {
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
     color: #f3a847;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-bottom span {
-    color: #4a5568;
-}
-
-.footer-bottom a:hover {
+.footer-links a:hover {
     color: #e2e8f0;
 }
 
-/* ✅ Footer Brand Styling */
-.footer-brand {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-brand:hover {
-    color: #f3a847;
-}
-
-/* ✅ Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
     .footer-container {
         text-align: center;
+        padding: 20px;
     }
 
     .social-section {
@@ -526,11 +501,12 @@ body {
 
     .footer-col {
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .footer-bottom {
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
         text-align: center;
     }
 }
@@ -972,18 +948,18 @@ body {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: 12px;
+  margin-bottom: 5px;
 }
 
 .social-icons a {
-  color: #e53935;
-  font-size: 18px;
+  color:rgb(255, 255, 255);
+  font-size: 12px;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #b71c1c;
+  color:rgb(255, 255, 255);
 }
 
 /* ✅ Read More Button */

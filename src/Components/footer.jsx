@@ -6,7 +6,7 @@ export default function Footer() {
         <MDBFooter className="footer">
             <section className="social-section">
                 <div className="social-text">
-                    <span>Get connected with us on social networks:</span>
+                    <span>Connect with us on social media:</span>
                 </div>
 
                 <div className="social-icons">
@@ -15,9 +15,6 @@ export default function Footer() {
                     </a>
                     <a href="#" className="social-link">
                         <MDBIcon fab icon="twitter" />
-                    </a>
-                    <a href="#" className="social-link">
-                        <MDBIcon fab icon="google" />
                     </a>
                     <a href="#" className="social-link">
                         <MDBIcon fab icon="instagram" />
@@ -36,49 +33,46 @@ export default function Footer() {
                     <MDBRow className="footer-row">
                         <MDBCol md="3" lg="4" xl="3" className="footer-col">
                             <h6 className="footer-title">
-                                <MDBIcon src="public\images\logo-white.png" className="footer-icon" />
+                                <img src="/images/kss-logo.png" alt="Kosi Seva Sadan Logo" className="footer-icon" />
                                 Kosi Seva Sadan
                             </h6>
                             <p className="footer-text">
-                                Kosi Seva Sadan is a non-profit organization dedicated to empowering marginalized communities in Bihar through sustainable livelihood initiatives, disaster resilience, women’s empowerment, and social justice. Established in 1981, we focus on transforming lives by promoting innovative farming techniques, community-based development, and access to essential resources for rural development.
+                                Kosi Seva Sadan is a non-profit organization working towards sustainable development, disaster resilience, and women’s empowerment in Bihar. Since 1981, we have been dedicated to enhancing rural livelihoods, promoting innovative farming, and ensuring social justice for marginalized communities.
                             </p>
                         </MDBCol>
 
-
-                        
-                        <MDBCol md="2" lg="2" xl="2" className="footer-col">
-                            <h6 className="footer-title">Products</h6>
-                            <p><a href="#" className="footer-link">Angular</a></p>
-                            <p><a href="#" className="footer-link">React</a></p>
-                            <p><a href="#" className="footer-link">Vue</a></p>
-                            <p><a href="#" className="footer-link">Laravel</a></p>
+                        <MDBCol md="3" lg="2" xl="2" className="footer-col">
+                            <h6 className="footer-title">Our Initiatives</h6>
+                            <p><a href="#" className="footer-link">Livelihood Programs</a></p>
+                            <p><a href="#" className="footer-link">Disaster Management</a></p>
+                            <p><a href="#" className="footer-link">Women Empowerment</a></p>
+                            <p><a href="#" className="footer-link">Education & Training</a></p>
                         </MDBCol>
 
                         <MDBCol md="3" lg="2" xl="2" className="footer-col">
-                            <h6 className="footer-title">Useful links</h6>
-                            <p><a href="#" className="footer-link">Pricing</a></p>
-                            <p><a href="#" className="footer-link">Settings</a></p>
-                            <p><a href="#" className="footer-link">Orders</a></p>
-                            <p><a href="#" className="footer-link">Help</a></p>
+                            <h6 className="footer-title">Quick Links</h6>
+                            <p><a href="#" className="footer-link">About Us</a></p>
+                            <p><a href="#" className="footer-link">Our Impact</a></p>
+                            <p><a href="#" className="footer-link">Get Involved</a></p>
+                            <p><a href="#" className="footer-link">Contact Us</a></p>
                         </MDBCol>
 
                         <MDBCol md="4" lg="3" xl="3" className="footer-col">
                             <h6 className="footer-title">Contact</h6>
-                            <p><MDBIcon icon="home" className="footer-icon" /> New York, NY 10012, US</p>
-                            <p><MDBIcon icon="envelope" className="footer-icon" /> info@example.com</p>
-                            <p><MDBIcon icon="phone" className="footer-icon" /> +01 234 567 88</p>
-                            <p><MDBIcon icon="print" className="footer-icon" /> +01 234 567 89</p>
+                            <p><MDBIcon icon="home" className="footer-icon" /> Bihar, India</p>
+                            <p><MDBIcon icon="envelope" className="footer-icon" /> contact@kosisevasadan.org</p>
+                            <p><MDBIcon icon="phone" className="footer-icon" /> +91 98765 43210</p>
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>
             </section>
 
             <div className="footer-bottom">
-                    <p>© 2025 Kosi Seva Sadan. All rights reserved</p>
-                    <div className="footer-links">
-                        <a href="/copyright">Copyright</a>
-                        <a href="/privacy-policy">Privacy Policy and Cookie Notice</a>
-                        <a href="/terms-conditions">Terms and Conditions</a>
+                <p>© 2025 Kosi Seva Sadan. All rights reserved</p>
+                <div className="footer-links">
+                    <a href="/copyright">Copyright</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="/terms-conditions">Terms & Conditions</a>
                 </div>
             </div>
         </MDBFooter>
