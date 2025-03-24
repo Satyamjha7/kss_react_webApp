@@ -6,14 +6,12 @@ import Breadcrumb from '../Components/Breadcrumb';
 const Contact = () => {
     return (
         <div className="contact-container">
-            {/* Banner Section */}
             <div className="contact-banner" style={{ backgroundImage: `url(${bannerImage})` }}>
                 <div className="contact-banner-overlay">
                     <h1 className="contact-banner-title">Contact Us</h1>
                 </div>
             </div>
             <Breadcrumb/>
-            {/* Contact Info */}
             <div className="contact-info">
                 <div className="contact-card">
                     <i className="fas fa-envelope"></i>
