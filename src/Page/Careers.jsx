@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Careers.css";
-import careersBanner from "../assets/133.jpeg"; // Add a relevant background image
+import careersBanner from "../assets/133.jpeg";
 
 const jobOpenings = [
     {
