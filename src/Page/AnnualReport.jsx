@@ -33,8 +33,6 @@ const AnnualReport = () => {
             <p className="intro-text">
                 Explore our journey, impact, and progress over the years.
             </p>
-
-            {/* Report Display */}
             <div className="annual-report-display">
                 {reports.map((report, index) => (
                     <div className="report-item" key={index}>
