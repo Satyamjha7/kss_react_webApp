@@ -7,7 +7,7 @@ function RouterWithLoader({ children }) {
 
     useEffect(() => {
         NProgress.configure({
-            showSpinner: false, // ❌ Disable the circle spinner
+            showSpinner: false,
             speed: 300,
             minimum: 0.1,
             easing: 'ease'
@@ -22,7 +22,6 @@ function RouterWithLoader({ children }) {
 
     return (
         <>
-            {/* Injecting CSS directly */}
             <style>
                 {`
                     /* NProgress bar style */
