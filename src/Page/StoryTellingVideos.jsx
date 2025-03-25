@@ -19,8 +19,6 @@ const StorytellingVideos = () => {
                     of our work, inspiring others to join us in building a better future.
                 </p>
             </div>
-
-            {/* Video Section with Thumbnail and Play Button */}
             <div className="video-wrapper">
                 {!videoVisible ? (
                     <div className="video-thumbnail" onClick={() => setVideoVisible(true)}>
