@@ -4,8 +4,7 @@ import "./Styles.css";
 import donateImage from "../assets/156.jpg";
 
 const DonateButton = () => {
-    const navigate = useNavigate(); // Hook for navigation
-
+    const navigate = useNavigate();
     return (
         <div className="donate-section" style={{ backgroundImage: `url(${donateImage})` }}>
             <div className="donate-overlay">
