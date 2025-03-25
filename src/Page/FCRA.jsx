@@ -1,7 +1,7 @@
 import React from "react";
 import "./FCRA.css";
 
-import fcraImage from "../assets/182.jpg"; // Same background image as Annual Report
+import fcraImage from "../assets/182.jpg";
 import Breadcrumb from "../Components/Breadcrumb";
 
 const FCRA = () => {
