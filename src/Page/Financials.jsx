@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaFilePdf, FaDownload, FaEye } from "react-icons/fa";
 import Breadcrumb from "../Components/Breadcrumb";
 import "./Financials.css";
-import teamBackground from "../assets/163.jpg"; // Reusing the background image
+import teamBackground from "../assets/163.jpg";
 
 const initialDocs = [
     { title: "Annual Report 2023", file: "annual_report_2023.pdf" },
