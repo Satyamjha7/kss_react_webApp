@@ -48,11 +48,9 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds loading time
-
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
