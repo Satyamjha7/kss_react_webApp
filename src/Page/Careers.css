@@ -26,7 +26,6 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Intro Text */
 .intro-text {
     font-size: 1.2rem;
     margin: 30px auto;
@@ -35,7 +34,6 @@
     max-width: 80%;
 }
 
-/* Job Listings */
 .job-listings {
     display: flex;
     justify-content: center;
