@@ -525,7 +525,7 @@ body {
     z-index: 999;
 }
 
-/* Popup Container */
+
 .popup-container {
     background: white;
     padding: 25px;
@@ -535,8 +535,6 @@ body {
     text-align: center;
     position: relative;
 }
-
-/* Close Button */
 .close-btn {
     position: absolute;
     top: 10px;
