@@ -26,7 +26,6 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Contact Info */
 .contact-info {
     display: flex;
     justify-content: space-around;
@@ -59,8 +58,6 @@
 .contact-card h3 {
     color: #333;
 }
-
-/* Contact Form */
 .contact-form {
     display: flex;
     justify-content: space-between;
