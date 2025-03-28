@@ -25,7 +25,6 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Intro Text */
 .intro-text {
     font-size: 1.2rem;
     margin: 30px 0;
@@ -33,7 +32,6 @@
     text-align: center;
 }
 
-/* FCRA Content */
 .fcra-content {
     text-align: center;
     padding: 40px;
@@ -52,7 +50,6 @@
     margin: 0 auto 30px auto;
 }
 
-/* FCRA Documents Section */
 .fcra-documents {
     display: flex;
     justify-content: center;
@@ -81,7 +78,6 @@
     margin-bottom: 15px;
 }
 
-/* Buttons */
 .view-btn,
 .download-btn {
     display: inline-block;
@@ -114,7 +110,6 @@
     background-color: #0056b3;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .fcra-documents {
         flex-direction: column;
