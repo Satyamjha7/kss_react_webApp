@@ -9,8 +9,6 @@
     background: linear-gradient(to right, #f9f9f9, #eaeaea);
     text-align: center;
 }
-
-/* Header Section */
 .video-header {
     max-width: 700px;
     margin-bottom: 20px;
@@ -45,16 +43,12 @@
     color: #666;
     margin-top: 10px;
 }
-
-/* Video Wrapper */
 .video-wrapper {
     display: flex;
     justify-content: center;
     margin-top: 30px;
     position: relative;
 }
-
-/* Video Thumbnail */
 .video-thumbnail {
     position: relative;
     width: 560px;
@@ -79,7 +73,6 @@
     object-fit: cover;
 }
 
-/* Play Button */
 .play-button {
     position: absolute;
     width: 80px;
@@ -92,7 +85,6 @@
     opacity: 1;
 }
 
-/* Embedded Video */
 .video-frame {
     width: 560px;
     height: 315px;
@@ -100,7 +92,6 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .video-title {
         font-size: 2rem;
