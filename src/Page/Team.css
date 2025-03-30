@@ -61,7 +61,6 @@
   background-color: #b71c1c;
 }
 
-/* ✅ Team Card */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
