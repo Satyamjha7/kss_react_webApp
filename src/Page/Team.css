@@ -119,7 +119,6 @@
   background-color: #b71c1c;
 }
 
-/* ✅ Responsive */
 @media (max-width: 768px) {
   .team-grid {
     grid-template-columns: 1fr;
