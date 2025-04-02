@@ -356,8 +356,6 @@ body {
 .social-link:hover {
     color: #f3a847;
 }
-
-/* Footer Content */
 .footer {
     background: linear-gradient(135deg, rgb(31, 49, 52), rgb(16, 69, 75));
     color: white;
