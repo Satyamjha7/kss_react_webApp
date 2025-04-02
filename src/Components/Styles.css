@@ -471,7 +471,6 @@ body {
     color: #e2e8f0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .footer-container {
         text-align: center;
