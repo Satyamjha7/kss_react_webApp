@@ -597,11 +597,10 @@ body {
     background: #8b0000;
 }
 /*Breadcrumb*/
-/* Container for heading and breadcrumb */
 .breadcrumb-container {
     display: flex;
     flex-direction: column;
-    gap: 4px; /* Space between heading and breadcrumb */
+    gap: 4px;
 }
 
 /* Heading Style */
