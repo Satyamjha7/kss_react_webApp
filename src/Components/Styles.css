@@ -667,7 +667,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(244, 99, 99, 0.56); /* Red semi-transparent overlay */
+    background: rgba(244, 99, 99, 0.56);
     display: flex;
     flex-direction: column;
     justify-content: center;
