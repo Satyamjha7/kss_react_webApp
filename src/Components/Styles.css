@@ -968,7 +968,6 @@ body {
   background-color: #b71c1c;
 }
 
-/* ✅ Responsive Design */
 @media (max-width: 1024px) {
   .profile-card {
     max-width: 100%;
