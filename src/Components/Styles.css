@@ -823,7 +823,7 @@ body {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
-    background: linear-gradient(135deg, #05191d, #0a2e33); /* Fixed gradient */
+    background: linear-gradient(135deg, #05191d, #0a2e33); 
     padding: 5px 20px;
     height: 40px;
     bottom: 0;
