@@ -756,7 +756,6 @@ body {
     transform: scale(1.4) translateY(0) translateZ(0);
 }
 
-/* Active (Click) Effect */
 .c-button--gooey:active {
     transform: scale(0.95);
     box-shadow: 0 3px 10px rgba(255, 87, 34, 0.3);
