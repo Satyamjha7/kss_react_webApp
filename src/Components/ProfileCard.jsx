@@ -13,16 +13,12 @@ const ProfileCard = ({ member }) => {
                 <div className="divider"></div>
                 <p className="profile-role">{member.role}</p>
                 <p className="profile-description">{member.description}</p>
-
-                {/* ✅ Social Icons */}
                 <div className="social-icons">
                     <a href="#"><FaFacebookF /></a>
                     <a href="#"><FaTwitter /></a>
                     <a href="#"><FaLinkedinIn /></a>
                     <a href="#"><FaInstagram /></a>
                 </div>
-
-                {/* ✅ Read More Button */}
                 <button className="read-more-btn">Read More</button>
             </div>
         </div>
