@@ -5,12 +5,9 @@ import "./Styles.css";
 const ProfileCard = ({ member }) => {
     return (
         <div className="profile-card">
-            {/* ✅ Profile Image */}
             <div className="profile-image">
                 <img src={member.image} alt={member.name} />
             </div>
-
-            {/* ✅ Profile Info */}
             <div className="profile-info">
                 <h3 className="profile-name">{member.name}</h3>
                 <div className="divider"></div>
