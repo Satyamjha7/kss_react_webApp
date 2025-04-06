@@ -43,7 +43,6 @@
   }
 }
 
-/* Slider Content */
 .slider-content {
   position: absolute;
   top: 50%;
@@ -51,15 +50,12 @@
   transform: translateY(-50%);
   color: white;
   max-width: 600px;
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
 }
-
-/* When slide is active, animate text */
 .current-slide .slider-content {
   animation: fadeSlide 1s ease-in-out forwards;
 }
 
-/* Main Heading (Appears first) */
 .current-slide .slider-content h1 {
   font-size: 3rem;
   font-weight: bold;
