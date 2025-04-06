@@ -135,8 +135,6 @@
 .slider-arrow:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
-
-/* Responsive Styles */
 @media (max-width: 768px) {
   .slider-content h1 {
     font-size: 2.2rem;
