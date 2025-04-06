@@ -63,17 +63,13 @@
   opacity: 0;
   animation: fadeSlide 1s ease-in-out forwards;
 }
-
-/* Highlighted Text (Appears after delay) */
 .current-slide .slider-content h1 span {
-  color: #c40c0c; /* Highlighted text */
+  color: #c40c0c;
   opacity: 0;
   display: inline-block;
   animation: fadeSlide 1s ease-in-out forwards;
   animation-delay: 0.8s;
 }
-
-/* Paragraph (Appears after heading & span) */
 .current-slide .slider-content p {
   font-size: 1.4rem;
   margin-bottom: 30px;
@@ -81,8 +77,6 @@
   animation: fadeSlide 1s ease-in-out forwards;
   animation-delay: 1.5s;
 }
-
-/* Buttons (Appear last) */
 .current-slide .slider-buttons {
   display: flex;
   gap: 15px;
