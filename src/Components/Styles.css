@@ -641,8 +641,6 @@ body {
     font-weight: 600;
     pointer-events: none;
 }
-
-/* Icon Styling */
 .breadcrumb-icon {
     margin-right: 5px;
     font-size: 16px;
