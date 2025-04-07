@@ -852,8 +852,6 @@ body {
 .footer-links a:hover {
     color: #f3a847;
 }
-
-/* ✅ Responsive Styling */
 @media (max-width: 768px) {
     .footerlast {
         flex-direction: column;
