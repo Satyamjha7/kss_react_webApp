@@ -636,8 +636,6 @@ body {
     color: #999999;
     font-size: 12px;
 }
-
-/* Active State */
 .breadcrumb-item.active {
     color: #ffffff;
     font-weight: 600;
