@@ -602,8 +602,6 @@ body {
     flex-direction: column;
     gap: 4px;
 }
-
-/* Heading Style */
 .page-heading {
     font-size: 1.8rem;
     color: #ffffff;
