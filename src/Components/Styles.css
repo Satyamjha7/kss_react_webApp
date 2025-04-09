@@ -615,8 +615,6 @@ body {
     gap: 8px;
     font-size: 1rem;
 }
-
-/* Breadcrumb Item */
 .breadcrumb-item {
     color: #cccccc;
     text-decoration: none;
