@@ -625,8 +625,6 @@ body {
 .breadcrumb-item:hover {
     color: #ffffff;
 }
-
-/* Separator Styling */
 .breadcrumb-separator {
     color: #999999;
     font-size: 12px;
