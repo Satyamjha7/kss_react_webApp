@@ -878,8 +878,6 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
-
-/* ✅ Profile Image */
 .profile-image img {
   width: 100px;
   height: 100px;
