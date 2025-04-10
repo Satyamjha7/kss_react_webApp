@@ -16,7 +16,7 @@ const NewsletterPopup = () => {
                     </div>
                     <h2 className="popup-title">Subscribe To Our Newsletter</h2>
                     <p className="popup-description">
-                        Join our subscribers list and Stay up-to-dated on all the latest news and initiatives from Kosi Seva Sadan.
+                        Join Us and Stay up-to-dated on all the latest news and initiatives from Kosi Seva Sadan.
                     </p>
                     <div className="input-container">
                         <input type="email" placeholder="Enter your email" className="email-input" />
