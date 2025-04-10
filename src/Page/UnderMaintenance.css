@@ -16,7 +16,7 @@
 
 .maintenance-container p {
     font-size: 1.2rem;
-    color: #555; /* Only applies to this component */
+    color: #555;
 }
 
 .maintenance-container .home-btn {
