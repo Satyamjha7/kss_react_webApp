@@ -20,7 +20,7 @@ const WomenEmpowerment = () => {
 
             <div className="women-content">
                 <div className="content-section">
-                    <img src={empowermentImg} alt="Empowerment" className="content-img" />
+                    <img src={empowermentImg} alt="Empowerment" className="content-img" /> /*heading content*/
                     <div className="content-text">
                         <h2>Empowering Women, Transforming Lives</h2>
                         <p>
