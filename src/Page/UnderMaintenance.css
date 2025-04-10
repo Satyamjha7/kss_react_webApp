@@ -11,7 +11,7 @@
 
 .maintenance-container h1 {
     font-size: 2.5rem;
-    color: #2c3e50; /* Only applies to this component */
+    color: #2c3e50;
 }
 
 .maintenance-container p {
