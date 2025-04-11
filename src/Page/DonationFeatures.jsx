@@ -10,8 +10,6 @@ const DonationFeature = () => {
 
     const [selectedProject, setSelectedProject] = useState(projects[0]);
     const [donationAmount, setDonationAmount] = useState(100);
-
-    // Handle project selection
     const handleProjectChange = (event) => {
         const project = projects.find((p) => p.id === parseInt(event.target.value));
         setSelectedProject(project);
