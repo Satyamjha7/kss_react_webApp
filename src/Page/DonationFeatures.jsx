@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./DonationFeatures.css";
 
 const DonationFeature = () => {
-    // Sample projects with current funding
     const [projects, setProjects] = useState([
         { id: 1, name: "Education for Girls", goal: 5000, raised: 3500 },
         { id: 2, name: "Clean Water Initiative", goal: 8000, raised: 6200 },
