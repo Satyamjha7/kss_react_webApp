@@ -15,7 +15,6 @@ const DonationFeature = () => {
         setSelectedProject(project);
     };
 
-    // Handle donation calculation
     const handleDonationChange = (event) => {
         setDonationAmount(parseInt(event.target.value) || 0);
     };
