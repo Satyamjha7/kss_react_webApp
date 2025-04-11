@@ -1,7 +1,6 @@
 import React from "react";
 import "./Mission.css";
 
-// Import the images
 import icon from "../assets/icon.png";
 import icon1 from "../assets/icon1.png";
 import icon2 from "../assets/icon2.png";
