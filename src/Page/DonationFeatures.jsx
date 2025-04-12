@@ -53,8 +53,6 @@ const DonationFeature = () => {
                     Raised: ₹{selectedProject.raised} / Goal: ₹{selectedProject.goal}
                 </p>
             </div>
-
-            {/* Donation Input */}
             <div className="donation-input">
                 <label>Donation Amount: ₹</label>
                 <input
