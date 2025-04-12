@@ -18,8 +18,6 @@ const DonationFeature = () => {
     const handleDonationChange = (event) => {
         setDonationAmount(parseInt(event.target.value) || 0);
     };
-
-    // Handle donation submission
     const handleDonate = () => {
         setProjects((prevProjects) =>
             prevProjects.map((p) =>
