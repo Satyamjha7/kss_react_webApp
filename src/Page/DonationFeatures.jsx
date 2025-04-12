@@ -33,8 +33,6 @@ const DonationFeature = () => {
         <div className="donation-container">
             <h2>Make an Impact</h2>
             <p>Select a project and see how your donation contributes.</p>
-
-            {/* Project Selection */}
             <select value={selectedProject.id} onChange={handleProjectChange}>
                 {projects.map((project) => (
                     <option key={project.id} value={project.id}>
