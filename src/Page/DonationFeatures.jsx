@@ -40,8 +40,6 @@ const DonationFeature = () => {
                     </option>
                 ))}
             </select>
-
-            {/* Progress Bar */}
             <div className="progress-container">
                 <div className="progress-bar">
                     <div
