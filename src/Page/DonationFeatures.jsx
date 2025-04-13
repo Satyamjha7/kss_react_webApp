@@ -62,8 +62,6 @@ const DonationFeature = () => {
                     min="10"
                 />
             </div>
-
-            {/* Donate Button */}
             <button onClick={handleDonate} className="donate-button">
                 Donate Now
             </button>
