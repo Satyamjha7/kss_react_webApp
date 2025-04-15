@@ -29,6 +29,34 @@ const Education = () => {
                         </p>
                     </div>
                 </div>
+
+                {/* New Section: Community-Based Learning */}
+                <div className="edu-content-section">
+                    <img src="https://source.unsplash.com/800x600/?community,training" alt="Community Training" className="edu-content-img" />
+                    <div className="edu-content-text">
+                        <h2>Community-Based Learning</h2>
+                        <p>
+                            We conduct grassroots-level educational drives, engaging local communities to spread knowledge on healthcare, sustainability, and social rights.
+                        </p>
+                        <p>
+                            These initiatives ensure that even the most marginalized groups gain access to critical information and lifelong learning opportunities.
+                        </p>
+                    </div>
+                </div>
+
+                {/* New Section: Education for the Next Generation */}
+                <div className="edu-content-section">
+                    <img src="https://source.unsplash.com/800x600/?children,learning" alt="Youth Education" className="edu-content-img" />
+                    <div className="edu-content-text">
+                        <h2>Education for the Next Generation</h2>
+                        <p>
+                            Our youth programs aim to build curiosity, creativity, and confidence among children by integrating modern tools and interactive teaching methods.
+                        </p>
+                        <p>
+                            Through digital classrooms, reading clubs, and scholarship opportunities, we nurture the leaders of tomorrow from an early age.
+                        </p>
+                    </div>
+                </div>
             </div>
         </>
     );

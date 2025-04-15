@@ -5,8 +5,8 @@ import 'aos/dist/aos.css';
 
 // Use correct relative paths and forward slashes
 import waterIcon from '../assets/waterIcon.png';
-import toiletIcon from '../assets/toiletIcon.jpg';
-import hygieneIcon from '../assets/hygieneIcon.jpg';
+import toiletIcon from '../assets/toiletIcon.png';
+import hygieneIcon from '../assets/hygieneIcon.png';
 
 import teamBackground from '../assets/163.jpg';
 

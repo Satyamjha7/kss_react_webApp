@@ -58,3 +58,26 @@
   line-height: 1.6;
   margin-bottom: 15px;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .edu-content {
+    padding: 30px 20px;
+  }
+
+  .edu-content-img {
+    width: 100%;
+  }
+
+  .edu-content-text {
+    width: 100%;
+  }
+
+  .edu-title {
+    font-size: 2.2em;
+  }
+
+  .edu-content-text h2 {
+    font-size: 1.5em;
+  }
+}
