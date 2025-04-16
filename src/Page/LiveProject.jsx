@@ -43,7 +43,7 @@ const LiveProjects = () => {
                             src={`/assets/${project.image}`}
                             alt={project.name}
                             className="project-image"
-                            onError={(e) => (e.target.src = "/assets/default.jpg")} // Fallback image
+                            onError={(e) => (e.target.src = "/assets/default.jpg")}
                         />
                         <div className="project-info">
                             <h3>{project.name}</h3>
