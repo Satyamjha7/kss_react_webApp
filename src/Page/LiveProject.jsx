@@ -38,7 +38,7 @@ const LiveProjects = () => {
             <div className="projects-list">
                 {projects.map((project) => (
                     <div key={project.id} className="project-card">
-                        {/* Use Public Folder Image Reference */}
+                
                         <img
                             src={`/assets/${project.image}`}
                             alt={project.name}
