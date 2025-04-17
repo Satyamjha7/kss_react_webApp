@@ -14,7 +14,7 @@ const ClimateChange = () => {
                     <h1 className="climate-title">Climate Change</h1>
                 </div>
             </div>
-
+            {/* climate change section*/}
             <div className="climate-content">
                 <div className="climate-content-section">
                     <img src={climateChangeImg} alt="Climate Change" className="climate-content-img" />
