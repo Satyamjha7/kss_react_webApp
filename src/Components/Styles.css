@@ -224,8 +224,8 @@ body {
     .hamburger {
         display: block;
         position: absolute;
-        right: 20px;
-        top: 15px;
+        right: 10px;
+        top: 18px;
         z-index: 20;
         color: white; 
     }
