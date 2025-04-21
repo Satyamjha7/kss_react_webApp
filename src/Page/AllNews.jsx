@@ -3,7 +3,7 @@ import './AllNews.css';
 import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.JPG";
 import img3 from "../assets/img3.JPG";
-
+/*Few Updates Needed*/
 const AllNews = () => {
     const newsData = [
         {
