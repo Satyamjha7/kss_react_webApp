@@ -2,7 +2,7 @@ import React from 'react';
 import './Health.css';
 import healthBackground from '../assets/133.jpeg';
 import healthImg from '../assets/163.jpg';
-
+/*Contents to be edited*/
 const Health = () => {
     return (
         <>

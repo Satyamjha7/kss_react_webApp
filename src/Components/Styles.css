@@ -1,5 +1,4 @@
-/*Navbar*/
-
+/*Nav Section*/
 * {
     margin: 0;
     padding: 0;
@@ -367,7 +366,7 @@ body {
         font-size: 14px;
     }
 }
-/* Footer */
+/* Footer needs to update*/
 .footer {
     background: linear-gradient(135deg, rgb(31, 49, 52), rgb(16, 69, 75));
     color: white;
@@ -685,7 +684,7 @@ body {
     color: #cccccc;
 }
 
-/*Donate Button*/
+/*Donate Button Responsive*/
 .donate-section {
     position: relative;
     width: 100%;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Careers.css";
 import careersBanner from "../assets/133.jpeg";
-
+/*Openings for Job Roles to display*/
 const jobOpenings = [
     {
         title: "Frontend Developer",
