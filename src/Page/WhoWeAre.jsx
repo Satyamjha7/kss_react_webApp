@@ -17,10 +17,13 @@ const WhoWeAre = () => {
             <div className="content-section">
                 <h2>About Us</h2>
                 <p>
-                    Kosi Seva Sadan (KSS) is a Gandhian non-profit organization rooted in the values of equity, justice, and sustainability. Established in 1981 by the inspiration of the esteemed social reformer Late Jay Prakash Narayan, KSS was born out of the Jayaprakash Movement during the Bhoodan Andolan, which sought to bring about societal change through non-violence and self-sufficiency.
+                    Kosi Seva Sadan (KSS) is more than just a Gandhian non-profit — it’s a movement deeply rooted in the ideals of equity, justice, and sustainability. Born in 1981 from the powerful wave of the Jayaprakash Movement during the Bhoodan Andolan, KSS carries forward the legacy of non-violence and self-reliance envisioned by the legendary social reformer Late Jay Prakash Narayan.
                 </p>
                 <p>
-                    Our journey was further strengthened by the mentorship of Late Prem Bhai of the Sarvodaya Movement, who guided a group of passionate youth to create impactful, need-based programs aimed at uplifting vulnerable communities.
+                    Our foundation was further strengthened by the wisdom and mentorship of Late Prem Bhai from the Sarvodaya Movement, who inspired a dedicated group of young changemakers to take action. Today, KSS stands as a beacon of hope — delivering impact-driven, community-focused programs that uplift the most vulnerable with compassion, integrity, and purpose.
+                </p>
+                <p className="quote">
+                    “The best way to find yourself is to lose yourself in the service of others.” — Mahatma Gandhi
                 </p>
             </div>
 
