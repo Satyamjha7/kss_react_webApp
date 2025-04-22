@@ -1,4 +1,6 @@
+/* Full-width responsive banner */
 .financials-banner {
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,6 +12,7 @@
     color: white;
 }
 
+/* Banner overlay for text readability */
 .financials-banner-overlay {
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -19,27 +22,26 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0 10px;
 }
 
+/* Title styling */
 .financial-title {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
-    text-align: center;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
 }
 
-.financial-subtitle {
-    font-size: 1.3em;
-    color: #ddd;
-}
-
+/* Main content area */
 .financials-content {
     background: #f8f9fa;
     padding: 50px 20px;
     text-align: center;
 }
 
+/* Document list layout */
 .documents-list {
     display: flex;
     flex-wrap: wrap;
@@ -48,12 +50,14 @@
     margin-top: 30px;
 }
 
+/* Document card styling */
 .doc-card {
     background: #fff;
     color: #333;
     border-radius: 10px;
     padding: 20px;
     width: 300px;
+    max-width: 90vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
     text-align: center;
@@ -63,19 +67,24 @@
     transform: translateY(-10px);
 }
 
+/* Icon style */
 .doc-icon {
     font-size: 50px;
     color: #e74c3c;
     margin-bottom: 10px;
 }
 
+/* Button container with flex */
 .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 10px;
     margin-top: 15px;
+    flex-wrap: wrap;
 }
 
+/* Buttons style */
 .preview-btn,
 .download-btn {
     background: #3498db;
@@ -86,6 +95,9 @@
     cursor: pointer;
     transition: background 0.3s;
     font-size: 0.9em;
+    flex: 1;
+    min-width: 130px;
+    text-align: center;
 }
 
 .preview-btn:hover,
@@ -93,3 +105,48 @@
     background: #2980b9;
 }
 
+/* -------- Media Queries for Responsiveness -------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .financial-title {
+        font-size: 2.2rem;
+    }
+
+    .doc-card {
+        width: 90%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .preview-btn,
+    .download-btn {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .financials-banner {
+        height: 50vh;
+    }
+
+    .financial-title {
+        font-size: 1.8rem;
+    }
+
+    .doc-icon {
+        font-size: 40px;
+    }
+
+    .doc-card {
+        padding: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
