@@ -10,8 +10,6 @@
     position: relative;
     color: white;
 }
-
-/* Banner overlay for text readability */
 .financials-banner-overlay {
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
