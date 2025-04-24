@@ -36,7 +36,6 @@
     text-align: center;
 }
 
-/* Document list layout */
 .documents-list {
     display: flex;
     flex-wrap: wrap;
