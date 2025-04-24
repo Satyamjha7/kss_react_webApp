@@ -66,7 +66,6 @@
     margin-bottom: 10px;
 }
 
-/* Button container with flex */
 .buttons {
     display: flex;
     justify-content: space-between;
