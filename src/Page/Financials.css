@@ -115,7 +115,6 @@
     }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
     .financials-banner {
         height: 50vh;
