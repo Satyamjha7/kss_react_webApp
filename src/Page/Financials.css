@@ -95,9 +95,6 @@
     background: #2980b9;
 }
 
-/* -------- Media Queries for Responsiveness -------- */
-
-/* Tablets */
 @media (max-width: 768px) {
     .financial-title {
         font-size: 2.2rem;
