@@ -1,4 +1,3 @@
-/* Full-width responsive banner */
 .financials-banner {
     width: 100%;
     background-size: cover;
@@ -11,8 +10,6 @@
     position: relative;
     color: white;
 }
-
-/* Banner overlay for text readability */
 .financials-banner-overlay {
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -25,7 +22,6 @@
     padding: 0 10px;
 }
 
-/* Title styling */
 .financial-title {
     font-size: 3rem;
     font-weight: bold;
@@ -34,14 +30,12 @@
     margin: 0;
 }
 
-/* Main content area */
 .financials-content {
     background: #f8f9fa;
     padding: 50px 20px;
     text-align: center;
 }
 
-/* Document list layout */
 .documents-list {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +44,6 @@
     margin-top: 30px;
 }
 
-/* Document card styling */
 .doc-card {
     background: #fff;
     color: #333;
@@ -67,14 +60,12 @@
     transform: translateY(-10px);
 }
 
-/* Icon style */
 .doc-icon {
     font-size: 50px;
     color: #e74c3c;
     margin-bottom: 10px;
 }
 
-/* Button container with flex */
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -84,7 +75,6 @@
     flex-wrap: wrap;
 }
 
-/* Buttons style */
 .preview-btn,
 .download-btn {
     background: #3498db;
@@ -105,9 +95,6 @@
     background: #2980b9;
 }
 
-/* -------- Media Queries for Responsiveness -------- */
-
-/* Tablets */
 @media (max-width: 768px) {
     .financial-title {
         font-size: 2.2rem;
@@ -127,8 +114,7 @@
         width: 100%;
     }
 }
-
-/* Mobile */
+/*responsiveness*/
 @media (max-width: 480px) {
     .financials-banner {
         height: 50vh;
