@@ -114,7 +114,6 @@
         width: 100%;
     }
 }
-/*responsiveness*/
 @media (max-width: 480px) {
     .financials-banner {
         height: 50vh;
