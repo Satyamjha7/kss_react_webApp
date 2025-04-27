@@ -25,11 +25,9 @@ const AnnualReport = () => {
             <div className="annual-banner" style={{ backgroundImage: `url(${annualImage})` }}>
                 <div className="annual-banner-overlay">
                     <h1 className="annual-banner-title">Annual Reports</h1>
-                    <div className="breadcrumb-wrapper">
-                        <Breadcrumb />
-                    </div>
                 </div>
             </div>
+            <Breadcrumb />
             <p className="intro-text">
                 Explore our journey, impact, and progress over the years.
             </p>

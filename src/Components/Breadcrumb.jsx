@@ -3,38 +3,36 @@ import { FaHome, FaChevronRight } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import "./Styles.css";
 
-const Breadcrumb = ({ heading }) => {
+const Breadcrumb = () => {
     const location = useLocation();
     const pathNames = location.pathname.split("/").filter((x) => x);
 
     return (
-        <div className="breadcrumb-container">
-            <h1 className="page-heading">{heading}</h1>
-            <nav className="breadcrumb">
-                <Link to="/" className="breadcrumb-item">
-                    <FaHome className="breadcrumb-icon" /> HOME
-                </Link>
-                {pathNames.map((name, index) => {
-                    const routeTo = `/${pathNames.slice(0, index + 1).join("/")}`;
-                    const isLast = index === pathNames.length - 1;
-                    return (
-                        <span key={index} className="breadcrumb-segment">
-                            <FaChevronRight className="breadcrumb-separator" />
-                            {isLast ? (
-                                <span className="breadcrumb-item active">
-                                    {name.toUpperCase()}
-                                </span>
-                            ) : (
-                                <Link to={routeTo} className="breadcrumb-item">
-                                    {name.toUpperCase()}
-                                </Link>
-                            )}
-                        </span>
-                    );
-                })}
-            </nav>
-        </div>
+        <nav className="breadcrumb">
+            <Link to="/" className="breadcrumb-link">
+                <FaHome className="breadcrumb-icon" />
+                <span>Home</span>
+            </Link>
+            {pathNames.map((name, index) => {
+                const routeTo = `/${pathNames.slice(0, index + 1).join("/")}`;
+                const isLast = index === pathNames.length - 1;
+                return (
+                    <div key={index} className="breadcrumb-item">
+                        <FaChevronRight className="breadcrumb-separator" />
+                        {isLast ? (
+                            <span className="breadcrumb-current">{formatName(name)}</span>
+                        ) : (
+                            <Link to={routeTo} className="breadcrumb-link">
+                                {formatName(name)}
+                            </Link>
+                        )}
+                    </div>
+                );
+            })}
+        </nav>
     );
 };
+
+const formatName = (name) => name.replace(/-/g, " ").toUpperCase();
 
 export default Breadcrumb;

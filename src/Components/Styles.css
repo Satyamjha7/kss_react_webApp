@@ -434,12 +434,9 @@ body {
 
 /* Logo Styling */
 .footer-logo {
-    width: 60px;
-    height: 60px;
-    background: white;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     padding: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Vertical Line Styling */
@@ -669,48 +666,54 @@ body {
     background: #8b0000;
 }
 /*Breadcrumb*/
-.breadcrumb-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-.page-heading {
-    font-size: 1.8rem;
-    color: #ffffff;
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-
+/* Main wrapper */
 .breadcrumb {
     display: flex;
     align-items: center;
-    gap: 8px;
     font-size: 1rem;
-}
-.breadcrumb-item {
-    color: #cccccc;
-    text-decoration: none;
-    font-weight: 400;
-    transition: color 0.2s ease;
+    color: #333;
+    padding: 1rem 2rem 0 2rem; /* a little top padding */
 }
 
-.breadcrumb-item:hover {
-    color: #ffffff;
+/* Links */
+.breadcrumb-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    gap: 0.4rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
-.breadcrumb-separator {
-    color: #999999;
-    font-size: 12px;
+
+.breadcrumb-link:hover {
+    color: #000;
 }
-.breadcrumb-item.active {
-    color: #ffffff;
+
+/* Current page text */
+.breadcrumb-current {
+    color: #000;
     font-weight: 600;
-    pointer-events: none;
 }
+
+/* Separator (arrow) */
+.breadcrumb-separator {
+    margin: 0 0.4rem;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Icon (home) */
 .breadcrumb-icon {
-    margin-right: 5px;
-    font-size: 16px;
-    color: #cccccc;
+    font-size: 1rem;
 }
+
+/* Breadcrumb item */
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
 
 /*Donate Button Responsive*/
 .donate-section {
