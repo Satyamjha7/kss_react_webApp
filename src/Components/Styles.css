@@ -535,7 +535,6 @@ body {
     color: #e2e8f0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .footer-container {
         text-align: center;
