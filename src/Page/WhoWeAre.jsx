@@ -5,6 +5,9 @@ import MissionImage from "../assets/182.jpg";
 import ImpactImage from "../assets/178.jpg";
 import AboutUsImage from "../assets/133.jpeg";
 
+// Icons
+import { FaEye, FaBullseye, FaHandsHelping } from "react-icons/fa";
+
 const WhoWeAre = () => {
     return (
         <div className="who-we-are">
@@ -30,18 +33,26 @@ const WhoWeAre = () => {
             <div className="grid-section">
                 <div className="grid-item">
                     <img src={VisionImage} alt="Vision" />
-                    <h3>Our Vision</h3>
-                    <p>To create an egalitarian society where every individual, especially the poor, oppressed, and underprivileged, gets an opportunity to realize their full potential.</p>
+                    <div>
+                        <h3><FaEye style={{ color: "#0077b6", marginRight: "10px" }} /> Our Vision</h3>
+                        <p>To create an egalitarian society where every individual, especially the poor, oppressed, and underprivileged, gets an opportunity to realize their full potential.</p>
+                    </div>
                 </div>
+
                 <div className="grid-item">
                     <img src={MissionImage} alt="Mission" />
-                    <h3>Our Mission</h3>
-                    <p>Facilitating holistic development anchored in equity, justice, and sustainability by empowering communities to become self-sufficient and resilient.</p>
+                    <div>
+                        <h3><FaBullseye style={{ color: "#f57c00", marginRight: "10px" }} /> Our Mission</h3>
+                        <p>Facilitating holistic development anchored in equity, justice, and sustainability by empowering communities to become self-sufficient and resilient.</p>
+                    </div>
                 </div>
+
                 <div className="grid-item">
                     <img src={ImpactImage} alt="Impact" />
-                    <h3>Our Impact</h3>
-                    <p>Operating in the Saharsa district of Bihar, KSS has expanded its outreach to other districts, impacting thousands through programs in education, health, livelihood, and more.</p>
+                    <div>
+                        <h3><FaHandsHelping style={{ color: "#2e7d32", marginRight: "10px" }} /> Our Impact</h3>
+                        <p>Operating in the Saharsa district of Bihar, KSS has expanded its outreach to other districts, impacting thousands through programs in education, health, livelihood, and more.</p>
+                    </div>
                 </div>
             </div>
         </div>
