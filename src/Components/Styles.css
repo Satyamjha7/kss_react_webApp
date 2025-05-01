@@ -696,7 +696,6 @@ body {
     font-size: 1rem;
 }
 
-/* Breadcrumb item */
 .breadcrumb-item {
     display: flex;
     align-items: center;
