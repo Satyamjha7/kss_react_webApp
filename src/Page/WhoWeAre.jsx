@@ -5,7 +5,6 @@ import MissionImage from "../assets/182.jpg";
 import ImpactImage from "../assets/178.jpg";
 import AboutUsImage from "../assets/133.jpeg";
 
-// Icons
 import { FaEye, FaBullseye, FaHandsHelping } from "react-icons/fa";
 
 const WhoWeAre = () => {
