@@ -468,7 +468,6 @@ body {
     margin-top: 10px;
 }
 
-/* Footer Links */
 .footer-links-list {
     list-style: none;
     padding: 0;
@@ -501,7 +500,6 @@ body {
     color: #f3a847;
 }
 
-/* Footer Bottom */
 .footer-bottom {
     background: linear-gradient(135deg, rgb(31, 49, 52), rgb(10, 51, 56));
     padding: 20px 8%;
@@ -664,7 +662,6 @@ body {
     padding: 1rem 2rem 0 2rem; /* a little top padding */
 }
 
-/* Links */
 .breadcrumb-link {
     display: flex;
     align-items: center;
@@ -697,7 +694,6 @@ body {
     font-size: 1rem;
 }
 
-/* Breadcrumb item */
 .breadcrumb-item {
     display: flex;
     align-items: center;
