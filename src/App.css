@@ -1,6 +1,6 @@
 .app-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: col
   min-height: 100vh;
 }
 .main-content {
