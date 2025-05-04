@@ -1,60 +1,131 @@
+/* Banner Section */
 .watsan-banner {
-  width: 100%;
-  height: 50vh;
+  height: 320px;
   background-size: cover;
   background-position: center;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .watsan-banner-overlay {
-  width: 100%;
+  background: rgba(5, 25, 29, 0.65);
   height: 100%;
-  background: linear-gradient(135deg, #05191d 0%, #1c3b41 100%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .watsan-title {
-  color: #fff;
-  font-size: 3em;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 3.5em;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
-.watsan-content {
-  padding: 50px;
-  background-color: #f5f5f5;
+/* Section Layout */
+.watsan-section {
+  padding: 100px 20px;
+  background-color: #f7f9fc;
 }
 
-.watsan-content-section {
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Headings */
+.section-heading {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.highlight-blue {
+  color: #1e90ff;
+}
+
+.highlight-green {
+  color: #28a745;
+}
+
+.section-subtext {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  color: #444;
+  font-size: 1.15em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Cards */
+.programme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.programme-card {
+  border-radius: 20px;
+  padding: 50px 30px;
+  color: #ffffff;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.programme-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Icon Circle */
+.icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 25px;
   display: flex;
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.4s ease;
 }
 
-.watsan-content-img {
-  width: 40%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.programme-card:hover .icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: scale(1.1);
 }
 
-.watsan-content-text {
-  width: 55%;
+.programme-icon {
+  width: 50px;
+  height: 50px;
 }
 
-.watsan-content-text h2 {
-  color: #05191d;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.watsan-content-text p {
-  color: #333;
-  line-height: 1.6;
+/* Card Text */
+.card-title {
+  font-size: 1.6em;
   margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card-description {
+  font-size: 1.05em;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 2.2em;
+  }
+
+  .programme-card {
+    padding: 40px 25px;
+  }
 }
