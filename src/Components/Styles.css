@@ -659,7 +659,7 @@ body {
     align-items: center;
     font-size: 1rem;
     color: #333;
-    padding: 1rem 2rem 0 2rem; /* a little top padding */
+    padding: 1rem 2rem 0 2rem;
 }
 
 .breadcrumb-link {
