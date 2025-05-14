@@ -3,6 +3,11 @@ import './Watsan.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+// Use correct relative paths and forward slashes
+import waterIcon from '../assets/waterIcon.png';
+import toiletIcon from '../assets/toiletIcon.jpg';
+import hygieneIcon from '../assets/hygieneIcon.jpg';
+
 import teamBackground from '../assets/163.jpg';
 
 const watsanProgrammes = [

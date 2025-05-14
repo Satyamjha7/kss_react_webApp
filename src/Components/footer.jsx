@@ -33,7 +33,7 @@ export default function Footer() {
                     <MDBRow className="footer-row">
                         <MDBCol md="3" lg="4" xl="3" className="footer-col">
                             <div className="logo-text-container">
-                                <img src="public\images\logo-white.png" alt="Kosi Seva Sadan Logo" className="footer-logo" />
+                                <img src="\images\logo-white.png" alt="Kosi Seva Sadan Logo" className="footer-logo" />
                                 <div className="vertical-line"></div>
                                 <div className="text-container">
                                     <h6 className="footer-title">Kosi Seva Sadan</h6>
