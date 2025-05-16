@@ -218,7 +218,7 @@ body {
 .donate-btn:hover {
     background-color: #e04e2a;
 }
-
+/*Page responsiveness */
 @media (max-width: 550px) {
   .hamburger {
     display: block;
