@@ -221,7 +221,7 @@ h1, h2, h3, h4 {
 .donate-btn:hover {
     background-color: #e04e2a;
 }
-
+/*Page responsiveness */
 @media (max-width: 550px) {
   .hamburger {
     display: block;
@@ -346,7 +346,7 @@ h1, h2, h3, h4 {
   }
 }
 
-
+/*Responsive UI */
 @media (max-width: 480px) {
     .logo-img {
         height: 45px;

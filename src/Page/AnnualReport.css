@@ -161,7 +161,7 @@
     transform: scale(1.05);
 }
 
-
+/* Responsive UI */
 @media (max-width: 768px) {
     .annual-report-display {
         flex-direction: column;
