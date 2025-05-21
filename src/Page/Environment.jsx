@@ -1,6 +1,6 @@
 import React from 'react';
 import './Environment.css';
-import environmentBackground from '../assets/163.jpg';
+import environmentBackground from '../assets/Env.jpg';
 import environmentImg from '../assets/163.jpg';
 
 const Environment = () => {

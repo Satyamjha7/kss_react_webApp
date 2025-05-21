@@ -42,6 +42,7 @@ import Careers from "./Page/Careers";
 import TestimonialCarousel from "./Page/TestimonialCarousel";
 import PartnersCarousel from "./Page/PartnersCarousel";
 import Rights from "./Components/Rights";
+import AboutBanner from "./Page/AboutBanner";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);

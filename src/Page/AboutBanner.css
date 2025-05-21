@@ -1,0 +1,100 @@
+.about-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background-color:rgb(205, 178, 173);
+  background-image: url('../assets/texture3.png');
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.about-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.texture-effect {
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+  animation: floatTexture 30s linear infinite;
+}
+
+@keyframes floatTexture {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50px, -50px) rotate(360deg);
+  }
+}
+
+.about-banner-content {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.about-banner-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-banner-content p {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.8;
+}
+
+.about-banner-image {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.about-banner-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  transform: rotate(3deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-banner {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-banner-content,
+  .about-banner-image {
+    max-width: 100%;
+  }
+
+  .about-banner-content h1 {
+    font-size: 2.2em;
+  }
+
+  .about-banner-content p {
+    font-size: 1em;
+  }
+
+  .about-banner-image img {
+    max-width: 90%;
+    transform: rotate(0deg);
+  }
+}

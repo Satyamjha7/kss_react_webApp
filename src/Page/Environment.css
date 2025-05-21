@@ -22,6 +22,8 @@
   color: #fff;
   font-size: 3em;
   font-weight: bold;
+  text-align: center;
+  padding: 0 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -35,16 +37,19 @@
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .environment-content-img {
   width: 40%;
+  min-width: 280px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .environment-content-text {
   width: 55%;
+  min-width: 280px;
 }
 
 .environment-content-text h2 {
@@ -57,4 +62,52 @@
   color: #333;
   line-height: 1.6;
   margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+  .environment-banner {
+    height: 40vh;
+  }
+
+  .environment-title {
+    font-size: 2.2em;
+  }
+
+  .environment-content {
+    padding: 30px 20px;
+  }
+
+  .environment-content-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .environment-content-img,
+  .environment-content-text {
+    width: 100%;
+  }
+
+  .environment-content-text h2 {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 480px) {
+  .environment-banner {
+    height: 35vh;
+  }
+
+  .environment-title {
+    font-size: 1.8em;
+  }
+
+  .environment-content-text h2 {
+    font-size: 1.5em;
+  }
+
+  .environment-content {
+    padding: 20px 15px;
+  }
 }

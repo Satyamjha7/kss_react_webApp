@@ -8,56 +8,92 @@
     justify-content: center;
     position: relative;
     color: white;
-}
-
-.values-title {
+  }
+  
+  .values-title {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.values-content {
+  }
+  
+  .values-content {
     padding: 40px 20px;
-}
-
-.values-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.value-item {
-    background-color: #064753;
-    color: #fff;
+  }
+  
+  /* Hover Grid */
+  .hover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  @media (min-width: 600px) {
+    .hover-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .hover-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .hover-card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .hover-bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(36, 36, 36, 0.8);
+    border-radius: 20px;
+    z-index: 1;
+  }
+  
+  .card-container {
+    position: relative;
+    z-index: 2;
+    background: #064753;
+    border-radius: 12px;
+    overflow: hidden;
     padding: 20px;
-    border-radius: 8px;
-    width: 250px;
+    transition: transform 0.3s ease-in-out, border 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hover-card:hover .card-container {
+    transform: translateY(-8px);
+  }
+  
+  .card-content {
     text-align: center;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.value-item:hover {
-    transform: translateY(-10px);
-}
-
-.value-icon {
-    font-size: 36px;
-    margin-bottom: 10px;
+  }
+  
+  .value-icon {
+    font-size: 38px;
+    margin-bottom: 16px;
     color: #e91e63;
-}
-
-.value-item h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.value-item p {
-    font-size: 0.9em;
-    line-height: 1.5;
-}
+  }
+  
+  .card-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .card-description {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  

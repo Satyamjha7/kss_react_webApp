@@ -6,8 +6,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+  }
 
 .navbar {
     display: flex;
@@ -881,7 +884,7 @@ body {
 
 .footerlast p {
     color: white;
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
 
@@ -894,7 +897,7 @@ body {
 .footer-links a {
     color: white;
     text-decoration: none;
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     transition: color 0.3s ease;
 }

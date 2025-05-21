@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import "./Values.css";
 import Breadcrumb from "../Components/Breadcrumb";
 import valueBackground from "../assets/133.jpeg";
@@ -9,7 +10,7 @@ const Values = () => {
             icon: "fas fa-shield-alt",
             title: "Integrity",
             description:
-                "We conduct all our work with the utmost honesty, transparency, and accountability, maintaining the highest ethical standards in everything we do."
+                "We conduct all our work with the utmost honesty, transparency, and accountability, maintaining the highest ethical standards."
         },
         {
             icon: "fas fa-hand-holding",
@@ -21,7 +22,7 @@ const Values = () => {
             icon: "fas fa-users",
             title: "Collaboration",
             description:
-                "We value collaboration and partnerships, as we know that by working together, we can achieve greater impact."
+                "We value collaboration and partnerships, knowing that by working together, we can achieve greater impact."
         },
         {
             icon: "fas fa-lightbulb",
@@ -37,23 +38,50 @@ const Values = () => {
         }
     ];
 
+    const [hoveredIndex, setHoveredIndex] = useState(null);
+
     return (
         <div>
-            <div className="values-section" style={{ backgroundImage: `url(${valueBackground})` }}>
+            <div
+                className="values-section"
+                style={{ backgroundImage: `url(${valueBackground})` }}
+            >
                 <h1 className="values-title">Our Core Values</h1>
             </div>
-            <Breadcrumb/>
+
+            <Breadcrumb />
 
             <div className="values-content">
-                <ul className="values-list">
-                    {values.map((value, index) => (
-                        <li key={index} className="value-item">
-                            <i className={`${value.icon} value-icon`}></i>
-                            <h2>{value.title}</h2>
-                            <p>{value.description}</p>
-                        </li>
+                <div className="hover-grid">
+                    {values.map((item, idx) => (
+                        <div
+                            key={idx}
+                            className="hover-card"
+                            onMouseEnter={() => setHoveredIndex(idx)}
+                            onMouseLeave={() => setHoveredIndex(null)}
+                        >
+                            <AnimatePresence>
+                                {hoveredIndex === idx && (
+                                    <motion.span
+                                        className="hover-bg"
+                                        layoutId="hoverBackground"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1, transition: { duration: 0.2 } }}
+                                        exit={{ opacity: 0, transition: { duration: 0.2 } }}
+                                    />
+                                )}
+                            </AnimatePresence>
+
+                            <div className="card-container">
+                                <div className="card-content">
+                                    <i className={`${item.icon} value-icon`}></i>
+                                    <h2 className="card-title">{item.title}</h2>
+                                    <p className="card-description">{item.description}</p>
+                                </div>
+                            </div>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
         </div>
     );

@@ -13,20 +13,20 @@ import PartnersCarousel from "./PartnersCarousel";
 const Home = () => {
   const slides = [
     {
-      img: "/images/img1.jpeg",
+      img: "/images/img7.jpg",
       heading: "HELP US TO SAVE THE",
       highlight: "HOMELESS PEOPLE",
       description:
         "Your support helps us create better lives for the villagers in need.",
     },
     {
-      img: "/images/img2.jpeg",
+      img: "/images/img6.JPG",
       heading: "TOGETHER, WE CAN",
       highlight: "MAKE A DIFFERENCE",
       description: "Join our mission to uplift underprivileged communities.",
     },
     {
-      img: "/images/img3.jpeg",
+      img: "/images/153.jpg",
       heading: "PROVIDING HOPE FOR",
       highlight: "A BRIGHTER FUTURE",
       description: "Empowering children and families through education.",

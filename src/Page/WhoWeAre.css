@@ -37,15 +37,13 @@
 
 .content-section {
     padding: 50px 20px;
-    text-align: center;
-    background:rgb(238, 108, 108);
+    text-align: left;
     margin-top: 20px;
 }
 
 .content-section h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color:rgb(255, 255, 255);
     margin-bottom: 10px;
     text-align: left;
     max-width: 800px;
@@ -55,7 +53,6 @@
 
 .content-section p {
     font-size: 1.1rem;
-    color: #ffffff;
     line-height: 1.7;
     max-width: 800px;
     margin: 0 auto 20px;
@@ -133,3 +130,77 @@
         align-items: center;
     }
 }
+/* Vision-Mission-Impact cards style */
+
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+  }
+  
+  .vm-card {
+    position: relative;
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  /* .vm-card:hover {
+    transform: scale(1.03);
+  }
+   */
+  .vm-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .vm-overlay h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  .vm-hover-content {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 25px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(30px);
+  }
+  
+  .vm-card:hover .vm-hover-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .vm-hover-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Mobile responsive adjustments */
+  @media (max-width: 768px) {
+    .vision-mission-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
