@@ -79,16 +79,12 @@ const Navbar = () => {
             <span className="mouse-event">What We Do ▾</span>
             {dropdown.what && (
               <div className="dropdown-menu">
-                <Link to="/women-empowerment">Women Empowerment</Link>
-                <Link to="/health-nutrition">Health & Nutrition</Link>
-                <Link to="/watsan">Water & Sanitation</Link>
-                <Link to="/education-awareness">Education & Awareness</Link>
-                <Link to="/child-rights">Child Rights</Link>
-                <Link to="/drr-climate">Climate Change</Link>
-                <Link to="/skills-development">Skills Development</Link>
-                <Link to="/sustainable-agriculture">Sustainable Agriculture</Link>
-                <Link to="/environment">Environment & Clean Energy</Link>
-                <Link to="/livelihood-promotion">Livelihood Promotion</Link>
+                <Link to="/women-empowerment">Strengthening Women’s Participation</Link>
+                <Link to="/health-nutrition">Promoting Child Rights through Education and Skill Development </Link>
+                <Link to="/watsan">Health, Sanitation and Nutrition</Link>
+                <Link to="/education-awareness">Climate-Resilient Livelihoods and Sustainable Agriculture</Link>
+                <Link to="/child-rights">Flood Preparedness, Relief, and Community Resilience</Link>
+                <Link to="/drr-climate">Environment Conservation and Clean Energy Solutions</Link>
               </div>
             )}
           </li>

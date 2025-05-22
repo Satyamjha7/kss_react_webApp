@@ -43,6 +43,7 @@ import TestimonialCarousel from "./Page/TestimonialCarousel";
 import PartnersCarousel from "./Page/PartnersCarousel";
 import Rights from "./Components/Rights";
 import AboutBanner from "./Page/AboutBanner";
+import ThematicAreas from "./Page/ThematicAreas";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);

@@ -9,6 +9,7 @@ import StorytellingVideos from "./StoryTellingVideos";
 import DonateButton from "../Components/DonateButton";
 import Action from "./Action";
 import PartnersCarousel from "./PartnersCarousel";
+import ThematicAreas from "./ThematicAreas";
 
 const Home = () => {
   const slides = [
@@ -79,6 +80,7 @@ const Home = () => {
       <Action />
       <Mission />
       <ImpactSection />
+      <ThematicAreas />
       <DonateButton />
       <StorytellingVideos />
       <LatestNews />

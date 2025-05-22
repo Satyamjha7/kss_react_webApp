@@ -13,7 +13,7 @@ const WomenEmpowerment = () => {
                     style={{ backgroundImage: `url(${teamBackground})` }}
                 >
                     <div className="women-banner-overlay">
-                        <h1 className="women-title">Women Empowerment</h1>
+                        <h1 className="women-title">Strengthening Women’s Participation</h1>
                     </div>
                 </div>
             </div>
