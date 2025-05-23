@@ -5,83 +5,50 @@ export default function Footer() {
     return (
         <MDBFooter className="footer">
             <section className="social-section">
-                <div className="social-text">
-                    <span>Follow us for updates</span>
-                </div>
-
+                <p className="social-text">Follow us</p>
                 <div className="social-icons">
-                    <a href="#" className="social-link">
-                        <MDBIcon fab icon="facebook-f" />
-                    </a>
-                    <a href="#" className="social-link">
-                        <MDBIcon fab icon="twitter" />
-                    </a>
-                    <a href="#" className="social-link">
-                        <MDBIcon fab icon="instagram" />
-                    </a>
-                    <a href="#" className="social-link">
-                        <MDBIcon fab icon="linkedin" />
-                    </a>
-                    <a href="#" className="social-link">
-                        <MDBIcon fab icon="github" />
-                    </a>
+                    <a href="#"><MDBIcon fab icon="facebook-f" /></a>
+                    <a href="#"><MDBIcon fab icon="twitter" /></a>
+                    <a href="#"><MDBIcon fab icon="instagram" /></a>
                 </div>
             </section>
 
-            <section className="footer-content">
-                <MDBContainer className="footer-container">
-                    <MDBRow className="footer-row">
-                        <MDBCol md="3" lg="4" xl="3" className="footer-col">
-                            <div className="logo-text-container">
-                                <img src="\images\logo-white.png" alt="Kosi Seva Sadan Logo" className="footer-logo" />
-                                <div className="vertical-line"></div>
-                                <div className="text-container">
-                                    <h6 className="footer-title">Kosi Seva Sadan</h6>
-                                    <p className="footer-text">
-                                        Building resilient communities through sustainable development, women empowerment, and disaster response initiatives in Bihar since 1981.
-                                    </p>
-                                </div>
+            <MDBContainer className="footer-container">
+                <MDBRow className="footer-row">
+                    <MDBCol md="4" className="footer-col">
+                        <div className="logo-text-container">
+                            <img src="/images/logo-white.png" alt="KSS Logo" className="footer-logo" />
+                            <div>
+                                <h6 className="footer-title">Kosi Seva Sadan</h6>
+                                <p className="footer-text">Empowering Bihar since 1981 through sustainable development and humanitarian initiatives.</p>
                             </div>
-                        </MDBCol>
+                        </div>
+                        <div className="credibility-tag">
+                            <img src="src\assets\ca.png" alt="Credibility Verified" className="credibility-img" />
+                        </div>
+                    </MDBCol>
 
+                    <MDBCol md="4" className="footer-col">
+                        <h6 className="footer-title">Quick Links</h6>
+                        <ul className="footer-links-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Work</a></li>
+                            <li><a href="#">Get Involved</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </MDBCol>
 
-                        <MDBCol md="2" lg="2" xl="2" className="footer-col">
-                            <h6 className="footer-title">Initiatives</h6>
-                            <ul className="footer-links-list">
-                                <li><a href="#" className="footer-link">Livelihood Programs</a></li>
-                                <li><a href="#" className="footer-link">Disaster Management</a></li>
-                                <li><a href="#" className="footer-link">Women Empowerment</a></li>
-                                <li><a href="#" className="footer-link">Education & Training</a></li>
-                            </ul>
-                        </MDBCol>
-
-                        <MDBCol md="2" lg="2" xl="2" className="footer-col">
-                            <h6 className="footer-title">Quick Links</h6>
-                            <ul className="footer-links-list">
-                                <li><a href="#" className="footer-link">About Us</a></li>
-                                <li><a href="#" className="footer-link">Our Impact</a></li>
-                                <li><a href="#" className="footer-link">Get Involved</a></li>
-                                <li><a href="#" className="footer-link">Contact Us</a></li>
-                            </ul>
-                        </MDBCol>
-
-                        <MDBCol md="4" lg="3" xl="3" className="footer-col">
-                            <h6 className="footer-title">Contact Us</h6>
-                            <p className="footer-contact"><MDBIcon icon="home" className="footer-icon" /> Bihar, India</p>
-                            <p className="footer-contact"><MDBIcon icon="envelope" className="footer-icon" /> contact@kosisevasadan.org</p>
-                            <p className="footer-contact"><MDBIcon icon="phone" className="footer-icon" /> +91 98765 43210</p>
-                        </MDBCol>
-                    </MDBRow>
-                </MDBContainer>
-            </section>
+                    <MDBCol md="4" className="footer-col">
+                        <h6 className="footer-title">Contact</h6>
+                        <p><MDBIcon icon="envelope" /> kosisevasadan@gmail.com</p>
+                        <p><MDBIcon icon="phone" /> +91 9934797023, 9113124943</p>
+                        <p><MDBIcon icon="map-marker-alt" /> Acharyavan Mahishi, Bihar, India</p>
+                    </MDBCol>
+                </MDBRow>
+            </MDBContainer>
 
             <div className="footer-bottom">
                 <p>© 2025 Kosi Seva Sadan. All rights reserved.</p>
-                <div className="footer-bottom-links">
-                    <a href="/copyright">Copyright</a>
-                    <a href="/privacy-policy">Privacy Policy</a>
-                    <a href="/terms-conditions">Terms & Conditions</a>
-                </div>
             </div>
         </MDBFooter>
     );
