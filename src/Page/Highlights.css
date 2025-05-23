@@ -1,0 +1,41 @@
+.ngo-container {
+    background-color:rgb(104, 26, 6);
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ngo-container h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+    max-width: 900px;
+    line-height: 1.5;
+  }
+  .highlight{
+    color:rgb(173, 243, 8)
+  }
+  @media screen and (max-width: 768px) {
+    .ngo-container {
+      padding: 60px 15px;
+    }
+  
+    .ngo-container h1 {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .ngo-container {
+      padding: 40px 10px;
+    }
+  
+    .ngo-container h1 {
+      font-size: 1.3rem;
+      line-height: 1.4;
+    }
+  }

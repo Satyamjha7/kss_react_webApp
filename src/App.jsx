@@ -44,6 +44,7 @@ import PartnersCarousel from "./Page/PartnersCarousel";
 import Rights from "./Components/Rights";
 import AboutBanner from "./Page/AboutBanner";
 import ThematicAreas from "./Page/ThematicAreas";
+import NgoHighlight from "./Page/Highlights";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);

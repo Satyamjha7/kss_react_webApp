@@ -10,6 +10,7 @@ import DonateButton from "../Components/DonateButton";
 import Action from "./Action";
 import PartnersCarousel from "./PartnersCarousel";
 import ThematicAreas from "./ThematicAreas";
+import NgoHighlight from "./Highlights";
 
 const Home = () => {
   const slides = [
@@ -77,6 +78,7 @@ const Home = () => {
 
       <button className="slider-arrow left" onClick={handlePrev}>❮</button>
       <button className="slider-arrow right" onClick={handleNext}>❯</button>
+      <NgoHighlight />
       <Action />
       <Mission />
       <ImpactSection />
