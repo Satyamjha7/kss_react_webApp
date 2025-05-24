@@ -548,8 +548,6 @@ h1, h2, h3, h4 {
         flex-direction: column;
     }
 }
-/* Existing footer styles remain same */
-
 .credibility-tag {
     margin-top: 15px;
 }
