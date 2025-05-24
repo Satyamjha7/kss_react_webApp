@@ -224,7 +224,6 @@ h1, h2, h3, h4 {
 .donate-btn:hover {
     background-color: #e04e2a;
 }
-/*Page responsiveness */
 @media (max-width: 550px) {
   .hamburger {
     display: block;
