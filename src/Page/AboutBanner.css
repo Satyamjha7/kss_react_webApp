@@ -72,7 +72,7 @@
   transform: rotate(3deg);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
+/* Mobile Responsive*/
 @media screen and (max-width: 768px) {
   .about-banner {
     flex-direction: column;
