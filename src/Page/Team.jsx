@@ -54,7 +54,6 @@ const Team = () => {
 
     return (
         <div>
-            {/* ✅ Our Team Background Section */}
             <div
                 className="team-section"
                 style={{ backgroundImage: `url(${teamBackground})` }}
