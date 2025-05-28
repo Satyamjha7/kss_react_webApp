@@ -71,8 +71,6 @@ const Team = () => {
                     Our board members are dedicated professionals who bring expertise,
                     experience, and leadership to our mission of improving lives.
                 </p>
-
-                {/* ✅ Team Switcher */}
                 <div className="team-headings">
                     <h3
                         className={`team-option ${selectedTeam === "governingBoard" ? "active" : ""
