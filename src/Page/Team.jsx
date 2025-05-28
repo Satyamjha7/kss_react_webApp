@@ -65,7 +65,6 @@ const Team = () => {
 
             <Breadcrumb />
 
-            {/* ✅ KSS Team Section */}
             <div className="kss-team-section">
                 <h2 className="team-heading">Meet Our Leaders</h2>
                 <p className="team-description">
