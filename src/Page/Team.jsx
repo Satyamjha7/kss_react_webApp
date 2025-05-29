@@ -88,7 +88,6 @@ const Team = () => {
                     </h3>
                 </div>
 
-                {/* ✅ Team Grid */}
                 <div className="team-grid">
                     {teamData[selectedTeam].map((member, index) => (
                         <div className="team-card" key={index}>
