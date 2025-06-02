@@ -674,8 +674,6 @@ h1, h2, h3, h4 {
     color: #000;
     font-weight: 600;
 }
-
-/* Separator (arrow) */
 .breadcrumb-separator {
     margin: 0 0.4rem;
     font-size: 0.8rem;
