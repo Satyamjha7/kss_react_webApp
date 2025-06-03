@@ -5,7 +5,7 @@ import letter_icon from "../assets/email.png";
 
 const NewsletterPopup = () => {
     const [isOpen, setIsOpen] = useState(true);
-
+    {/*Popup for Newsletter Subscription*/}
     return (
         isOpen && (
             <div className="popup-overlay">
