@@ -3,6 +3,8 @@ import "./Team.css";
 import Breadcrumb from "../Components/Breadcrumb";
 import teamBackground from "../assets/114.jpeg";
 
+{/* Member Card Details...array of objects */}
+
 const teamData = {
     governingBoard: [
         {
