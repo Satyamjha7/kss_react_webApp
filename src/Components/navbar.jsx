@@ -8,10 +8,17 @@ const Navbar = () => {
     what: false,
     res: false,
     gallery: false,
+    media: false,
   });
 
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const handleDropdownClick = (menu) => {
+    setDropdown(prev => ({
+      ...prev,
+      [menu]: !prev[menu]
+    }));
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,6 +66,7 @@ const Navbar = () => {
           <li
             onMouseEnter={() => toggleDropdown("about")}
             onMouseLeave={() => toggleDropdown("about")}
+            onClick={() => handleDropdownClick('about')} 
           >
             <span className="mouse-event">About Us ▾</span>
             {dropdown.about && (
@@ -75,6 +83,7 @@ const Navbar = () => {
           <li
             onMouseEnter={() => toggleDropdown("what")}
             onMouseLeave={() => toggleDropdown("what")}
+            onClick={() => handleDropdownClick('about')} 
           >
             <span className="mouse-event">What We Do ▾</span>
             {dropdown.what && (
@@ -92,6 +101,7 @@ const Navbar = () => {
           <li
             onMouseEnter={() => toggleDropdown("res")}
             onMouseLeave={() => toggleDropdown("res")}
+            onClick={() => handleDropdownClick('about')} 
           >
             <span className="mouse-event">Resources ▾</span>
             {dropdown.res && (
@@ -100,6 +110,19 @@ const Navbar = () => {
                 <Link to="/fcra">FCRA</Link>
                 <Link to="/organization-docs">Organization Docs</Link>
                 <Link to="/careers">Careers</Link>
+                <div
+                className="dropdown-item"
+                onMouseEnter={() => setDropdown((prev) => ({ ...prev, media: true }))}
+                onMouseLeave={() => setDropdown((prev) => ({ ...prev, media: false }))}
+                >
+                  <span>Media ▸</span>
+                  {dropdown.media && (
+                    <div className="side-dropdown-menu">
+                      <Link to="/gallery">Gallery</Link>
+                      <Link to="/paper-clips">Paper Clips</Link>
+                    </div>
+                  )}
+                </div>
                 <Link to="/stories">Stories</Link>
               </div>
             )}
@@ -107,7 +130,7 @@ const Navbar = () => {
 
           <li
             onMouseEnter={() => toggleDropdown("gallery")}
-            onMouseLeave={() => toggleDropdown("gallery")}
+            onMouseLeave={() => toggleDropdown("gallery")}  
           >
             <span className="mouse-event">Media ▾</span>
             {dropdown.gallery && (
